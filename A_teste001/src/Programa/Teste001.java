@@ -4,50 +4,29 @@ import java.util.Arrays;
 
 public class Teste001 {
 	
-	public static int maior(int[] ls) {
-		int a = ls[0];
-		
+	public static void pares(int[] ls) {
 		for (int cada : ls) {
-			if (a < cada) {
-				a = cada;
+			if (cada % 2 == 0) {
+				System.out.print(cada + ", ");
 			}
 		}
-		return a;
+		System.out.println("");
 	}
-	
-	public static int menor(int[] ls) {
-		int b = ls[0];
-		
-		for (int cada : ls) {
-			if (b > cada) {
-				b = cada;
-			}
-		}
-		return b;
-	}
-	
 
 
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 				
-		int lista[] = {5, 3, 2, 1, 7, 4};
+		int lista[] = {5, 3, 2, 1, 7, 4, 11};
 		
 		System.out.println(Arrays.toString(lista));
-		
-		for (int cada : lista) {
-			System.out.println(cada);
-		}
-		
+				
 		System.out.println("--------------------------");
+				
 		
-		int max = maior(lista);
-		System.out.println("o maior é: " + max);
-		
-
-		int min = menor(lista);
-		System.out.println("o menor é: " + min);
-
+		System.out.println("pares: ");
+		pares(lista);
+				
 
 		// Your code here
 		long endTime = System.nanoTime();
