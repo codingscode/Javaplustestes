@@ -12,6 +12,15 @@ public class Teste001 {
 		}
 		System.out.println("");
 	}
+	
+	public static void impares(int[] ls) {
+		for (int cada : ls) {
+			if (cada % 2 == 1) {
+				System.out.print(cada + ", ");
+			}
+		}
+		System.out.println("");
+	}
 
 
 	public static void main(String[] args) {
@@ -26,6 +35,9 @@ public class Teste001 {
 		
 		System.out.println("pares: ");
 		pares(lista);
+		
+		System.out.println("impares: ");
+		impares(lista);
 				
 
 		// Your code here

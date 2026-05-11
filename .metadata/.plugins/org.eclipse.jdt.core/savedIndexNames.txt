@@ -1,4 +1,0 @@
-INDEX VERSION 1.134+/home/mks/ProgX/Javeiro/ginastica/.metadata/.plugins/org.eclipse.jdt.core
-1946892772.index
-1865797976.index
-3648145556.index
