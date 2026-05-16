@@ -1,41 +1,36 @@
 package Programa;
 
-import java.util.Arrays;
-
 public class Teste001 {
 	
-
-
+	
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 
-		String s1 = "programa";
-		String s2 = " legal";
-		String s3 = s1 + s2;
+		float num1 = 37;
+		System.out.println("num1");
+		System.out.println(num1);
 		
-		
-		System.out.println("s1: " + s1);
-		System.out.println("s2: " + s2);
-		System.out.println("s3: " + s3);
-		
-				
-		System.out.println("--------------------------");
-
-		System.out.println("tamanho do string: " + s3.length());
+		num1 /= 3;
+		System.out.println("num1");
+		System.out.println(num1);
+		//System.out.printf("%.2f", num1);
+		//System.out.println("");
 		System.out.println("--------------------------");
 		
-		String sequencia = "pcubtwe";
-		System.out.println("sequencia: " + sequencia);
+		float num2 = 4.2f;
+		System.out.println(Math.pow(num2, 3));
 		
-		
-		char[] arrayCaract = sequencia.toCharArray();
-		Arrays.sort(arrayCaract);
-		String ordenado = new String(arrayCaract);
-		System.out.println("ordenado: " + ordenado);
 		
 		System.out.println("--------------------------");
-		System.out.println(s1.toUpperCase());
-		System.out.println(s1.toLowerCase());
+		String s1 = "camaleao";
+		System.out.println("s1:");
+		System.out.println(s1);
+		
+		System.out.println(s1.charAt(0));
+		System.out.println(s1.charAt(1));
+		
+		s1 += " verde";
+		System.out.println(s1);
 		
 		
 		System.out.println("--------------------------");
@@ -53,19 +48,10 @@ public class Teste001 {
 }
 
 /*
-s1: programa
-s2:  legal
-s3: programa legal
---------------------------
-tamanho do string: 14
---------------------------
-sequencia: pcubtwe
-ordenado: bceptuw
---------------------------
-PROGRAMA
-programa
---------------------------
-Execution time: 25 ms
+continuar
+
+
+
 
 
 
