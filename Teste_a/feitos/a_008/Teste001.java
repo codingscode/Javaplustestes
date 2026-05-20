@@ -23,6 +23,7 @@ public class Teste001 {
         int mdcAtual = vetor[0];
         for (int i = 1; i < vetor.length; i++) {
             mdcAtual = calcularMDC(mdcAtual, vetor[i]);
+            
             // Se o MDC chegar a 1, ele não pode mais diminuir, então podemos parar
             if (mdcAtual == 1) {
                 return 1;
@@ -31,7 +32,7 @@ public class Teste001 {
         return mdcAtual;
     }
     
-    // Função recursiva para calcular o Máximo Divisor Comum (MDC)
+ // Função recursiva para calcular o Máximo Divisor Comum (MDC)
     public static int mdc(int a, int b) {
         if (b == 0) {
             return a;
