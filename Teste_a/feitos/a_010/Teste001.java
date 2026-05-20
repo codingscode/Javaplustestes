@@ -1,8 +1,7 @@
 package Programa;
 
 import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.stream.IntStream;
 
 public class Teste001 {
 	
@@ -10,17 +9,17 @@ public class Teste001 {
 	
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
+
+		int vetor1[] = {5, 6, 7, 8};
+		int vetor2[] = {2, 3, 10};
 		
-		Set<Integer> set1 = new HashSet<>(Arrays.asList(5, 6, 7, 8));
-		Set<Integer> set2 = new HashSet<>(Arrays.asList(2, 3, 10));
+		System.out.println(Arrays.toString(vetor1));
+		System.out.println(Arrays.toString(vetor2));
 		
-		System.out.println(set1);
-		System.out.println(set2);
+		int[] vetor3 = IntStream.concat(Arrays.stream(vetor1), Arrays.stream(vetor2)).toArray();
+
 		
-		Set<Integer> set3 = new HashSet(set1);
-		set3.addAll(set2);		
-		
-		System.out.println(set3); 
+		System.out.println(Arrays.toString(vetor3)); 
 
 		System.out.println("--------------------------");
 		
@@ -41,17 +40,15 @@ public class Teste001 {
 }
 
 /*
-criar código que some dois conjuntos
+criar código que some dois vetores
 
 [5, 6, 7, 8]
 [2, 3, 10]
-[2, 3, 5, 6, 7, 8, 10]
+[5, 6, 7, 8, 2, 3, 10]
 --------------------------
 --------------------------
 tempo execução em ms:
-0
-
-
+12
 
 
 */
