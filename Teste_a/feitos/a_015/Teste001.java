@@ -1,5 +1,6 @@
 package Programa;
 
+import java.util.Arrays;
 import java.util.HashSet;
 
 public class Teste001 {
@@ -9,27 +10,23 @@ public class Teste001 {
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 		
-		String s1 = "borboleta";
-        String s2 = "foca";
-
-        HashSet<Character> set1 = new HashSet<>();
-        for (char c : s1.toCharArray()) set1.add(c);
-
-        HashSet<Character> set2 = new HashSet<>();
-        for (char c : s2.toCharArray()) set2.add(c);
-
-        HashSet<Character> set3 = new HashSet<>(set1);
-        set3.retainAll(set2);
-        
-        HashSet<Character> set4 = new HashSet<>(set1);
-        set4.addAll(set2);
-
-        System.out.println(set1);
-        System.out.println(set2);
-        System.out.println("interseção:");
-		System.out.println(set3);
+		HashSet<Character> s1 = new HashSet<>(Arrays.asList('b','o', 'r', 'b', 'o', 'l', 'e', 't', 'a'));
+		HashSet<Character> s2 = new HashSet<>(Arrays.asList('f', 'o', 'c', 'a'));
+		
+		System.out.println(s1);
+		System.out.println(s2);
+		
+		HashSet<Character> intersecao = new HashSet<>(s1);
+		intersecao.retainAll(s2);
+		
+		HashSet<Character> uniao = new HashSet<>(s1);
+		uniao.addAll(s2);
+		
+		System.out.println("interseção:");
+		System.out.println(intersecao);
 		System.out.println("união:");
-		System.out.println(set4);
+		System.out.println(uniao);
+
 		
 		System.out.println("--------------------------");
 		
@@ -49,6 +46,7 @@ public class Teste001 {
 }
 
 /*
+criar código de interseção e união de conjuntos 
 [a, b, r, t, e, l, o]
 [a, c, f, o]
 interseção:
@@ -58,7 +56,11 @@ união:
 --------------------------
 --------------------------
 tempo execução em ms:
-1
+0
+
+
+
+
 
 
 
