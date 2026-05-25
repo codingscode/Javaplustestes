@@ -1,7 +1,6 @@
 package Programa;
 
 import java.util.HashMap;
-import java.util.Map;
 
 public class Teste001 {
 	
@@ -20,13 +19,10 @@ public class Teste001 {
 		
 		System.out.println(produto.get("frete"));
 		
-		for (Map.Entry<String, Integer> cada : produto.entrySet()) {
-		    String chave = cada.getKey();
-		    Integer valor = cada.getValue();
-		    System.out.println(chave);
-		    System.out.println(valor);
-		}
-				
+		// chave valor
+		produto.forEach((c, v) -> System.out.println(c + ": " + v));
+		
+		
 		System.out.println("--------------------------");
 		
 		System.out.println("--------------------------");
@@ -45,18 +41,19 @@ public class Teste001 {
 }
 
 /*
+ 
 {preco=10, frete=2, quantidade=3}
 2
-preco
-10
-frete
-2
-quantidade
-3
+preco: 10
+frete: 2
+quantidade: 3
 --------------------------
 --------------------------
 tempo execução em ms:
-1
+24
+
+
+
 
 
 */
