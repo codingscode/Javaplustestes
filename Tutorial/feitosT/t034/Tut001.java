@@ -2,15 +2,18 @@ package programa;
 
 public class Tut001 {
 	
+	static void metodostatic() {
+		System.out.println("chamado sem criar objetos");
+	}
+	
+	
 	public static void main(String[] args) {
 		
-		// encapsular
+		// construtores
 		long startTime = System.nanoTime();
 
-		
-		
-		
-		
+		metodostatic();
+		Tut001.metodostatic();
 		
 		System.out.println("--------------------------");
 
@@ -27,13 +30,11 @@ public class Tut001 {
 }
 
 /*
-Aladim
+chamado sem criar objetos
+chamado sem criar objetos
 --------------------------
 tempo execução em ms:
 0
-
-
-
 
 
 */

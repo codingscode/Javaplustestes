@@ -7,9 +7,11 @@ public class Tut001 {
 		// encapsular
 		long startTime = System.nanoTime();
 
+		Pessoa p = new Pessoa();
 		
+		p.nome = "Aladim"; // erro
 		
-		
+		System.out.println(p.nome); // erro
 		
 		
 		System.out.println("--------------------------");
@@ -27,10 +29,6 @@ public class Tut001 {
 }
 
 /*
-Aladim
---------------------------
-tempo execução em ms:
-0
 
 
 

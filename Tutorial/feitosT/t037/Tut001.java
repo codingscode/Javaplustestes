@@ -7,9 +7,11 @@ public class Tut001 {
 		// encapsular
 		long startTime = System.nanoTime();
 
+		Pessoa p = new Pessoa();
 		
+		p.setNome("Aladim");
 		
-		
+		System.out.println(p.getNome());
 		
 		
 		System.out.println("--------------------------");
