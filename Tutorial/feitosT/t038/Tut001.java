@@ -1,14 +1,20 @@
 package programa;
 
+import java.util.Scanner;
+
 public class Tut001 {
-	
 	
 	public static void main(String[] args) {
 		
 		// 
 		long startTime = System.nanoTime();
 
+		Scanner objeto = new Scanner(System.in);
+		System.out.println("digite um nome");
 		
+		String nome = objeto.nextLine();
+		System.out.println("nome:");
+		System.out.println(nome);
 		
 		System.out.println("--------------------------");
 
@@ -20,12 +26,15 @@ public class Tut001 {
 		System.out.println("tempo execução em ms:");
 		System.out.println(duration);
 		
-		
+		objeto.close();
+
 	}
 
 }
 
 /*
+
+
 
 
 

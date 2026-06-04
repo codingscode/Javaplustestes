@@ -5,10 +5,16 @@ public class Tut001 {
 	
 	public static void main(String[] args) {
 		
-		// 
+		// polimorfismo
 		long startTime = System.nanoTime();
 
+		Animal meuanimal = new Animal();
+		Animal cachorro = new Cachorro();
+		Animal galinha = new Galinha();
 		
+		meuanimal.somAnimal();
+		cachorro.somAnimal();
+		galinha.somAnimal();
 		
 		System.out.println("--------------------------");
 
@@ -26,7 +32,12 @@ public class Tut001 {
 }
 
 /*
-
+animal faz um som
+cachorro faz au au
+galinha faz cócó
+--------------------------
+tempo execução em ms:
+0
 
 
 
