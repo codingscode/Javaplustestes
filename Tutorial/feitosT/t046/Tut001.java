@@ -1,6 +1,5 @@
 package programa;
 
-
 public class Tut001 {
 	
 	
@@ -9,9 +8,8 @@ public class Tut001 {
 		// 
 		long startTime = System.nanoTime();
 		
-		ClasseExterna fora = new ClasseExterna();
-		ClasseExterna.ClasseInterna dentro = fora.new ClasseInterna();
-		System.out.println(dentro.metodoInterno());
+		ClasseExterna.ClasseInterna dentro = new ClasseExterna.ClasseInterna();
+		System.out.println(dentro.y);
 
 		
 		System.out.println("--------------------------");
@@ -29,7 +27,7 @@ public class Tut001 {
 }
 
 /*
-10
+5
 --------------------------
 tempo execução em ms:
 0
