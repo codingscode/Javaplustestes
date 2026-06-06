@@ -1,19 +1,15 @@
 package programa;
 
-
 public class Tut001 {
 	
 	
 	public static void main(String[] args) {
 		
-		// 
+		// encapsular
 		long startTime = System.nanoTime();
 		
-		ClasseExterna fora = new ClasseExterna();
-		ClasseExterna.ClasseInterna dentro = fora.new ClasseInterna();
-		System.out.println(dentro.metodoInterno());
-
 		
+	
 		System.out.println("--------------------------");
 
 		// Your code here
@@ -24,15 +20,14 @@ public class Tut001 {
 		System.out.println("tempo execução em ms:");
 		System.out.println(duration);
 		
+		
 	}
 
 }
 
 /*
-10
---------------------------
-tempo execução em ms:
-0
+
+
 
 
 
