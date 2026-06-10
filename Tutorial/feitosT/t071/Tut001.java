@@ -8,9 +8,9 @@ public class Tut001 {
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 
-		// true = append mode
-		try ( FileWriter escrever = new FileWriter("/home/mks/ProgX/Javeiro/ginastica/Tutorial/src/programa/arquivo.txt", true) ) {
-			escrever.write("adicionando mais!");
+		// FileWriter será fechado automaticamente aqui
+		try ( FileWriter escrever = new FileWriter("/home/mks/ProgX/Javeiro/ginastica/Tutorial/src/programa/arquivo.txt") ) {
+			escrever.write("testando!");
 			System.out.println("escreveu com sucesso no arquivo.");
 		}
 		catch (IOException e) {
@@ -33,8 +33,10 @@ public class Tut001 {
 }
 
 /*
-
-
+escreveu com sucesso no arquivo.
+--------------------------
+tempo execução em ms:
+0
 
 
 
