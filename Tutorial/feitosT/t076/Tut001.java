@@ -1,13 +1,20 @@
 package programa;
 
+import java.io.File;
+
 public class Tut001 {
 
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 
-	    
+		File objeto = new File("/home/mks/ProgX/Javeiro/ginastica/Tutorial/src/programa/pastaX");
 
-	    
+	    if (objeto.delete()) { 
+	      System.out.println("apagou a pasta: " + objeto.getName());
+	    }
+	    else {
+	      System.out.println("falhou ao apagar a pasta.");
+	    }
 	    
 		System.out.println("--------------------------");
 
@@ -24,8 +31,10 @@ public class Tut001 {
 }
 
 /*
-
-
+apagou a pasta: pastaX
+--------------------------
+tempo execução em ms:
+7
 
 
 
