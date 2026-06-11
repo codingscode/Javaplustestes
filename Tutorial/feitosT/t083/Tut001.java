@@ -1,11 +1,22 @@
 package programa;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+
 public class Tut001 {
 
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 
-		
+		try (BufferedWriter bw = new BufferedWriter(new FileWriter("src/programa/arquivo.txt"))) {
+			bw.write("primeira linha");
+			bw.newLine(); // add line break
+			bw.write("segunda linha");
+			System.out.println("escreveu no arquivo com sucesso.");
+		} catch (IOException e) {
+			System.out.println("erro ao escrever arquivo.");
+		}
 
 		System.out.println("--------------------------");
 
@@ -22,7 +33,6 @@ public class Tut001 {
 }
 
 /*
-
 
 
 
