@@ -1,28 +1,23 @@
 package programa;
 
-import java.util.ArrayList;
-import java.util.Collections;
+import java.util.HashSet;
 
 public class Tut001 {
 
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 
-		// interface List
+		// HashSet nao aceita repetição
+		HashSet<String> carros = new HashSet<String>();
+		carros.add("celta");
+		carros.add("fusca");
+		carros.add("scudo");
+		carros.add("celta"); // duplicado
+		carros.add("l200");
+	    System.out.println(carros);
 
-		ArrayList<Integer> numeros = new ArrayList<Integer>();
-		// equivalente -> var numeros = new ArrayList<Integer>(); desde java 10
-		numeros.add(10);
-		numeros.add(5);
-		numeros.add(7);
-		numeros.add(8);
 		
-		System.out.println(numeros);
 		
-		Collections.sort(numeros);
-		
-		System.out.println(numeros);
-				
 		System.out.println("--------------------------");
 
 		// Your code here
@@ -38,11 +33,12 @@ public class Tut001 {
 }
 
 /*
-[10, 5, 7, 8]
-[5, 7, 8, 10]
+[scudo, celta, fusca, l200]
 --------------------------
 tempo execução em ms:
 0
+
+
 
 
 

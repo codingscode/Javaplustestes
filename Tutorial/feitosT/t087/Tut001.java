@@ -1,28 +1,23 @@
 package programa;
 
-import java.util.ArrayList;
-import java.util.Collections;
+import java.util.HashMap;
 
 public class Tut001 {
 
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 
-		// interface List
+		// chave valor
+		HashMap<String, String> capitalPais = new HashMap<String, String>();
 
-		ArrayList<Integer> numeros = new ArrayList<Integer>();
-		// equivalente -> var numeros = new ArrayList<Integer>(); desde java 10
-		numeros.add(10);
-		numeros.add(5);
-		numeros.add(7);
-		numeros.add(8);
+	    capitalPais.put("inglaterra", "londres");
+		capitalPais.put("alemanha", "berlim");
+		capitalPais.put("noruega", "oslo");
+		capitalPais.put("eua", "washington");
+	    System.out.println(capitalPais);
+
 		
-		System.out.println(numeros);
 		
-		Collections.sort(numeros);
-		
-		System.out.println(numeros);
-				
 		System.out.println("--------------------------");
 
 		// Your code here
@@ -38,11 +33,13 @@ public class Tut001 {
 }
 
 /*
-[10, 5, 7, 8]
-[5, 7, 8, 10]
+{inglaterra=londres, eua=washington, alemanha=berlim, noruega=oslo}
 --------------------------
 tempo execução em ms:
 0
+
+
+
 
 
 

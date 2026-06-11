@@ -1,28 +1,29 @@
 package programa;
 
 import java.util.ArrayList;
-import java.util.Collections;
+import java.util.Iterator;
 
 public class Tut001 {
 
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 
-		// interface List
+		// cria um ArrayList de Strings
+	    ArrayList<String> carros = new ArrayList<String>();
+	    carros.add("celta");
+	    carros.add("scudo");
+	    carros.add("l200");
+	    carros.add("creta");
 
-		ArrayList<Integer> numeros = new ArrayList<Integer>();
-		// equivalente -> var numeros = new ArrayList<Integer>(); desde java 10
-		numeros.add(10);
-		numeros.add(5);
-		numeros.add(7);
-		numeros.add(8);
+	    // Get an iterator for the ArrayList
+	    Iterator<String> it = carros.iterator();
+
+	    // Iterate through the list using the iterator
+	    while(it.hasNext()) {
+	      System.out.println(it.next());
+	    }
 		
-		System.out.println(numeros);
 		
-		Collections.sort(numeros);
-		
-		System.out.println(numeros);
-				
 		System.out.println("--------------------------");
 
 		// Your code here
@@ -38,11 +39,17 @@ public class Tut001 {
 }
 
 /*
-[10, 5, 7, 8]
-[5, 7, 8, 10]
+celta
+scudo
+l200
+creta
 --------------------------
 tempo execução em ms:
 0
+
+
+
+
 
 
 

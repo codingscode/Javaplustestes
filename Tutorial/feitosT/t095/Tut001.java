@@ -1,7 +1,6 @@
 package programa;
 
 import java.util.ArrayList;
-import java.util.Collections;
 
 public class Tut001 {
 
@@ -9,20 +8,22 @@ public class Tut001 {
 		long startTime = System.nanoTime();
 
 		// interface List
-
-		ArrayList<Integer> numeros = new ArrayList<Integer>();
-		// equivalente -> var numeros = new ArrayList<Integer>(); desde java 10
-		numeros.add(10);
-		numeros.add(5);
-		numeros.add(7);
-		numeros.add(8);
+		// metodo size() para mostrar tamanho
+		ArrayList<String> carros = new ArrayList<String>();
+		carros.add("Volvo");
+		carros.add("BMW");
+		carros.add("Ford");
+		carros.add(0, "Mazda");
 		
-		System.out.println(numeros);
+		System.out.println(carros);
 		
-		Collections.sort(numeros);
+		System.out.println(carros.size()); // tamanho
 		
-		System.out.println(numeros);
-				
+		for (int i=0; i<carros.size(); i++) {
+		   System.out.println(carros.get(i));
+		}
+		
+		
 		System.out.println("--------------------------");
 
 		// Your code here
@@ -38,11 +39,28 @@ public class Tut001 {
 }
 
 /*
-[10, 5, 7, 8]
-[5, 7, 8, 10]
+[Mazda, Volvo, BMW, Ford]
+4
+Mazda
+Volvo
+BMW
+Ford
 --------------------------
 tempo execução em ms:
 0
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

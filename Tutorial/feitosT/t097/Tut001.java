@@ -9,19 +9,18 @@ public class Tut001 {
 		long startTime = System.nanoTime();
 
 		// interface List
-
-		ArrayList<Integer> numeros = new ArrayList<Integer>();
-		// equivalente -> var numeros = new ArrayList<Integer>(); desde java 10
-		numeros.add(10);
-		numeros.add(5);
-		numeros.add(7);
-		numeros.add(8);
+		// metodo sort() para ordenar
+		ArrayList<String> carros = new ArrayList<String>();
+		carros.add("Volvo");
+		carros.add("BMW");
+		carros.add("Ford");
+		carros.add(0, "Mazda");
 		
-		System.out.println(numeros);
+		System.out.println(carros);
 		
-		Collections.sort(numeros);
+		Collections.sort(carros);
 		
-		System.out.println(numeros);
+		System.out.println(carros);
 				
 		System.out.println("--------------------------");
 
@@ -38,12 +37,11 @@ public class Tut001 {
 }
 
 /*
-[10, 5, 7, 8]
-[5, 7, 8, 10]
+[Mazda, Volvo, BMW, Ford]
+[BMW, Ford, Mazda, Volvo]
 --------------------------
 tempo execução em ms:
 0
-
 
 
 */

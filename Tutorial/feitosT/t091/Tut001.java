@@ -1,7 +1,6 @@
 package programa;
 
 import java.util.ArrayList;
-import java.util.Collections;
 
 public class Tut001 {
 
@@ -9,20 +8,16 @@ public class Tut001 {
 		long startTime = System.nanoTime();
 
 		// interface List
-
-		ArrayList<Integer> numeros = new ArrayList<Integer>();
-		// equivalente -> var numeros = new ArrayList<Integer>(); desde java 10
-		numeros.add(10);
-		numeros.add(5);
-		numeros.add(7);
-		numeros.add(8);
+		// metodo get(index) para acessar elemento no tal index
+		ArrayList<String> carros = new ArrayList<String>();
+		carros.add("Volvo");
+		carros.add("BMW");
+		carros.add("Ford");
+		carros.add(0, "Mazda");
 		
-		System.out.println(numeros);
+	    System.out.println(carros.get(1));
+	    System.out.println(carros.get(2));
 		
-		Collections.sort(numeros);
-		
-		System.out.println(numeros);
-				
 		System.out.println("--------------------------");
 
 		// Your code here
@@ -38,11 +33,19 @@ public class Tut001 {
 }
 
 /*
-[10, 5, 7, 8]
-[5, 7, 8, 10]
+Volvo
+BMW
 --------------------------
 tempo execução em ms:
 0
+
+
+
+
+
+
+
+
 
 
 
