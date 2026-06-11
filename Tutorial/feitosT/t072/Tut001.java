@@ -9,7 +9,7 @@ public class Tut001 {
 		long startTime = System.nanoTime();
 
 		// true = append mode
-		try ( FileWriter escrever = new FileWriter("/home/mks/ProgX/Javeiro/ginastica/Tutorial/src/programa/arquivo.txt", true) ) {
+		try ( FileWriter escrever = new FileWriter("./src/programa/arquivo.txt", true) ) {
 			escrever.write("adicionando mais!");
 			System.out.println("escreveu com sucesso no arquivo.");
 		}

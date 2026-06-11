@@ -7,7 +7,7 @@ public class Tut001 {
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 
-		File objeto = new File("/home/mks/ProgX/Javeiro/ginastica/Tutorial/src/programa/pastaX");
+		File objeto = new File("./src/programa/pastaX");
 
 	    if (objeto.delete()) { 
 	      System.out.println("apagou a pasta: " + objeto.getName());

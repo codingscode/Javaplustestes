@@ -9,7 +9,7 @@ public class Tut001 {
 		long startTime = System.nanoTime();
 	    
 	    // try-with-resources: FileInputStream will be closed automatically
-	    try (FileInputStream entrada = new FileInputStream("/home/mks/ProgX/Javeiro/ginastica/Tutorial/src/programa/arquivo.txt")) {
+	    try (FileInputStream entrada = new FileInputStream(".src/programa/arquivo.txt")) {
 
 	      int i;  // variable to store each byte that is read
 

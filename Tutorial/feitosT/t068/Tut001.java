@@ -10,7 +10,7 @@ public class Tut001 {
 		
 		//
 		try {
-			FileOutputStream output = new FileOutputStream("/x/arquivo.txt");
+			FileOutputStream output = new FileOutputStream("./src/programa/arquivo.txt");
 		    output.write("Ola".getBytes());
 		    output.close();  // must close manually
 		    System.out.println("escreveu com sucesso o arquivo.");

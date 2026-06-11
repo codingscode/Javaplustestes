@@ -9,7 +9,7 @@ public class Tut001 {
 		long startTime = System.nanoTime();
 
 		// FileWriter será fechado automaticamente aqui
-		try ( FileWriter escrever = new FileWriter("/home/mks/ProgX/Javeiro/ginastica/Tutorial/src/programa/arquivo.txt") ) {
+		try ( FileWriter escrever = new FileWriter("./src/programa/arquivo.txt") ) {
 			escrever.write("testando!");
 			System.out.println("escreveu com sucesso no arquivo.");
 		}

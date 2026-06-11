@@ -7,7 +7,7 @@ public class Tut001 {
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 
-		File objeto = new File("/home/mks/ProgX/Javeiro/ginastica/Tutorial/src/programa/meuarquivo.txt");
+		File objeto = new File("./src/programa/meuarquivo.txt");
 	    
 	    if (objeto.exists()) {
 	      System.out.println("nome do arquivo: " + objeto.getName());
@@ -15,7 +15,8 @@ public class Tut001 {
 	      System.out.println("escrevivel: " + objeto.canWrite());
 	      System.out.println("legivel: " + objeto.canRead());
 	      System.out.println("tamanho em bytes: " + objeto.length());
-	    } else {
+	    }
+	    else {
 	      System.out.println("o arquivo nao existe.");
 	    }
 	    

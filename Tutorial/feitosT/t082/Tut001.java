@@ -9,7 +9,7 @@ public class Tut001 {
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 
-		try (BufferedReader br = new BufferedReader(new FileReader("/home/mks/ProgX/Javeiro/ginastica/Tutorial/src/programa/arquivo.txt"))) {
+		try (BufferedReader br = new BufferedReader(new FileReader("./src/programa/arquivo.txt"))) {
 			String linha;
 			while ((linha = br.readLine()) != null) {
 				System.out.println(linha);

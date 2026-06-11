@@ -9,7 +9,7 @@ public class Tut001 {
 		long startTime = System.nanoTime();
 
 		try {
-			File objeto = new File("/home/mks/ProgX/Javeiro/ginastica/Tutorial/src/programa/arquivo.txt"); // Create File object
+			File objeto = new File("./src/programa/arquivo.txt"); // Create File object
 			if (objeto.createNewFile()) { // Try to create the file
 				System.out.println("arquivo criado: " + objeto.getName());
 			}

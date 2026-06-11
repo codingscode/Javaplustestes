@@ -12,7 +12,7 @@ public class Tut001 {
 	    String texto = "olá isto aqui é um texto!";
 
 	    // try-with-resources: stream will be closed automatically
-	    try (FileOutputStream saida = new FileOutputStream("/home/mks/ProgX/Javeiro/ginastica/Tutorial/src/programa/texto.txt")) {
+	    try (FileOutputStream saida = new FileOutputStream("./src/programa/texto.txt")) {
 	    	saida.write(texto.getBytes());  // convert text to bytes and write
 	        System.out.println("escreveu no arquivo com sucesso.");
 	    }

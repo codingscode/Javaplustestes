@@ -10,8 +10,8 @@ public class Tut001 {
 		long startTime = System.nanoTime();
 
 		// Copy image.jpg into copy.jpg
-		try (FileInputStream entrada = new FileInputStream("/home/mks/ProgX/Javeiro/ginastica/Tutorial/src/programa/mouse.jpg");
-			FileOutputStream saida = new FileOutputStream("/home/mks/ProgX/Javeiro/ginastica/Tutorial/src/programa/novo.jpg")) {
+		try (FileInputStream entrada = new FileInputStream("./src/programa/mouse.jpg");
+			FileOutputStream saida = new FileOutputStream("./src/programa/novo.jpg")) {
 
 			int b;
 			while ((b = entrada.read()) != -1) {

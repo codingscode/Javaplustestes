@@ -12,7 +12,7 @@ public class Tut001 {
 		String texto = "\ntexto acrescentado!";
 
 	    // true = append mode (keeps existing content)
-	    try (FileOutputStream saida = new FileOutputStream("/home/mks/ProgX/Javeiro/ginastica/Tutorial/src/programa/arquivo.txt", true)) {
+	    try (FileOutputStream saida = new FileOutputStream("./src/programa/arquivo.txt", true)) {
 	       saida.write(texto.getBytes());
 	       System.out.println("acrescentado ao arquivo com sucesso.");
 	    }

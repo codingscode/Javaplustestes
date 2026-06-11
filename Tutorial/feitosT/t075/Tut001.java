@@ -7,11 +7,12 @@ public class Tut001 {
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 
-		File objeto = new File("/home/mks/ProgX/Javeiro/ginastica/Tutorial/src/programa/meuarquivo.txt");
+		File objeto = new File("./src/programa/meuarquivo.txt");
 
 	    if (objeto.delete()) { 
 	      System.out.println("apagou o arquivo: " + objeto.getName());
-	    } else {
+	    }
+	    else {
 	      System.out.println("falhou ao apagar o arquivo.");
 	    }
 	    

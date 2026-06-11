@@ -11,8 +11,8 @@ public class Tut001 {
 	    
 	    	    
 	    // Copy image.jpg into copy.jpg
-	    try (FileInputStream entrada = new FileInputStream("/home/mks/ProgX/Javeiro/ginastica/Tutorial/src/programa/bitcoin-dourado.jpg");
-	         FileOutputStream saida = new FileOutputStream("/home/mks/ProgX/Javeiro/ginastica/Tutorial/src/programa/outro.jpg")) {
+	    try (FileInputStream entrada = new FileInputStream("./src/programa/bitcoin-dourado.jpg");
+	         FileOutputStream saida = new FileOutputStream("./src/programa/outro.jpg")) {
 
 	      int i;
 	      while ((i = entrada.read()) != -1) {

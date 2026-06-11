@@ -9,7 +9,7 @@ public class Tut001 {
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 
-		File objeto = new File("/home/mks/ProgX/Javeiro/ginastica/Tutorial/src/programa/meuarquivo.txt");
+		File objeto = new File("./src/programa/meuarquivo.txt");
 
 	    // try-with-resources: Scanner will be closed automatically
 	    try (Scanner leitor = new Scanner(objeto)) {

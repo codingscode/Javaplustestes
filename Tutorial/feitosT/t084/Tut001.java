@@ -10,7 +10,7 @@ public class Tut001 {
 		long startTime = System.nanoTime();
 
 		// true = append mode
-		try (BufferedWriter bw = new BufferedWriter(new FileWriter("src/programa/arquivo.txt", true))) {
+		try (BufferedWriter bw = new BufferedWriter(new FileWriter("./src/programa/arquivo.txt", true))) {
 			bw.newLine();
 			bw.write("linha acrescentada");
 			System.out.println("escreveu no arquivo com sucesso.");
