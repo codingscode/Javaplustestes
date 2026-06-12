@@ -1,0 +1,55 @@
+package programa;
+
+import java.util.TreeSet;
+
+public class Tut001 {
+
+	public static void main(String[] args) {
+		long startTime = System.nanoTime();
+		
+		// TreeSet -> ordena o conjunto
+		TreeSet<String> carros = new TreeSet<>();
+		carros.add("Volvo");
+		carros.add("BMW");
+		carros.add("Ford");
+		carros.add("BMW");  // Duplicate
+		carros.add("Mazda");
+
+	    System.out.println(carros);
+
+		System.out.println("--------------------------");
+
+		// Your code here
+		long endTime = System.nanoTime();
+		long duration = (endTime - startTime) / 1000000; // total time in nanoseconds
+
+		// milliseconds
+		System.out.println("tempo execução em ms:");
+		System.out.println(duration);
+
+	}
+
+}
+
+/*
+[BMW, Ford, Mazda, Volvo]
+--------------------------
+tempo execução em ms:
+0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
