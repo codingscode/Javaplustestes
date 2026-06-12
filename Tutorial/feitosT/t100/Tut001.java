@@ -1,27 +1,22 @@
 package programa;
 
-import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.List;
 
 public class Tut001 {
 
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 
-		// interface Set
-		// metodos -> add(), remove(), contains(), size(), clear()
-		// var carros = new HashSet<String>();
-		// Set<String> carros = new HashSet<>();
-		HashSet<String> carros = new HashSet<String>();
+		// interface List
+        // LinkedList usado para manipular dados
+		// metodos usados: addFirst(), addLast(), removeFirst(), removeLast(), getFirst(), getLast() 
+		List<String> carros = new LinkedList<String>();
 		carros.add("Volvo");
 		carros.add("BMW");
 		carros.add("Ford");
-		carros.add("BMW");  // duplicar
 		carros.add("Mazda");
-		
-	    for (String cada : carros) {
-	    	System.out.println(cada);
-	    }
-	    
+	    System.out.println(carros);
 				
 		System.out.println("--------------------------");
 
@@ -38,6 +33,10 @@ public class Tut001 {
 }
 
 /*
+[Volvo, BMW, Ford, Mazda]
+--------------------------
+tempo execução em ms:
+1
 
 
 

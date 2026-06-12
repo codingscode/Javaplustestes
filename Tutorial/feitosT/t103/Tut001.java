@@ -9,8 +9,6 @@ public class Tut001 {
 
 		// interface Set
 		// metodos -> add(), remove(), contains(), size(), clear()
-		// var carros = new HashSet<String>();
-		// Set<String> carros = new HashSet<>();
 		HashSet<String> carros = new HashSet<String>();
 		carros.add("Volvo");
 		carros.add("BMW");
@@ -18,9 +16,15 @@ public class Tut001 {
 		carros.add("BMW");  // duplicar
 		carros.add("Mazda");
 		
-	    for (String cada : carros) {
-	    	System.out.println(cada);
-	    }
+	    System.out.println(carros);
+	    System.out.println(carros.size());
+	    System.out.println(carros.contains("Mazda"));
+		
+		carros.remove("Ford");
+		System.out.println(carros);
+		
+		carros.clear();
+		System.out.println(carros);
 	    
 				
 		System.out.println("--------------------------");
@@ -38,11 +42,14 @@ public class Tut001 {
 }
 
 /*
-
-
-
-
-
+[Volvo, Mazda, Ford, BMW]
+4
+true
+[Volvo, Mazda, BMW]
+[]
+--------------------------
+tempo execução em ms:
+0
 
 
 */

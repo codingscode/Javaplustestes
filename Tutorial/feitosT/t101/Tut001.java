@@ -1,27 +1,26 @@
 package programa;
 
-import java.util.HashSet;
+import java.util.ArrayList;
+import java.util.Collections;
 
 public class Tut001 {
 
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 
-		// interface Set
-		// metodos -> add(), remove(), contains(), size(), clear()
-		// var carros = new HashSet<String>();
-		// Set<String> carros = new HashSet<>();
-		HashSet<String> carros = new HashSet<String>();
-		carros.add("Volvo");
-		carros.add("BMW");
-		carros.add("Ford");
-		carros.add("BMW");  // duplicar
-		carros.add("Mazda");
+		// interface List
+       
+		ArrayList<Integer> numeros = new ArrayList<Integer>();
+		numeros.add(33);
+		numeros.add(15);
+		numeros.add(20);
+		numeros.add(34);
+		numeros.add(8);
+		numeros.add(12);
+
+	    Collections.sort(numeros);  // Sort numeros
 		
-	    for (String cada : carros) {
-	    	System.out.println(cada);
-	    }
-	    
+	    System.out.println(numeros);
 				
 		System.out.println("--------------------------");
 
@@ -38,6 +37,12 @@ public class Tut001 {
 }
 
 /*
+[8, 12, 15, 20, 33, 34]
+--------------------------
+tempo execução em ms:
+0
+
+
 
 
 

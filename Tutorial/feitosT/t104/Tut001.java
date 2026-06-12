@@ -9,8 +9,6 @@ public class Tut001 {
 
 		// interface Set
 		// metodos -> add(), remove(), contains(), size(), clear()
-		// var carros = new HashSet<String>();
-		// Set<String> carros = new HashSet<>();
 		HashSet<String> carros = new HashSet<String>();
 		carros.add("Volvo");
 		carros.add("BMW");
@@ -38,7 +36,13 @@ public class Tut001 {
 }
 
 /*
-
+Volvo
+Mazda
+Ford
+BMW
+--------------------------
+tempo execução em ms:
+0
 
 
 
