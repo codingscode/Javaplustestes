@@ -1,14 +1,26 @@
 package programa;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+
 public class Tut001 {
 
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 		
-		
-		
-		
-		
+		// Make a collection
+	    ArrayList<String> carros = new ArrayList<String>();
+	    carros.add("Volvo");
+	    carros.add("BMW");
+	    carros.add("Ford");
+	    carros.add("Mazda");
+
+	    // Get the iterator
+	    Iterator<String> it = carros.iterator();
+
+	    // imprime o 1º item
+	    System.out.println(it.next());
+
 		System.out.println("--------------------------");
 
 		// Your code here
@@ -24,14 +36,10 @@ public class Tut001 {
 }
 
 /*
-
-
-
-
-
-
-
-
+Volvo
+--------------------------
+tempo execução em ms:
+0
 
 
 

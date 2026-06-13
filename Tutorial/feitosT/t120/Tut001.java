@@ -1,14 +1,25 @@
 package programa;
 
+import java.util.ArrayList;
+import java.util.Collections;
+
 public class Tut001 {
 
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 		
+		// algoritmos
+		// embaralhar
+		ArrayList<Integer> numeros = new ArrayList<>();
+		numeros.add(8);
+		numeros.add(5);
+		numeros.add(3);
+		numeros.add(9);
+		numeros.add(7);
 		
-		
-		
-		
+		Collections.shuffle(numeros);
+		System.out.println(numeros);
+	  
 		System.out.println("--------------------------");
 
 		// Your code here
@@ -24,9 +35,10 @@ public class Tut001 {
 }
 
 /*
-
-
-
+[8, 3, 5, 9, 7]
+--------------------------
+tempo execução em ms:
+0
 
 
 
