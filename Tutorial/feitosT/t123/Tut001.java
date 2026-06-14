@@ -1,22 +1,20 @@
 package programa;
 
-import java.util.LinkedHashSet;
-
 public class Tut001 {
 
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
-		
-		// LinkedHashSet -> mantem ordem de inserção
-		LinkedHashSet<String> carros = new LinkedHashSet<>();
-		carros.add("Volvo");
-		carros.add("BMW");
-		carros.add("Ford");
-		carros.add("BMW");  // Duplicate
-		carros.add("Mazda");
 
-	    System.out.println(carros);
+		// Wrapper Class -> Integer, Character, Double, Boolean...
+		// Primitive Data Type -> int, char, double, boolean...
+
+		Integer inteiro = 5;
+	    Double duplo = 5.99;
+	    Character caractere = 'A';
 	    
+	    System.out.println(inteiro);
+	    System.out.println(duplo);
+	    System.out.println(caractere);
 
 		System.out.println("--------------------------");
 
@@ -33,16 +31,12 @@ public class Tut001 {
 }
 
 /*
-[Volvo, BMW, Ford, Mazda]
+5
+5.99
+A
 --------------------------
 tempo execução em ms:
 0
-
-
-
-
-
-
 
 
 

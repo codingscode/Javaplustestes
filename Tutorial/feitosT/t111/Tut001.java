@@ -19,8 +19,6 @@ public class Tut001 {
 		produtos.put("calca", 10); // duplicado, se valor diferente sobrescreve
 		
 		System.out.println(produtos);
-		
-		
 
 		System.out.println("--------------------------");
 
