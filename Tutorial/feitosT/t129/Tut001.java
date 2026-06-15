@@ -1,24 +1,30 @@
 package programa;
 
-public class Tut001 extends Thread{
 
-	
-	
-	
-	
-	
+
+class Animal {
+	  void fazSom() {
+		  System.out.println("Animal som");
+	  }
+}
+
+class Cachorro extends Animal {
+	@Override
+	void fazsom() { // erro
+		System.out.println("Woof!");
+	}
+}
+
+
+public class Tut001 {
+
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 
-		// Threads
-		
-		Tut001 thread = new Tut001();
-	    thread.start();
-	    System.out.println("This code is outside of the thread");
-		
-		
-		
-		
+		// Annotations
+		// exemplos: @Override, @Deprecated, @SuppressWarnings
+		Animal metPet = new Cachorro();
+		metPet.fazSom();
 
 		System.out.println("--------------------------");
 
@@ -29,23 +35,20 @@ public class Tut001 extends Thread{
 		// milliseconds
 		System.out.println("tempo execução em ms:");
 		System.out.println(duration);
-		System.out.println("--------------------------");
+
 	}
-	
-	public void run() {
-	    System.out.println("This code is running in a thread");
-	}
-	
 
 }
 
 /*
-This code is outside of the thread
+Animal som
 --------------------------
 tempo execução em ms:
-This code is running in a thread
 0
---------------------------
+
+
+
+
 
 
 

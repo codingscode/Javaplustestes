@@ -1,23 +1,22 @@
 package programa;
 
-public class Tut001 extends Thread{
+public class Tut001 {
 
-	
-	
-	
-	
-	
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 
-		// Threads
+		// Generics
 		
-		Tut001 thread = new Tut001();
-	    thread.start();
-	    System.out.println("This code is outside of the thread");
-		
-		
-		
+		 // Array de Strings
+	    String[] nomes = {"aladim", "mel", "lily", "fiona"};
+
+	    // Array de Integers
+	    Integer[] numeros = {4, 5, 6, 7};
+
+	    // Call the generic method with both arrays
+	    Generico.imprimirArray(nomes);
+	    System.out.println("************************");
+	    Generico.imprimirArray(numeros);
 		
 
 		System.out.println("--------------------------");
@@ -29,23 +28,31 @@ public class Tut001 extends Thread{
 		// milliseconds
 		System.out.println("tempo execução em ms:");
 		System.out.println(duration);
-		System.out.println("--------------------------");
+
 	}
-	
-	public void run() {
-	    System.out.println("This code is running in a thread");
-	}
-	
 
 }
 
 /*
-This code is outside of the thread
+aladim
+mel
+lily
+fiona
+************************
+4
+5
+6
+7
 --------------------------
 tempo execução em ms:
-This code is running in a thread
 0
---------------------------
+
+
+
+
+
+
+
 
 
 

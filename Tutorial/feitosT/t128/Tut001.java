@@ -1,23 +1,18 @@
 package programa;
 
-public class Tut001 extends Thread{
+import java.util.ArrayList;
 
-	
-	
-	
-	
-	
+public class Tut001 {
+
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 
-		// Threads
+		// Generics
+		ArrayList<String> lista = new ArrayList<>();
+		lista.add("jaca");
+		String fruta = lista.get(0); // nao precisa usar cast 				 
 		
-		Tut001 thread = new Tut001();
-	    thread.start();
-	    System.out.println("This code is outside of the thread");
-		
-		
-		
+		System.out.println(fruta);
 		
 
 		System.out.println("--------------------------");
@@ -29,23 +24,16 @@ public class Tut001 extends Thread{
 		// milliseconds
 		System.out.println("tempo execução em ms:");
 		System.out.println(duration);
-		System.out.println("--------------------------");
+
 	}
-	
-	public void run() {
-	    System.out.println("This code is running in a thread");
-	}
-	
 
 }
 
 /*
-This code is outside of the thread
+jaca
 --------------------------
 tempo execução em ms:
-This code is running in a thread
 0
---------------------------
 
 
 
