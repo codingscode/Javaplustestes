@@ -1,51 +1,34 @@
 package programa;
 
-public class Tut001 extends Thread{
-
-	
-	
-	
+public class Tut001 {
 	
 	
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 
-		// Threads
-		
-		Tut001 thread = new Tut001();
-	    thread.start();
-	    System.out.println("This code is outside of the thread");
+		// Lambda
 		
 		
 		
 		
-
+	    
 		System.out.println("--------------------------");
 
 		// Your code here
-		long endTime = System.nanoTime();
-		long duration = (endTime - startTime) / 1000000; // total time in nanoseconds
+		long endTime = System.nanoTime(); // total time in nanoseconds
+		long duration = (endTime - startTime) / 1000000;
 
 		// milliseconds
-		System.out.println("tempo execução em ms:");
+		System.out.print("tempo execução em ms: ");
 		System.out.println(duration);
-		System.out.println("--------------------------");
-	}
-	
-	public void run() {
-	    System.out.println("This code is running in a thread");
 	}
 	
 
 }
 
 /*
-This code is outside of the thread
---------------------------
-tempo execução em ms:
-This code is running in a thread
-0
---------------------------
+
+
 
 
 
