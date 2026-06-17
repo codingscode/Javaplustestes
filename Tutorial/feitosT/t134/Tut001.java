@@ -9,10 +9,12 @@ public class Tut001 extends Thread {
 		// Threads
 		Tut001 thread = new Tut001();
 	    thread.start();
+	    
 	    // Wait for the thread to finish
 	    while(thread.isAlive()) {
 	       System.out.println("esperando...");
 	    }
+	    
 	    // Update amount and print its value
 	    System.out.print("Tut001: ");
 	    System.out.println(quantidade);

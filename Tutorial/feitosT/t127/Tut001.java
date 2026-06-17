@@ -17,8 +17,6 @@ public class Tut001 {
 	    Generico<Double> doubleStats = new Generico<>(doublenums);
 	    System.out.print("media Double: ");
 	    System.out.println(doubleStats.media());
-		 
-		
 
 		System.out.println("--------------------------");
 
