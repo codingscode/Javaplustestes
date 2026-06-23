@@ -3,14 +3,14 @@ package programa;
 
 
 
-interface StringFunction {
-	  String run(String str);
+interface FuncaoString {
+	  String executar(String str);
 }
 
 public class Tut001 {
 	
-	public static void imprimirFormatado(String str, StringFunction formato) {
-	    String resultado = formato.run(str);
+	public static void imprimirFormatado(String str, FuncaoString formato) {
+	    String resultado = formato.executar(str);
 	    System.out.println(resultado);
 	}
 
@@ -19,8 +19,8 @@ public class Tut001 {
 
 		// lambda
 		
-		StringFunction exclamacao = (s) -> s + "!";
-	    StringFunction pergunta = (s) -> s + "?";
+		FuncaoString exclamacao = (s) -> s + "!";
+		FuncaoString pergunta = (s) -> s + "?";
 	    imprimirFormatado("Olá", exclamacao);
 	    imprimirFormatado("Olá", pergunta);
 		

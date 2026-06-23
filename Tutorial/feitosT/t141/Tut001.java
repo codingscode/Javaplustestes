@@ -3,10 +3,7 @@ package programa;
 import java.util.ArrayList;
 import java.util.Collections;
 
-//Same functional interface
-interface Saldacao {
-	void digaOla();
-}
+
 
 public class Tut001 {
 
