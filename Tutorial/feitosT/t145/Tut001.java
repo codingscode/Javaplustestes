@@ -9,19 +9,21 @@ public class Tut001 {
 		
         // numero reverso
 		int numero = 9483;
-		int reverso = 0;
 		
 		System.out.print("numero: ");
 		System.out.println(numero);
 		
-		while (numero != 0) {
-			int digito = numero % 10;
-			reverso = 10*reverso + digito;
-			numero /= 10;
+		String paraString = String.valueOf(numero);
+		String temp = "";
+		
+		for (int i=paraString.length()-1; i>=0;i--) {
+			temp += paraString.charAt(i);
 		}
 		
-		System.out.print("reverso: ");
-		System.out.println(reverso);
+		numero = Integer.parseInt(temp);
+		
+		System.out.print("numero: ");
+		System.out.println(numero);
 		
 
 		System.out.println("--------------------------");
@@ -39,9 +41,9 @@ public class Tut001 {
 
 /*
 numero: 9483
-reverso: 3849
+numero: 3849
 --------------------------
-tempo execução em ms: 0
+tempo execução em ms: 20
 
 
 
