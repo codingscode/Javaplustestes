@@ -6,17 +6,12 @@ public class Tut001 {
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 		
-        // soma dos digitos de um número
-		int numero = 5813;
-		int soma = 0;
+        // 
+		int numero = 3;
 		
-		while (numero > 0) {
-			soma += numero % 10;
-			numero /= 10;
-		}
+		float valor = (float) Math.sqrt(numero);
 		
-		
-		System.out.println(soma);
+		System.out.println(valor);
 
 		System.out.println("--------------------------");
 
@@ -32,7 +27,7 @@ public class Tut001 {
 }
 
 /*
-17
+1.7320508
 --------------------------
 tempo execução em ms: 0
 
