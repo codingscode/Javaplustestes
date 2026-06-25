@@ -6,18 +6,13 @@ public class Tut001 {
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 		
-        // contar vogais
-		String texto = "ola Java";
-		int contador = 0;
-
-		for (char c : texto.toLowerCase().toCharArray()) {
-		  if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') {
-			  contador++;
-		  }
-		}
-
-		System.out.print("vogais: ");
-		System.out.println(contador);
+        // numero aleatorio
+		double numero = Math.random();
+		
+		int inteiro = (int)(Math.random() * 101); // 0 to 100
+		
+		System.out.println(numero);
+		System.out.println(inteiro);
 
 		System.out.println("--------------------------");
 
@@ -33,13 +28,10 @@ public class Tut001 {
 }
 
 /*
-vogais: 4
+0.6663746608615643
+14
 --------------------------
 tempo execução em ms: 0
-
-
-
-
 
  
  

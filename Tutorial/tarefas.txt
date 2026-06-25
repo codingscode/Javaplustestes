@@ -1,0 +1,211 @@
+Arrays e Vetores
+
+Criar um programa que leia 10 números e mostre a soma dos pares.
+
+Criar um programa que leia 10 números e mostre a soma dos ímpares.
+
+Criar um programa que encontre o maior valor de um vetor.
+
+Criar um programa que encontre o menor valor de um vetor.
+
+Criar um programa que calcule a média dos elementos de um vetor.
+
+Criar um programa que descubra quantos elementos são maiores que a média.
+
+Criar um programa que inverta a ordem de um vetor.
+
+Criar um programa que remova valores duplicados de um vetor.
+
+Criar um programa que rotacione os elementos do vetor para a direita.
+
+Criar um programa que rotacione os elementos do vetor para a esquerda.
+
+Criar um programa que busque um valor com busca linear.
+
+Criar um programa que busque um valor com busca binária.
+
+Criar um programa que identifique a segunda maior posição de um vetor.
+
+Criar um programa que identifique a segunda menor posição de um vetor.
+
+Criar um programa que conte quantos zeros existem em um vetor.
+
+Criar um programa que substitua valores negativos por zero.
+
+Criar um programa que separe valores pares e ímpares em dois vetores.
+
+Criar um programa que calcule a soma de um subintervalo do vetor.
+
+Criar um programa que encontre o produto de um subintervalo do vetor.
+
+Criar um programa que verifique se um vetor está ordenado.
+
+Matrizes
+
+Criar um programa que leia uma matriz 3x3 e mostre seus elementos.
+
+Criar um programa que calcule a soma total de uma matriz.
+
+Criar um programa que calcule a soma de cada linha.
+
+Criar um programa que calcule a soma de cada coluna.
+
+Criar um programa que calcule a diagonal principal.
+
+Criar um programa que calcule a diagonal secundária.
+
+Criar um programa que transponha uma matriz.
+
+Criar um programa que verifique se uma matriz é identidade.
+
+Criar um programa que verifique se uma matriz é simétrica.
+
+Criar um programa que encontre o maior valor de uma matriz.
+
+Criar um programa que encontre o menor valor de uma matriz.
+
+Criar um programa que localize a posição de um valor em uma matriz.
+
+Criar um programa que some apenas os elementos pares de uma matriz.
+
+Criar um programa que some apenas os elementos ímpares de uma matriz.
+
+Criar um programa que calcule o número de linhas e colunas com soma maior que zero.
+
+Criar um programa que substitua a diagonal principal por 1.
+
+Criar um programa que substitua a diagonal secundária por 0.
+
+Criar um programa que multiplique matriz por escalar.
+
+Criar um programa que leia uma matriz e mostre em ordem espiral.
+
+Criar um programa que leia uma matriz e mostre em ordem zig-zag.
+
+Strings
+
+Criar um programa que verifique se uma palavra é palíndromo.
+
+Criar um programa que inverta uma string.
+
+Criar um programa que conte vogais em uma frase.
+
+Criar um programa que conte consoantes em uma frase.
+
+Criar um programa que conte palavras em um texto.
+
+Criar um programa que remova espaços extras de uma frase.
+
+Criar um programa que converta uma frase para maiúsculas.
+
+Criar um programa que converta uma frase para minúsculas.
+
+Criar um programa que verifique se duas palavras são anagramas.
+
+Criar um programa que substitua uma palavra por outra em um texto.
+
+Criar um programa que extraia apenas letras de um texto.
+
+Criar um programa que extraia apenas números de um texto.
+
+Criar um programa que identifique o primeiro caractere não repetido.
+
+Criar um programa que identifique caracteres repetidos.
+
+Criar um programa que conte a frequência de cada letra.
+
+Criar um programa que separe nome e sobrenome.
+
+Criar um programa que valide um e-mail de forma básica.
+
+Criar um programa que valide uma senha por tamanho mínimo.
+
+Criar um programa que formate um nome com iniciais maiúsculas.
+
+Criar um programa que remova acentos simples.
+
+Pilhas
+
+Criar uma pilha com array.
+
+Criar uma pilha com lista encadeada.
+
+Criar operação de push em pilha.
+
+Criar operação de pop em pilha.
+
+Criar operação de topo em pilha.
+
+Criar verificação de pilha vazia.
+
+Criar uma pilha que armazene livros.
+
+Criar uma pilha que armazene números.
+
+Criar uma pilha que armazene textos.
+
+Criar um programa que inverta uma string usando pilha.
+
+Criar um programa que converta decimal para binário usando pilha.
+
+Criar um programa que converta decimal para hexadecimal usando pilha.
+
+Criar um programa que valide parênteses balanceados.
+
+Criar um programa que valide expressões com colchetes e chaves.
+
+Criar um programa que simule histórico de navegação com pilha.
+
+Criar um programa de desfazer ações usando pilha.
+
+Criar um programa de refazer ações usando pilha.
+
+Criar um programa que resolva a Torre de Hanoi com pilhas.
+
+Criar um programa que remova elementos da pilha até encontrar um valor.
+
+Criar um programa que compare duas pilhas.
+
+Filas
+
+Criar uma fila com array.
+
+Criar uma fila com lista encadeada.
+
+Criar operação de enqueue em fila.
+
+Criar operação de dequeue em fila.
+
+Criar operação de frente em fila.
+
+Criar verificação de fila vazia.
+
+Criar uma fila circular.
+
+Criar uma fila que armazene clientes.
+
+Criar uma fila que armazene tarefas.
+
+Criar uma fila que armazene mensagens.
+
+Criar um simulador de atendimento em fila.
+
+Criar um simulador de impressão em fila.
+
+Criar um simulador de chamadas em fila.
+
+Criar uma fila de prioridade simples.
+
+Criar uma deque com inserção e remoção nas duas extremidades.
+
+Criar um sistema de espera de eventos com fila.
+
+Criar um sistema de agendamento com fila.
+
+Criar um programa que mescle duas filas.
+
+Criar um programa que compare duas filas.
+
+Criar um programa que processe pedidos em ordem de chegada.
+
+
