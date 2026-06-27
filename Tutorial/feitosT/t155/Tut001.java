@@ -6,16 +6,18 @@ public class Tut001 {
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 		
-        // 
-		String original = "masupial";
-		String reverso = "";
+        // contar digitos em uma string
+		String texto = "W3Schools was founded in 1998";
+		int contador = 0;
 
-		for (int i = 0; i < original.length(); i++) {
-			reverso = original.charAt(i) + reverso; // ordem importa aqui
+		for (char c : texto.toCharArray()) {
+		  if (Character.isDigit(c)) {
+			  contador++;
+		  }
 		}
 
-		System.out.print("reverso: ");
-		System.out.println(reverso);
+		System.out.print("Digitos: ");
+		System.out.println(contador);
 		
 		System.out.println("--------------------------");
 
@@ -31,9 +33,9 @@ public class Tut001 {
 }
 
 /*
-reverso: laipusam
+Digitos: 5
 --------------------------
-tempo execução em ms: 19
+tempo execução em ms: 0
 
 
 

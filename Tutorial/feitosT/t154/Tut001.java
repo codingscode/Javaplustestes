@@ -6,16 +6,11 @@ public class Tut001 {
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 		
-        // 
-		String original = "masupial";
-		String reverso = "";
+        // remover vogais de uma string
+		String texto = "como vai Java";
+		String resultado = texto.replaceAll("[aeiouAEIOU]", "");
 
-		for (int i = 0; i < original.length(); i++) {
-			reverso = original.charAt(i) + reverso; // ordem importa aqui
-		}
-
-		System.out.print("reverso: ");
-		System.out.println(reverso);
+		System.out.println(resultado);
 		
 		System.out.println("--------------------------");
 
@@ -31,9 +26,9 @@ public class Tut001 {
 }
 
 /*
-reverso: laipusam
+cm v Jv
 --------------------------
-tempo execução em ms: 19
+tempo execução em ms: 0
 
 
 
