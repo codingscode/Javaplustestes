@@ -1,31 +1,33 @@
 package programa;
 
-import java.util.Arrays;
-
 public class Tut001 {
 	
 
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 		
-        // unir dois arrays
+        // segundo maior
+		int[] numeros = {12, 5, 9, 21, 21, 7};
+		Integer primeiro = null, segundo = null;
 		
-		int[] a = {1, 2, 3};
-		int[] b = {4, 5};
 		
-		int[] unido = new int[a.length + b.length];
-		
-		for (int i=0; i < a.length; i++) {
-			unido[i] = a[i];
+		for (int cada : numeros) {
+			if (primeiro == null || primeiro < cada) {
+				segundo = primeiro;
+				primeiro = cada;
+			}
+			else if ((segundo == null || segundo < cada) && cada != primeiro) {
+				segundo = cada;
+			}
 		}
 		
-		for (int i=0; i < b.length; i++) {
-			unido[a.length+i] = b[i];
-		}
+		System.out.print("primeiro: ");
+		System.out.println(primeiro);
+		System.out.print("segundo: ");
+		System.out.println(segundo);
 		
-		System.out.println(Arrays.toString(a));
-		System.out.println(Arrays.toString(b));
-		System.out.println(Arrays.toString(unido));
+		
+		
 		
 		System.out.println("--------------------------");
 
@@ -41,9 +43,8 @@ public class Tut001 {
 }
 
 /*
-[1, 2, 3]
-[4, 5]
-[1, 2, 3, 4, 5]
+primeiro: 21
+segundo: 12
 --------------------------
 tempo execução em ms: 0
 
