@@ -1,22 +1,20 @@
 package programa;
 
-import java.util.Arrays;
-
 public class Tut001 {
 	
 
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 		
-        // ordenar array
+        // converter string para array
+		String string1 = "borboleta linda";
 		
-		String[] carros = {"Volvo", "BMW", "Tesla", "Ford", "Fiat", "Mazda", "Audi"};
-	    
-		Arrays.sort(carros);
-	    
-	    for (String cada : carros) {
-	      System.out.println(cada);
-	    }
+		char[] meu_array = string1.toCharArray();
+		
+		System.out.println(meu_array);
+		System.out.println(meu_array[0]);
+		System.out.println(meu_array[1]);
+		
 		
 		System.out.println("--------------------------");
 
@@ -32,15 +30,14 @@ public class Tut001 {
 }
 
 /*
-Audi
-BMW
-Fiat
-Ford
-Mazda
-Tesla
-Volvo
+borboleta linda
+b
+o
 --------------------------
 tempo execução em ms: 0
+
+
+
 
  
  

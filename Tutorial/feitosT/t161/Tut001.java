@@ -1,6 +1,6 @@
 package programa;
 
-import java.util.Arrays;
+import java.util.HashMap;
 
 public class Tut001 {
 	
@@ -8,15 +8,17 @@ public class Tut001 {
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 		
-        // ordenar array
+        // frequencia
+		String texto = "banana";
 		
-		String[] carros = {"Volvo", "BMW", "Tesla", "Ford", "Fiat", "Mazda", "Audi"};
-	    
-		Arrays.sort(carros);
-	    
-	    for (String cada : carros) {
-	      System.out.println(cada);
-	    }
+		HashMap<Character, Integer> frequencia = new HashMap<>();
+		
+		
+		for (char cada : texto.toCharArray()) {
+           frequencia.put(cada, frequencia.getOrDefault(cada, 0) + 1);	
+		}
+		
+		System.out.println(frequencia);
 		
 		System.out.println("--------------------------");
 
@@ -32,15 +34,14 @@ public class Tut001 {
 }
 
 /*
-Audi
-BMW
-Fiat
-Ford
-Mazda
-Tesla
-Volvo
+{a=3, b=1, n=2}
 --------------------------
 tempo execução em ms: 0
+
+
+
+
+
 
  
  

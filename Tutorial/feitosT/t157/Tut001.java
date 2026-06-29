@@ -8,15 +8,20 @@ public class Tut001 {
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 		
-        // ordenar array
+        // verificar se são anagramas
 		
-		String[] carros = {"Volvo", "BMW", "Tesla", "Ford", "Fiat", "Mazda", "Audi"};
-	    
-		Arrays.sort(carros);
-	    
-	    for (String cada : carros) {
-	      System.out.println(cada);
-	    }
+		String str1 = "listen";
+		String str2 = "silent";
+
+		char[] arr1 = str1.toCharArray();
+		char[] arr2 = str2.toCharArray();
+
+		Arrays.sort(arr1);
+		Arrays.sort(arr2);
+
+		boolean eAnagrama = Arrays.equals(arr1, arr2);
+		System.out.println(eAnagrama ? "anagrama" : "não é anagrama");
+		
 		
 		System.out.println("--------------------------");
 
@@ -32,15 +37,10 @@ public class Tut001 {
 }
 
 /*
-Audi
-BMW
-Fiat
-Ford
-Mazda
-Tesla
-Volvo
+anagrama
 --------------------------
-tempo execução em ms: 0
+tempo execução em ms: 1
+
 
  
  

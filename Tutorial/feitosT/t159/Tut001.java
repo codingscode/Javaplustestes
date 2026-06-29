@@ -1,22 +1,18 @@
 package programa;
 
-import java.util.Arrays;
-
 public class Tut001 {
 	
 
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 		
-        // ordenar array
+        // remover espaço em branco
+		String texto = "  estrada bonita     ";
+		String aparado = texto.trim();
+
+		System.out.println(aparado);
+
 		
-		String[] carros = {"Volvo", "BMW", "Tesla", "Ford", "Fiat", "Mazda", "Audi"};
-	    
-		Arrays.sort(carros);
-	    
-	    for (String cada : carros) {
-	      System.out.println(cada);
-	    }
 		
 		System.out.println("--------------------------");
 
@@ -32,15 +28,12 @@ public class Tut001 {
 }
 
 /*
-Audi
-BMW
-Fiat
-Ford
-Mazda
-Tesla
-Volvo
+estrada bonita
 --------------------------
 tempo execução em ms: 0
+
+
+
 
  
  
