@@ -1,35 +1,26 @@
 package programa;
 
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
 public class Tut001 {
 	
-	static boolean e_primo(int n) {
-		int cont = 0;
-		
-		for (int i = n/2; i >= 1; i--) {
-			if (n % i == 0) {
-				cont += 1;
-			}
-		}
-		
-		if (cont == 1) {
-			return true;
-		}
-		return false;
-	}
-	
-	
+
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 		
-        // checar número primo
+        // embaralhar arrays
 		
-		int numero = 7;
+		String[] frutas = {"jaca", "laranja", "manga", "graviola"};
+		System.out.println(Arrays.toString(frutas));
 		
-		System.out.print("primo ? : ");
-		System.out.println(e_primo(numero));
+		List<String> lista= Arrays.asList(frutas);
 		
-		System.out.println(e_primo(5));
-		System.out.println(e_primo(6));
+		Collections.shuffle(lista);
+		
+		System.out.println(lista);
+				
 		
 		System.out.println("--------------------------");
 
@@ -45,11 +36,10 @@ public class Tut001 {
 }
 
 /*
-primo ? : true
-true
-false
+[jaca, laranja, manga, graviola]
+[jaca, graviola, manga, laranja]
 --------------------------
-tempo execução em ms: 0
+tempo execução em ms: 1
 
 
  

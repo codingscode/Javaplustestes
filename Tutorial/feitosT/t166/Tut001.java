@@ -1,36 +1,26 @@
 package programa;
 
+import java.util.Arrays;
+import java.util.HashSet;
+
 public class Tut001 {
 	
-	static boolean e_primo(int n) {
-		int cont = 0;
-		
-		for (int i = n/2; i >= 1; i--) {
-			if (n % i == 0) {
-				cont += 1;
-			}
-		}
-		
-		if (cont == 1) {
-			return true;
-		}
-		return false;
-	}
-	
-	
+
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 		
-        // checar número primo
+        // remover duplicados de um array
+		Integer[] numeros = {1, 2, 2, 3, 4, 4, 5};
+		HashSet<Integer> unicos = new HashSet<>();
 		
-		int numero = 7;
+		for (Integer cada : numeros) {
+			unicos.add(cada);
+		}
 		
-		System.out.print("primo ? : ");
-		System.out.println(e_primo(numero));
+		System.out.println(Arrays.toString(numeros));
+		System.out.println(unicos);
 		
-		System.out.println(e_primo(5));
-		System.out.println(e_primo(6));
-		
+				
 		System.out.println("--------------------------");
 
 		// Your code here
@@ -45,12 +35,10 @@ public class Tut001 {
 }
 
 /*
-primo ? : true
-true
-false
+[1, 2, 2, 3, 4, 4, 5]
+[1, 2, 3, 4, 5]
 --------------------------
 tempo execução em ms: 0
-
 
  
  

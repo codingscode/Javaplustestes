@@ -1,35 +1,32 @@
 package programa;
 
+import java.util.Arrays;
+
 public class Tut001 {
 	
-	static boolean e_primo(int n) {
-		int cont = 0;
-		
-		for (int i = n/2; i >= 1; i--) {
-			if (n % i == 0) {
-				cont += 1;
-			}
-		}
-		
-		if (cont == 1) {
-			return true;
-		}
-		return false;
-	}
-	
-	
+
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 		
-        // checar número primo
+        // unir dois arrays
+		int[] a = {1, 2, 3};
+		int[] b = {4, 5};
+
+		int[] unido = new int[a.length + b.length];
+
+		int i = 0;
 		
-		int numero = 7;
+		for (int cada : a) {
+			unido[i++] = cada;
+		}
 		
-		System.out.print("primo ? : ");
-		System.out.println(e_primo(numero));
+		for (int cada : b) {
+			unido[i++] = cada;
+		}
 		
-		System.out.println(e_primo(5));
-		System.out.println(e_primo(6));
+		System.out.println(Arrays.toString(a));
+		System.out.println(Arrays.toString(b));
+		System.out.println(Arrays.toString(unido));
 		
 		System.out.println("--------------------------");
 
@@ -45,12 +42,11 @@ public class Tut001 {
 }
 
 /*
-primo ? : true
-true
-false
+[1, 2, 3]
+[4, 5]
+[1, 2, 3, 4, 5]
 --------------------------
 tempo execução em ms: 0
-
 
  
  

@@ -2,34 +2,21 @@ package programa;
 
 public class Tut001 {
 	
-	static boolean e_primo(int n) {
-		int cont = 0;
-		
-		for (int i = n/2; i >= 1; i--) {
-			if (n % i == 0) {
-				cont += 1;
-			}
-		}
-		
-		if (cont == 1) {
-			return true;
-		}
-		return false;
-	}
-	
-	
+
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 		
-        // checar número primo
-		
-		int numero = 7;
-		
-		System.out.print("primo ? : ");
-		System.out.println(e_primo(numero));
-		
-		System.out.println(e_primo(5));
-		System.out.println(e_primo(6));
+        // encontrar duplicados
+		int[] numeros = {1, 2, 3, 2, 4, 5, 1};
+        
+		for (int i = 0; i < numeros.length; i++) {
+		   for (int j = i + 1; j < numeros.length; j++) {
+		      if (numeros[i] == numeros[j]) {
+		        System.out.print("duplicado: ");
+		        System.out.println(numeros[i]);
+		      }
+		   }
+		}
 		
 		System.out.println("--------------------------");
 
@@ -45,9 +32,8 @@ public class Tut001 {
 }
 
 /*
-primo ? : true
-true
-false
+duplicado: 1
+duplicado: 2
 --------------------------
 tempo execução em ms: 0
 

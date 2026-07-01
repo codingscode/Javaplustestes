@@ -2,34 +2,26 @@ package programa;
 
 public class Tut001 {
 	
-	static boolean e_primo(int n) {
-		int cont = 0;
-		
-		for (int i = n/2; i >= 1; i--) {
-			if (n % i == 0) {
-				cont += 1;
-			}
+	static int c_mdc(int n1, int n2) {
+		int mdc = 1;
+		for (int i = 1; i <= n1 && i <= n2; i++) {
+		   if (n1 % i == 0 && n2 % i == 0) {
+			   mdc = i;
+		   }
 		}
-		
-		if (cont == 1) {
-			return true;
-		}
-		return false;
+		return mdc;
 	}
 	
-	
+
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 		
-        // checar número primo
+        // maior divisor comum
+		int a = 36;
+		int b = 60;
 		
-		int numero = 7;
-		
-		System.out.print("primo ? : ");
-		System.out.println(e_primo(numero));
-		
-		System.out.println(e_primo(5));
-		System.out.println(e_primo(6));
+		System.out.print("mdc: ");
+		System.out.println(c_mdc(a, b));
 		
 		System.out.println("--------------------------");
 
@@ -45,9 +37,7 @@ public class Tut001 {
 }
 
 /*
-primo ? : true
-true
-false
+mdc: 12
 --------------------------
 tempo execução em ms: 0
 
