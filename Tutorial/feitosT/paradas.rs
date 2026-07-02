@@ -19,7 +19,7 @@ https://www.w3schools.com/java/java_howto_check_prime_num.asp
 
 
 https://www.w3schools.com/java/java_ref_string.asp
-https://www.w3schools.com/java/ref_string_copyvalueof.asp
+https://www.w3schools.com/java/ref_string_getchars.asp
 
 
 

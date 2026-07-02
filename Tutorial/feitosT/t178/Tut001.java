@@ -6,11 +6,14 @@ public class Tut001 {
 		long startTime = System.nanoTime();
 		
         // strings
-		//
+		// metodo copia de valor
 		
-		String myStr = "boi";
-	    byte[] result = myStr.getBytes();
-	    System.out.println(result[0]);				
+		char[] s1 = {'b', 'o', 'r', 'b', 'o', 'l', 'e', 't', 'a'};
+		String s2 = "";
+		s2 = s2.copyValueOf(s1, 0, 5);
+		
+		System.out.print("string retornada: ");
+		System.out.println(s2);
 		
 		System.out.println("--------------------------");
 
@@ -26,9 +29,9 @@ public class Tut001 {
 }
 
 /*
-aladim tem 8 anos
+string retornada: borbo
 --------------------------
-tempo execução em ms: 31
+tempo execução em ms: 0
 
 
  

@@ -8,9 +8,9 @@ public class Tut001 {
         // strings
 		//
 		
-		String myStr = "boi";
-	    byte[] result = myStr.getBytes();
-	    System.out.println(result[0]);				
+		String mostrar = String.format("%s tem %d anos", "aladim", 8); 
+				
+		System.out.println(mostrar);				
 		
 		System.out.println("--------------------------");
 
