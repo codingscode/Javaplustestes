@@ -5,16 +5,12 @@ public class Tut001 {
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 		
-        // strings
-		String s1 = "aladim";
-		
-		
-		System.out.println(s1.contentEquals("aladim"));
-		System.out.println(s1.contentEquals("im"));
-		System.out.println(s1.contentEquals("di"));
-		System.out.println(s1.contentEquals("l"));
-		System.out.println(s1.contentEquals("x"));
-		System.out.println(s1.contentEquals("ik"));
+        // 
+		String string1 = "bacana";
+		String string2 = "bacana";
+		String string3 = "aladim";
+		System.out.println(string1.compareTo(string2)); // Returns 0 because they are equal
+		System.out.println(string1.compareTo(string3));
 		
 		System.out.println("--------------------------");
 
@@ -30,14 +26,12 @@ public class Tut001 {
 }
 
 /*
-true
-false
-false
-false
-false
-false
+0
+1
 --------------------------
 tempo execução em ms: 0
+
+
 
 
  

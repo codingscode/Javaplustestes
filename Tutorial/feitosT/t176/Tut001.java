@@ -6,15 +6,13 @@ public class Tut001 {
 		long startTime = System.nanoTime();
 		
         // strings
-		String s1 = "aladim";
+		String s1 = "Aladim";
 		
 		
-		System.out.println(s1.contentEquals("aladim"));
-		System.out.println(s1.contentEquals("im"));
-		System.out.println(s1.contentEquals("di"));
-		System.out.println(s1.contentEquals("l"));
-		System.out.println(s1.contentEquals("x"));
-		System.out.println(s1.contentEquals("ik"));
+		System.out.println(s1.contains("l"));
+		System.out.println(s1.contains("im"));
+		System.out.println(s1.contains("L"));
+		System.out.println(s1.contains("x"));
 		
 		System.out.println("--------------------------");
 
@@ -31,9 +29,7 @@ public class Tut001 {
 
 /*
 true
-false
-false
-false
+true
 false
 false
 --------------------------

@@ -6,15 +6,11 @@ public class Tut001 {
 		long startTime = System.nanoTime();
 		
         // strings
-		String s1 = "aladim";
-		
-		
-		System.out.println(s1.contentEquals("aladim"));
-		System.out.println(s1.contentEquals("im"));
-		System.out.println(s1.contentEquals("di"));
-		System.out.println(s1.contentEquals("l"));
-		System.out.println(s1.contentEquals("x"));
-		System.out.println(s1.contentEquals("ik"));
+		String string1 = "bacana";
+		String string2 = "BaCana";
+		String string3 = "aladim";
+		System.out.println(string1.compareToIgnoreCase(string2)); // desc caixa alta baixa, 0 se iguais
+		System.out.println(string1.compareToIgnoreCase(string3));
 		
 		System.out.println("--------------------------");
 
@@ -30,14 +26,12 @@ public class Tut001 {
 }
 
 /*
-true
-false
-false
-false
-false
-false
+0
+1
 --------------------------
 tempo execução em ms: 0
+
+
 
 
  
