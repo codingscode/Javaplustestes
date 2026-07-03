@@ -6,13 +6,12 @@ public class Tut001 {
 		long startTime = System.nanoTime();
 		
         // métodos para string
-		//  
+		// se regioes iguais 
 		
-		String s1 = "questao completa! ganhei 30 ouros e 500 de experienciea.";
-		
-		String regex = "[0-9]+"; // expressao regular
-		
-		System.out.println(s1.replaceAll(regex, "($0)"));
+		String s1 = "bacana, mundo!";
+		String s2 = "novo mundo";
+		System.out.println(s1.regionMatches(7, s2, 4, 5));
+		System.out.println(s1.regionMatches(0, s2, 0, 5));		
 		
 		System.out.println("--------------------------");
 
@@ -28,9 +27,10 @@ public class Tut001 {
 }
 
 /*
-questao completa! ganhei (30) ouros e (500) de experienciea.
+true
+false
 --------------------------
-tempo execução em ms: 5
+tempo execução em ms: 0
 
 
 

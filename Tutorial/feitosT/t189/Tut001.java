@@ -8,11 +8,8 @@ public class Tut001 {
         // métodos para string
 		//  
 		
-		String s1 = "questao completa! ganhei 30 ouros e 500 de experienciea.";
-		
-		String regex = "[0-9]+"; // expressao regular
-		
-		System.out.println(s1.replaceAll(regex, "($0)"));
+		String s1 = "banana";
+		System.out.println(s1.replace('n', 'x')); // substitui todo n por x
 		
 		System.out.println("--------------------------");
 
@@ -28,9 +25,9 @@ public class Tut001 {
 }
 
 /*
-questao completa! ganhei (30) ouros e (500) de experienciea.
+baxaxa
 --------------------------
-tempo execução em ms: 5
+tempo execução em ms: 0
 
 
 

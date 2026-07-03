@@ -5,14 +5,13 @@ public class Tut001 {
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 		
-        // métodos para string
-		//  
+        // strings
+		// métodos .isEmpty(), .join(), 
 		
-		String s1 = "questao completa! ganhei 30 ouros e 500 de experienciea.";
+		String s1 = "macaco na arvore, macaco quer banana";
 		
-		String regex = "[0-9]+"; // expressao regular
-		
-		System.out.println(s1.replaceAll(regex, "($0)"));
+		System.out.println(s1.lastIndexOf("macaco")); // ultima ocorrencia
+		System.out.println(s1.lastIndexOf("n", 10)); // " n apos indice 10
 		
 		System.out.println("--------------------------");
 
@@ -28,9 +27,10 @@ public class Tut001 {
 }
 
 /*
-questao completa! ganhei (30) ouros e (500) de experienciea.
+18
+7
 --------------------------
-tempo execução em ms: 5
+tempo execução em ms: 0
 
 
 

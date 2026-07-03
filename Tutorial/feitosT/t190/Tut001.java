@@ -8,11 +8,11 @@ public class Tut001 {
         // métodos para string
 		//  
 		
-		String s1 = "questao completa! ganhei 30 ouros e 500 de experienciea.";
+		String s1 = "ubuntu é bom, ubuntu é fácil de usar, ubuntu é opensource.";
 		
-		String regex = "[0-9]+"; // expressao regular
+		String regex = "(?i)ubuntu"; // expressao regular
 		
-		System.out.println(s1.replaceAll(regex, "($0)"));
+		System.out.println(s1.replaceAll(regex, "mx linux"));
 		
 		System.out.println("--------------------------");
 
@@ -28,9 +28,9 @@ public class Tut001 {
 }
 
 /*
-questao completa! ganhei (30) ouros e (500) de experienciea.
+mx linux é bom, mx linux é fácil de usar, mx linux é opensource.
 --------------------------
-tempo execução em ms: 5
+tempo execução em ms: 0
 
 
 
