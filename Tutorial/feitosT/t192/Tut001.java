@@ -6,11 +6,20 @@ public class Tut001 {
 		long startTime = System.nanoTime();
 		
         // métodos para string
-		// .startsWith(), 
+		//  
 		
-		String s1 = "disciplina+sabedoria";
-		System.out.println(s1.substring(7, 12)); // é tipo String
+		String s1 = "bacana não é banana";
 		
+		String regex = "na"; // expressao regular
+		
+		System.out.println(s1.replaceFirst(regex, "ta"));
+		
+		
+		String s2 = "questao completa! ganhei 30 ouros e 500 de experienciea.";
+		
+		String regex2 = "[0-9]+";
+		
+		System.out.println(s2.replaceFirst(regex2, "($0)"));
 		
 		System.out.println("--------------------------");
 
@@ -26,9 +35,12 @@ public class Tut001 {
 }
 
 /*
-ina+s
+bacata não é banana
+questao completa! ganhei (30) ouros e 500 de experienciea.
 --------------------------
-tempo execução em ms: 0
+tempo execução em ms: 5
+
+
 
 
 

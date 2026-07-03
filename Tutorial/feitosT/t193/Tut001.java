@@ -1,15 +1,22 @@
 package programa;
 
+import java.util.Arrays;
+
 public class Tut001 {
 	
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 		
         // métodos para string
-		// .startsWith(), 
+		// dividir uma string em um array de strings
 		
-		String s1 = "disciplina+sabedoria";
-		System.out.println(s1.substring(7, 12)); // é tipo String
+		String s1 = "divida uma string em espacos, e também pontuacao.";
+		
+		String regex = "[,\\.\\s]";
+		
+		String[] meu_array = s1.split(regex);
+		
+		System.out.println(Arrays.toString(meu_array));
 		
 		
 		System.out.println("--------------------------");
@@ -26,9 +33,11 @@ public class Tut001 {
 }
 
 /*
-ina+s
+[divida, uma, string, em, espacos, , e, também, pontuacao]
 --------------------------
-tempo execução em ms: 0
+tempo execução em ms: 10
+
+
 
 
 
