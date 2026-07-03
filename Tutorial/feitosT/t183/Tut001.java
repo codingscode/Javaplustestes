@@ -6,10 +6,11 @@ public class Tut001 {
 		long startTime = System.nanoTime();
 		
         // strings
-		// métodos .isEmpty(), .join(), 
+		// primeira ocorrencia
 		
-		
-		
+		String s1 = "bacana planeta terra.";
+		System.out.println(s1.indexOf("planeta"));
+		System.out.println(s1.indexOf("p"));
 		
 		
 		System.out.println("--------------------------");
@@ -27,7 +28,7 @@ public class Tut001 {
 
 /*
 7
-10
+7
 --------------------------
 tempo execução em ms: 0
 

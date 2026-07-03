@@ -6,10 +6,17 @@ public class Tut001 {
 		long startTime = System.nanoTime();
 		
         // strings
-		// métodos .isEmpty(), .join(), 
+		//
 		
+		String s1 = "aladim";
+		String s2 = "mel";
+		String s3 = "Aladim";
 		
-		
+		System.out.println(s1.hashCode());
+		System.out.println(s2.hashCode());
+		System.out.println(s3.hashCode());
+		System.out.println( (s1.hashCode()) == (s2.hashCode()) );
+		System.out.println( (s1.hashCode()) == (s3.hashCode()) );
 		
 		
 		System.out.println("--------------------------");
@@ -26,8 +33,11 @@ public class Tut001 {
 }
 
 /*
-7
-10
+-1415210190
+107988
+1963624274
+false
+false
 --------------------------
 tempo execução em ms: 0
 

@@ -6,10 +6,11 @@ public class Tut001 {
 		long startTime = System.nanoTime();
 		
         // strings
-		// métodos .isEmpty(), .join(), 
+		// primeira ocorrencia
 		
-		
-		
+		String s1 = "bacana planeta terra.";
+		System.out.println(s1.indexOf("planeta"));
+		System.out.println(s1.indexOf("n", 5)); // encontrar n iniciando no indice 5
 		
 		
 		System.out.println("--------------------------");
