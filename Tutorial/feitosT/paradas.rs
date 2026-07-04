@@ -19,7 +19,7 @@ https://www.w3schools.com/java/java_ref_string.asp
 
 
 https://www.w3schools.com/java/java_ref_math.asp
-https://www.w3schools.com/java/ref_math_cbrt.asp
+https://www.w3schools.com/java/ref_math_getexponent.asp
 
 
 

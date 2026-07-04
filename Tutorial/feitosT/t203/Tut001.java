@@ -8,7 +8,13 @@ public class Tut001 {
         // métodos math
 		//
 		
-		
+		// arredonda para o inteiro abaixo
+		System.out.println(Math.floor(0.60));
+		System.out.println(Math.floor(0.40));
+		System.out.println(Math.floor(5));
+		System.out.println(Math.floor(5.1));
+		System.out.println(Math.floor(-5.1));
+		System.out.println(Math.floor(-5.9));
 		
 		System.out.println("--------------------------");
 
@@ -24,8 +30,14 @@ public class Tut001 {
 }
 
 /*
-
-
+0.0
+0.0
+5.0
+5.0
+-6.0
+-6.0
+--------------------------
+tempo execução em ms: 0
 
 
 
