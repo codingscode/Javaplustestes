@@ -14,13 +14,12 @@ https://www.w3schools.com/java/java_howto_palindrome_check.asp
 https://www.w3schools.com/java/java_howto_second_largest_array.asp
 https://www.w3schools.com/java/java_howto_merge_two_arrays.asp
 https://www.w3schools.com/java/java_howto_check_prime_num.asp
-
-
-
-
 https://www.w3schools.com/java/java_ref_string.asp
-https://www.w3schools.com/java/ref_string_startswith.asp
 
+
+
+https://www.w3schools.com/java/java_ref_math.asp
+https://www.w3schools.com/java/ref_math_cbrt.asp
 
 
 

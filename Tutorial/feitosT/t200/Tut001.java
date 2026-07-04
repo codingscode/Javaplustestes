@@ -8,13 +8,10 @@ public class Tut001 {
         // métodos math
 		// .acos(),.addExact(n1, n2),.asin(),.atan(),.atan2(),
 		
-		// arredonda para o numero superior
-		System.out.println(Math.ceil(0.60));
-		System.out.println(Math.ceil(0.40));
-		System.out.println(Math.ceil(5));
-		System.out.println(Math.ceil(5.1));
-		System.out.println(Math.ceil(-5.1));
-		System.out.println(Math.ceil(-5.9));
+		// raiz cubica
+		System.out.println(Math.cbrt(4));
+		System.out.println(Math.cbrt(9));
+		System.out.println(Math.cbrt(27));
 		
 		
 		System.out.println("--------------------------");
@@ -31,12 +28,9 @@ public class Tut001 {
 }
 
 /*
-1.0
-1.0
-5.0
-6.0
--5.0
--5.0
+1.5874010519681996
+2.080083823051904
+3.0
 --------------------------
 tempo execução em ms: 0
 

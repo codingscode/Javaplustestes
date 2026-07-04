@@ -6,16 +6,11 @@ public class Tut001 {
 		long startTime = System.nanoTime();
 		
         // métodos math
-		// .acos(),.addExact(n1, n2),.asin(),.atan(),.atan2(),
+		//
 		
-		// arredonda para o numero superior
-		System.out.println(Math.ceil(0.60));
-		System.out.println(Math.ceil(0.40));
-		System.out.println(Math.ceil(5));
-		System.out.println(Math.ceil(5.1));
-		System.out.println(Math.ceil(-5.1));
-		System.out.println(Math.ceil(-5.9));
-		
+		System.out.println(Math.abs(-4.7));
+		System.out.println(Math.abs(4.7));
+		System.out.println(Math.abs(-3)); 
 		
 		System.out.println("--------------------------");
 
@@ -31,12 +26,9 @@ public class Tut001 {
 }
 
 /*
-1.0
-1.0
-5.0
-6.0
--5.0
--5.0
+4.7
+4.7
+3
 --------------------------
 tempo execução em ms: 0
 

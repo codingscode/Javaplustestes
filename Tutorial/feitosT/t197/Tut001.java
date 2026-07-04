@@ -1,21 +1,20 @@
 package programa;
 
+import java.util.Arrays;
+
 public class Tut001 {
 	
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 		
-        // métodos math
-		// .acos(),.addExact(n1, n2),.asin(),.atan(),.atan2(),
+        // métodos para string
+		// um array do tipo char 
 		
-		// arredonda para o numero superior
-		System.out.println(Math.ceil(0.60));
-		System.out.println(Math.ceil(0.40));
-		System.out.println(Math.ceil(5));
-		System.out.println(Math.ceil(5.1));
-		System.out.println(Math.ceil(-5.1));
-		System.out.println(Math.ceil(-5.9));
+		String s1 = "bacana";
+		char[] meu_array = s1.toCharArray();
 		
+		System.out.println(Arrays.toString(meu_array));
+		System.out.println(meu_array[0]);
 		
 		System.out.println("--------------------------");
 
@@ -31,16 +30,13 @@ public class Tut001 {
 }
 
 /*
-1.0
-1.0
-5.0
-6.0
--5.0
--5.0
+[b, a, c, a, n, a]
+b
 --------------------------
 tempo execução em ms: 0
 
 
 
-
+ 
+ 
 */
