@@ -7,12 +7,14 @@ public class Tut001 {
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 		
-        // arrays metodos
+        // arrays
 		// 
-		String[] carros = {"fusca", "celta", "kombi", "creta", "l200"};
-		String[] carros2 = Arrays.copyOf(carros, 3); // até o indice 2
-		
-		System.out.println(Arrays.toString(carros2));
+		String[] carros = {"Volvo", "BMW", "Tesla"};
+		String[] carros2 = {"Volvo", "BMW", "Tesla"};
+		String[] carros3 = {"BMW", "Tesla", "Volvo"};
+
+		System.out.println(Arrays.compare(carros, carros2)); // iguais
+		System.out.println(Arrays.compare(carros, carros3)); // diferentes
 		
 		
 		System.out.println("--------------------------");

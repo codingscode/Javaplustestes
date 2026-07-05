@@ -1,18 +1,18 @@
 package programa;
 
-import java.util.Arrays;
-
 public class Tut001 {
 	
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 		
-        // arrays metodos
-		// 
-		String[] carros = {"fusca", "celta", "kombi", "creta", "l200"};
-		String[] carros2 = Arrays.copyOf(carros, 3); // até o indice 2
-		
-		System.out.println(Arrays.toString(carros2));
+        // métodos math
+		// arredonda para o inteiro mais proximo
+		System.out.println(Math.round(0.60));
+		System.out.println(Math.round(0.40));
+		System.out.println(Math.round(5));
+		System.out.println(Math.round(5.1));
+		System.out.println(Math.round(-5.1));
+		System.out.println(Math.round(-5.9));
 		
 		
 		System.out.println("--------------------------");
@@ -29,8 +29,12 @@ public class Tut001 {
 }
 
 /*
+1
 0
-20
+5
+5
+-5
+-6
 --------------------------
 tempo execução em ms: 0
 

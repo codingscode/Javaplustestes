@@ -1,18 +1,17 @@
 package programa;
 
-import java.util.Arrays;
-
 public class Tut001 {
 	
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 		
-        // arrays metodos
-		// 
-		String[] carros = {"fusca", "celta", "kombi", "creta", "l200"};
-		String[] carros2 = Arrays.copyOf(carros, 3); // até o indice 2
-		
-		System.out.println(Arrays.toString(carros2));
+        // métodos math
+		// .signum(), converte radianos para graus
+		System.out.println(Math.toDegrees(1));
+		System.out.println(Math.toDegrees(Math.PI));
+		System.out.println(Math.toDegrees(Math.PI / 4));
+		System.out.println(Math.toDegrees(-0.5236));
+		System.out.println(Math.toDegrees(6));
 		
 		
 		System.out.println("--------------------------");
@@ -29,8 +28,11 @@ public class Tut001 {
 }
 
 /*
-0
-20
+57.29577951308232
+180.0
+45.0
+-30.0000701530499
+343.77467707849394
 --------------------------
 tempo execução em ms: 0
 
