@@ -6,14 +6,12 @@ public class Tut001 {
 		long startTime = System.nanoTime();
 		
         // métodos math
-		// arredonda para o inteiro mais proximo
-		System.out.println(Math.rint(0.5));
-		System.out.println(Math.rint(1.5));
-		System.out.println(Math.rint(5));
-		System.out.println(Math.rint(5.1));
-		System.out.println(Math.rint(-5.1));
-		System.out.println(Math.rint(-5.9));
-		
+		// potencia
+		System.out.println(Math.pow(2, 8));
+		System.out.println(Math.pow(3, 4));
+		System.out.println(Math.pow(9, 0.5));
+		System.out.println(Math.pow(8, -1));
+		System.out.println(Math.pow(10, -2));
 		
 		System.out.println("--------------------------");
 
@@ -29,12 +27,11 @@ public class Tut001 {
 }
 
 /*
-0.0
-2.0
-5.0
-5.0
--5.0
--6.0
+256.0
+81.0
+3.0
+0.125
+0.01
 --------------------------
 tempo execução em ms: 0
 

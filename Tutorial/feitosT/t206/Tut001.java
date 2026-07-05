@@ -6,13 +6,10 @@ public class Tut001 {
 		long startTime = System.nanoTime();
 		
         // métodos math
-		// arredonda para o inteiro mais proximo
-		System.out.println(Math.rint(0.5));
-		System.out.println(Math.rint(1.5));
-		System.out.println(Math.rint(5));
-		System.out.println(Math.rint(5.1));
-		System.out.println(Math.rint(-5.1));
-		System.out.println(Math.rint(-5.9));
+		// .min() o menor
+		System.out.println(Math.max(2.0, 0.25));
+		System.out.println(Math.max(4, 10));
+		//System.out.println(Math.max(4, 10, 7)); // somente pares
 		
 		
 		System.out.println("--------------------------");
@@ -29,12 +26,8 @@ public class Tut001 {
 }
 
 /*
-0.0
 2.0
-5.0
-5.0
--5.0
--6.0
+10
 --------------------------
 tempo execução em ms: 0
 

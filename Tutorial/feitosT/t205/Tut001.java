@@ -6,13 +6,13 @@ public class Tut001 {
 		long startTime = System.nanoTime();
 		
         // métodos math
-		// arredonda para o inteiro mais proximo
-		System.out.println(Math.rint(0.5));
-		System.out.println(Math.rint(1.5));
-		System.out.println(Math.rint(5));
-		System.out.println(Math.rint(5.1));
-		System.out.println(Math.rint(-5.1));
-		System.out.println(Math.rint(-5.9));
+		// logaritmo base 10
+		System.out.println(Math.log10(10));
+		System.out.println(Math.log10(20));
+		System.out.println(Math.log10(1));
+		System.out.println(Math.log10(-10));
+		System.out.println(Math.log10(100));
+		System.out.println(Math.log10(0.001));
 		
 		
 		System.out.println("--------------------------");
@@ -29,12 +29,12 @@ public class Tut001 {
 }
 
 /*
+1.0
+1.3010299956639813
 0.0
+NaN
 2.0
-5.0
-5.0
--5.0
--6.0
+-3.0
 --------------------------
 tempo execução em ms: 0
 

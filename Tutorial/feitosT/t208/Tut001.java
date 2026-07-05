@@ -6,13 +6,15 @@ public class Tut001 {
 		long startTime = System.nanoTime();
 		
         // métodos math
-		// arredonda para o inteiro mais proximo
-		System.out.println(Math.rint(0.5));
-		System.out.println(Math.rint(1.5));
-		System.out.println(Math.rint(5));
-		System.out.println(Math.rint(5.1));
-		System.out.println(Math.rint(-5.1));
-		System.out.println(Math.rint(-5.9));
+		// 
+		System.out.println(Math.random());
+		
+		int aleatorio = (int) (5*(Math.random())) + 1; // 1 a 5
+		
+		while (aleatorio != 5) {
+			System.out.println(aleatorio);
+			aleatorio = (int) (5*(Math.random())) + 1;
+		}
 		
 		
 		System.out.println("--------------------------");
@@ -29,14 +31,16 @@ public class Tut001 {
 }
 
 /*
-0.0
-2.0
-5.0
-5.0
--5.0
--6.0
+0.4811034783044795
+3
+2
+1
+4
+2
+3
+2
 --------------------------
-tempo execução em ms: 0
+tempo execução em ms: 1
 
 
 
