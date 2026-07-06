@@ -1,26 +1,24 @@
 package programa;
 
-import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Tut001 {
 	
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 		
-        // ArrayList metodos
+        // arrays metodos
 		// 
 		
-		ArrayList<String> carros = new ArrayList<String>();
-		carros.add("celta");
-		carros.add("komb");
-		carros.add("pampa");
-		carros.add("l200");
-	    	    
-	    System.out.println(carros);
-	    
-	    carros.add(2, "pajero"); // injeta e afasta
-	    
-	    System.out.println(carros);
+		int[] numeros = {10, 4, 2, 7};
+		int[] lista = {20, 3, 10, 1, 15, 12};
+		
+		Arrays.sort(numeros);
+		Arrays.sort(lista, 1, 4); // ordena somente do indice 1 ao 3
+		
+		System.out.println(Arrays.toString(numeros));
+		System.out.println(Arrays.toString(lista));
+		
 		
 		System.out.println("--------------------------");
 
@@ -36,10 +34,10 @@ public class Tut001 {
 }
 
 /*
-[celta, komb, pampa, l200]
-[celta, komb, pajero, pampa, l200]
+[2, 4, 7, 10]
+[20, 1, 3, 10, 15, 12]
 --------------------------
-tempo execução em ms: 0
+tempo execução em ms: 1
 
 
 

@@ -15,10 +15,7 @@ public class Tut001 {
 		carros.add("komb");
 		carros.add("pampa");
 		carros.add("l200");
-	    	    
-	    System.out.println(carros);
 	    
-	    carros.add(2, "pajero"); // injeta e afasta
 	    
 	    System.out.println(carros);
 		
@@ -37,7 +34,6 @@ public class Tut001 {
 
 /*
 [celta, komb, pampa, l200]
-[celta, komb, pajero, pampa, l200]
 --------------------------
 tempo execução em ms: 0
 
