@@ -21,7 +21,7 @@ public class Tut001 {
 	    marcas.add("W3Schools");
 	    marcas.add("Apple");
 	    
-	    marcas.addAll(1, carros);
+	    marcas.addAll(carros);
 	    
 	    System.out.println(marcas);
 		
@@ -39,7 +39,7 @@ public class Tut001 {
 }
 
 /*
-[Microsoft, Volvo, BMW, Ford, Mazda, W3Schools, Apple]
+[Microsoft, W3Schools, Apple, Volvo, BMW, Ford, Mazda]
 --------------------------
 tempo execução em ms: 0
 

@@ -20,8 +20,8 @@ https://www.w3schools.com/java/java_ref_arrays.asp
 
 
 
-
 https://www.w3schools.com/java/java_ref_arraylist.asp
+https://www.w3schools.com/java/ref_arraylist_clear.asp
 
 
 
