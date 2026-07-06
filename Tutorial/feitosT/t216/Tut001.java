@@ -8,12 +8,15 @@ public class Tut001 {
 		long startTime = System.nanoTime();
 		
         // arrays metodos
-		// 
-		String[] carros = {"fusca", "celta", "kombi", "creta", "l200"};
-		String[] carros2 = Arrays.copyOf(carros, 3); // até o indice 2
+		// checar se dois arrays sao iguais
 		
-		System.out.println(Arrays.toString(carros2));
+		String[] carros = {"Volvo", "BMW", "Tesla"};
+		String[] carros2 = {"Volvo", "BMW", "Tesla"};
+		String[] carros3 = {"BMW", "Tesla", "Volvo"};
 		
+		
+		System.out.println(Arrays.equals(carros, carros2)); 
+		System.out.println(Arrays.equals(carros, carros3));
 		
 		System.out.println("--------------------------");
 
@@ -29,7 +32,8 @@ public class Tut001 {
 }
 
 /*
-[fusca, celta, kombi]
+true
+false
 --------------------------
 tempo execução em ms: 0
 

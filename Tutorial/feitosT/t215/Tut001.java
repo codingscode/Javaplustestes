@@ -8,11 +8,16 @@ public class Tut001 {
 		long startTime = System.nanoTime();
 		
         // arrays metodos
-		// 
-		String[] carros = {"fusca", "celta", "kombi", "creta", "l200"};
-		String[] carros2 = Arrays.copyOf(carros, 3); // até o indice 2
+		//
 		
-		System.out.println(Arrays.toString(carros2));
+		int[][] l1 = {{1, 2}, {3, 4}};
+		int[][] l2 = {{1, 2}, {3, 4}};
+		int[][] l3 = {{2, 3}, {1, 4}};
+		int[][] l4 = {{3, 4}, {1, 2}};
+		
+		System.out.println(Arrays.deepEquals(l1, l2));
+		System.out.println(Arrays.deepEquals(l1, l3));
+		System.out.println(Arrays.deepEquals(l1, l4));
 		
 		
 		System.out.println("--------------------------");
@@ -29,7 +34,8 @@ public class Tut001 {
 }
 
 /*
-[fusca, celta, kombi]
+0
+20
 --------------------------
 tempo execução em ms: 0
 

@@ -9,10 +9,15 @@ public class Tut001 {
 		
         // arrays metodos
 		// 
-		String[] carros = {"fusca", "celta", "kombi", "creta", "l200"};
-		String[] carros2 = Arrays.copyOf(carros, 3); // até o indice 2
 		
-		System.out.println(Arrays.toString(carros2));
+		String[] frutas = {"jaca", "manga", "tanja", "ata", "graviola"};
+		Arrays.fill(frutas, "laranja"); // preenche todos os elementos com um valor tal
+		
+		System.out.println(Arrays.toString(frutas));
+		
+		String[] frutas2 = {"jaca", "manga", "tanja", "ata", "graviola"};
+		Arrays.fill(frutas2, 2, 4, "uva");
+		System.out.println(Arrays.toString(frutas2));
 		
 		
 		System.out.println("--------------------------");
@@ -29,7 +34,8 @@ public class Tut001 {
 }
 
 /*
-[fusca, celta, kombi]
+[laranja, laranja, laranja, laranja, laranja]
+[jaca, manga, uva, uva, graviola]
 --------------------------
 tempo execução em ms: 0
 
