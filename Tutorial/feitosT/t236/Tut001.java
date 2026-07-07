@@ -12,10 +12,9 @@ public class Tut001 {
 		// 
 		ArrayList<Integer> numeros = new ArrayList<>(List.of(3,4,5,6,7));
 		
-		
         System.out.println(numeros);
         
-        numeros.removeIf( cada -> cada % 2 == 1 );
+        numeros.removeAll(numeros);
                 
         System.out.println(numeros);
 				
@@ -35,9 +34,9 @@ public class Tut001 {
 
 /*
 [3, 4, 5, 6, 7]
-[4, 6]
+[]
 --------------------------
-tempo execução em ms: 8
+tempo execução em ms: 0
 
 
 

@@ -1,6 +1,7 @@
 package programa;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class Tut001 {
@@ -10,16 +11,11 @@ public class Tut001 {
 		
         // ArrayList metodos
 		// 
-		ArrayList<Integer> numeros = new ArrayList<>(List.of(3,4,5,6,7));
+		ArrayList<Integer> numeros = new ArrayList<>(List.of(3,4,5,6,4,10));
 		
-		
-        System.out.println(numeros);
-        
-        numeros.removeIf( cada -> cada % 2 == 1 );
-                
-        System.out.println(numeros);
-				
-		
+		System.out.println(numeros.indexOf(4));
+	    System.out.println(numeros.lastIndexOf(4));
+	   
 		System.out.println("--------------------------");
 
 		// Your code here
@@ -34,10 +30,13 @@ public class Tut001 {
 }
 
 /*
-[3, 4, 5, 6, 7]
-[4, 6]
+1
+4
 --------------------------
-tempo execução em ms: 8
+tempo execução em ms: 0
+
+
+
 
 
 

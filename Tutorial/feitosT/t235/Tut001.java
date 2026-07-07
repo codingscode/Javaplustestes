@@ -11,14 +11,22 @@ public class Tut001 {
         // ArrayList metodos
 		// 
 		ArrayList<Integer> numeros = new ArrayList<>(List.of(3,4,5,6,7));
-		
+		ArrayList<String> nomes = new ArrayList<>(List.of("mel", "aladim", "lily"));
 		
         System.out.println(numeros);
         
-        numeros.removeIf( cada -> cada % 2 == 1 );
+        numeros.remove(0); // remove pelo indice
                 
         System.out.println(numeros);
-				
+		
+        numeros.remove(Integer.valueOf(6)); // remove pelo objeto
+        
+        System.out.println(numeros);
+        
+        nomes.remove("lily");
+        
+        System.out.println(nomes);
+		
 		
 		System.out.println("--------------------------");
 
@@ -35,9 +43,11 @@ public class Tut001 {
 
 /*
 [3, 4, 5, 6, 7]
-[4, 6]
+[4, 5, 6, 7]
+[4, 5, 7]
+[mel, aladim]
 --------------------------
-tempo execução em ms: 8
+tempo execução em ms: 0
 
 
 

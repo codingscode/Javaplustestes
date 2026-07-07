@@ -1,6 +1,7 @@
 package programa;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class Tut001 {
@@ -12,14 +13,14 @@ public class Tut001 {
 		// 
 		ArrayList<Integer> numeros = new ArrayList<>(List.of(3,4,5,6,7));
 		
-		
-        System.out.println(numeros);
-        
-        numeros.removeIf( cada -> cada % 2 == 1 );
-                
-        System.out.println(numeros);
-				
-		
+	    // Get the iterator
+	    Iterator<Integer> it = numeros.iterator();
+	    
+	    // Loop through a collection
+	    while (it.hasNext()) {
+	      System.out.println(it.next());
+	    }
+	   
 		System.out.println("--------------------------");
 
 		// Your code here
@@ -34,10 +35,16 @@ public class Tut001 {
 }
 
 /*
-[3, 4, 5, 6, 7]
-[4, 6]
+3
+4
+5
+6
+7
 --------------------------
-tempo execução em ms: 8
+tempo execução em ms: 0
+
+
+
 
 
 

@@ -2,6 +2,7 @@ package programa;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.ListIterator;
 
 public class Tut001 {
 	
@@ -10,16 +11,23 @@ public class Tut001 {
 		
         // ArrayList metodos
 		// 
-		ArrayList<Integer> numeros = new ArrayList<>(List.of(3,4,5,6,7));
+		ArrayList<Integer> numeros = new ArrayList<>(List.of(3,4,5,6,4,10));
 		
-		
-        System.out.println(numeros);
-        
-        numeros.removeIf( cada -> cada % 2 == 1 );
-                
-        System.out.println(numeros);
-				
-		
+		// Get the iterator
+	    ListIterator<Integer> it = numeros.listIterator();
+	    
+	    // Loop through the list
+	    while(it.hasNext()) {
+	      System.out.println(it.next());
+	    }
+	    
+	    System.out.println("voltando");
+	    
+	    // Loop backwards through the list
+	    while(it.hasPrevious()) {
+	      System.out.println(it.previous());
+	    }
+	   
 		System.out.println("--------------------------");
 
 		// Your code here
@@ -34,10 +42,24 @@ public class Tut001 {
 }
 
 /*
-[3, 4, 5, 6, 7]
-[4, 6]
+3
+4
+5
+6
+4
+10
+voltando
+10
+4
+6
+5
+4
+3
 --------------------------
-tempo execução em ms: 8
+tempo execução em ms: 1
+
+
+
 
 
 
