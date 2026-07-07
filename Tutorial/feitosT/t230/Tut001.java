@@ -11,12 +11,12 @@ public class Tut001 {
         // ArrayList metodos
 		// 
 		ArrayList<Integer> numeros = new ArrayList<>(List.of(3,4,5,6,7));
-		ArrayList<String> nomes = new ArrayList<>();
+		
+	    System.out.println(numeros.indexOf(5)); // indice de
+	    System.out.println(numeros.indexOf(6));
+	    System.out.println(numeros.indexOf(10)); // nao existe
 		
 		
-	    System.out.println(numeros.isEmpty());
-	    System.out.println(nomes.isEmpty());
-	   
 		System.out.println("--------------------------");
 
 		// Your code here
@@ -31,8 +31,9 @@ public class Tut001 {
 }
 
 /*
-false
-true
+2
+3
+-1
 --------------------------
 tempo execução em ms: 0
 

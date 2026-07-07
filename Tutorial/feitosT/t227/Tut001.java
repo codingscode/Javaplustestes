@@ -1,7 +1,6 @@
 package programa;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Tut001 {
 	
@@ -10,13 +9,17 @@ public class Tut001 {
 		
         // ArrayList metodos
 		// 
-		ArrayList<Integer> numeros = new ArrayList<>(List.of(3,4,5,6,7));
-		ArrayList<String> nomes = new ArrayList<>();
 		
+		ArrayList<String> carros = new ArrayList<String>();
+		carros.add("fusca");
+		carros.add("celta");
+		carros.add("gol");
+		carros.add("palio");
+	    
+	    
+	    System.out.println(carros.contains("gol"));
+	    System.out.println(carros.contains("l200"));
 		
-	    System.out.println(numeros.isEmpty());
-	    System.out.println(nomes.isEmpty());
-	   
 		System.out.println("--------------------------");
 
 		// Your code here
@@ -31,8 +34,8 @@ public class Tut001 {
 }
 
 /*
-false
 true
+false
 --------------------------
 tempo execução em ms: 0
 
