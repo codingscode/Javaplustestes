@@ -1,17 +1,25 @@
 package programa;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Tut001 {
 	
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 		
-        // 
+        // ArrayList metodos
 		// 
+		ArrayList<String> nomes = new ArrayList<>(List.of("mel", "aladim", "apolo", "lily"));
+		
+		System.out.println(nomes.size()); // quantidade elementos
+		
+		nomes.sort(null); // ordena alfabeticamente
+		
+		        
+        System.out.println(nomes);
 
-		
-		
-		
-		
+
 		System.out.println("--------------------------");
 
 		// Your code here
@@ -26,12 +34,10 @@ public class Tut001 {
 }
 
 /*
-
-
-
-
-
-
+4
+[aladim, apolo, lily, mel]
+--------------------------
+tempo execução em ms: 0
 
 
 

@@ -17,13 +17,12 @@ https://www.w3schools.com/java/java_howto_check_prime_num.asp
 https://www.w3schools.com/java/java_ref_string.asp
 https://www.w3schools.com/java/java_ref_math.asp
 https://www.w3schools.com/java/java_ref_arrays.asp
-
-
-
 https://www.w3schools.com/java/java_ref_arraylist.asp
-https://www.w3schools.com/java/ref_arraylist_removeif.asp
 
 
+
+
+https://www.w3schools.com/java/java_ref_linkedlist.asp
 
 
 

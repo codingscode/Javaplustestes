@@ -1,17 +1,24 @@
 package programa;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Tut001 {
 	
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 		
-        // 
+        // ArrayList metodos
 		// 
+		ArrayList<String> nomes = new ArrayList<>(List.of("mel", "aladim", "apolo", "lily"));
+		
+		System.out.println(nomes.size()); // quantidade elementos
+		
+		nomes.sort( (a, b) -> { return -1 * a.compareTo(b); } ); // reverso
+		        
+        System.out.println(nomes);
 
-		
-		
-		
-		
+
 		System.out.println("--------------------------");
 
 		// Your code here
@@ -27,11 +34,10 @@ public class Tut001 {
 
 /*
 
-
-
-
-
-
+4
+[mel, lily, apolo, aladim]
+--------------------------
+tempo execução em ms: 9
 
 
 
