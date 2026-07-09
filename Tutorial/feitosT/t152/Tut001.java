@@ -11,9 +11,9 @@ public class Tut001 {
 		int contador = 0;
 
 		for (char c : texto.toLowerCase().toCharArray()) {
-		  if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') {
-			  contador++;
-		  }
+		   if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') {
+              contador++;
+		   }
 		}
 
 		System.out.print("vogais: ");

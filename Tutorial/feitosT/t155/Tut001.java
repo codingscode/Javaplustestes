@@ -11,9 +11,9 @@ public class Tut001 {
 		int contador = 0;
 
 		for (char c : texto.toCharArray()) {
-		  if (Character.isDigit(c)) {
+		   if (Character.isDigit(c)) {
 			  contador++;
-		  }
+		   }
 		}
 
 		System.out.print("Digitos: ");
