@@ -15,7 +15,6 @@ public class Tut001 {
 		System.out.println(meu_array[0]);
 		System.out.println(meu_array[1]);
 		
-		
 		System.out.println("--------------------------");
 
 		// Your code here
