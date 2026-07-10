@@ -4,9 +4,6 @@ import java.util.HashMap;
 
 public class Tut001 {
 	
-	
-	
-	
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 		

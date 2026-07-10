@@ -22,7 +22,6 @@ public class Tut001 {
 		long startTime = System.nanoTime();
 		
         // checar número primo
-		
 		int numero = 7;
 		
 		System.out.print("primo ? : ");
