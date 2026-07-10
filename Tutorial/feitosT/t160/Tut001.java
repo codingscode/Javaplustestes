@@ -11,8 +11,6 @@ public class Tut001 {
 		String semespaco = texto.replaceAll("\\s+", "");
 
 		System.out.println(semespaco);
-
-		
 		
 		System.out.println("--------------------------");
 

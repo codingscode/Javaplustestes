@@ -26,9 +26,6 @@ public class Tut001 {
 		System.out.print("segundo: ");
 		System.out.println(segundo);
 		
-		
-		
-		
 		System.out.println("--------------------------");
 
 		// Your code here
