@@ -11,7 +11,7 @@ public class Tut001 {
 		String s1 = "macaco na arvore, macaco quer banana";
 		
 		System.out.println(s1.lastIndexOf("macaco")); // ultima ocorrencia
-		System.out.println(s1.lastIndexOf("n", 10)); // " n apos indice 10
+		System.out.println(s1.lastIndexOf("n", 10)); // " n em indice 10, separados padrao " "
 		
 		System.out.println("--------------------------");
 
