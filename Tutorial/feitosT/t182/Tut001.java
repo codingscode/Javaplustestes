@@ -7,7 +7,6 @@ public class Tut001 {
 		
         // strings
 		//
-		
 		String s1 = "aladim";
 		String s2 = "mel";
 		String s3 = "Aladim";

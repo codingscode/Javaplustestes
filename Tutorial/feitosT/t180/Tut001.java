@@ -7,9 +7,8 @@ public class Tut001 {
 		
         // strings
 		//
-		
 		String mostrar = String.format("%s tem %d anos", "aladim", 8); 
-				
+		
 		System.out.println(mostrar);				
 		
 		System.out.println("--------------------------");
