@@ -5,9 +5,7 @@ public class Tut001 {
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 		
-        //
-        String[] algo = {"a", "z", "u", "l"};
-        System.out.println(algo);
+        
         
         
 		System.out.println("--------------------------");

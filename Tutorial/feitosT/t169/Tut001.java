@@ -20,7 +20,7 @@ public class Tut001 {
 		Collections.shuffle(lista);
 		
 		System.out.println(lista);
-				
+
 		
 		System.out.println("--------------------------");
 

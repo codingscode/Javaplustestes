@@ -20,7 +20,7 @@ public class Tut001 {
 		System.out.println(Arrays.toString(numeros));
 		System.out.println(unicos);
 		
-				
+
 		System.out.println("--------------------------");
 
 		// Your code here
