@@ -6,7 +6,7 @@ public class Tut001 {
 		long startTime = System.nanoTime();
 		
         
-String s1 = "macaco na arvore, macaco quer banana na";
+        String s1 = "macaco na arvore, macaco quer banana na";
 		
 		System.out.println(s1.lastIndexOf("macaco")); // ultima ocorrencia
 		System.out.println(s1.lastIndexOf("n")); // " ultimo n nos 10 primeiros
