@@ -14,6 +14,7 @@ public class Tut001 {
 		char[] meu_array = s1.toCharArray();
 		
 		System.out.println(Arrays.toString(meu_array));
+		//System.out.println(meu_array);
 		System.out.println(meu_array[0]);
 		
 		System.out.println("--------------------------");

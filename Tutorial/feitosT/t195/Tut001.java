@@ -11,7 +11,6 @@ public class Tut001 {
 		String s1 = "disciplina+sabedoria";
 		System.out.println(s1.subSequence(7, 12)); // nao é tipo String
 		
-		
 		System.out.println("--------------------------");
 
 		// Your code here
