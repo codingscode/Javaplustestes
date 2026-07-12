@@ -13,7 +13,7 @@ public class Tut001 {
 		System.out.println(Math.log10(-10));
 		System.out.println(Math.log10(100));
 		System.out.println(Math.log10(0.001));
-		
+
 		
 		System.out.println("--------------------------");
 

@@ -8,7 +8,7 @@ public class Tut001 {
         // métodos math
 		// .cos(),.cosh(),
 		
-		// numero neperiano e elevado um numero tal
+		// numero neperiano e elevado a um numero tal
 		System.out.println(Math.exp(0));
 		System.out.println(Math.exp(1));
 		System.out.println(Math.exp(2));
