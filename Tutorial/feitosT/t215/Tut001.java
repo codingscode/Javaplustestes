@@ -34,8 +34,9 @@ public class Tut001 {
 }
 
 /*
-0
-20
+true
+false
+false
 --------------------------
 tempo execução em ms: 0
 
