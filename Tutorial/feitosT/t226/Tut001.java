@@ -16,7 +16,7 @@ public class Tut001 {
 		carros.add("gol");
 		carros.add("palio");
 	    
-	    ArrayList<String> carros2 = (ArrayList<String>) carros.clone();
+	    ArrayList<String> carros2 = (ArrayList<String>) carros.clone(); // shalow copy
 	    carros2.set(0, "hilux");
 	    
 	    System.out.println(carros);

@@ -21,7 +21,7 @@ public class Tut001 {
 	    marcas.add("W3Schools");
 	    marcas.add("Apple");
 	    
-	    marcas.addAll(1, carros);
+	    marcas.addAll(1, carros); // injeta a partir do indice 1 e afasta
 	    
 	    System.out.println(marcas);
 		
