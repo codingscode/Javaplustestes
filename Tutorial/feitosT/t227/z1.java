@@ -1,11 +1,16 @@
 package programa;
 
+import java.util.Arrays;
+
 public class Tut001 {
 	
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 		
         
+		Integer[] numeros = {1,2,3};
+		
+		System.out.println(Arrays.asList(numeros).contains(1));
 		
 		
         
