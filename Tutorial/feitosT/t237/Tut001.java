@@ -18,7 +18,7 @@ public class Tut001 {
         numeros.removeAll(remover);
                 
         System.out.println(numeros);
-				
+		
 		
 		System.out.println("--------------------------");
 
