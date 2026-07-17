@@ -15,15 +15,22 @@ public class Tut001 {
 		// 
 		List<Integer> a = Arrays.asList(1, 2, 3, 4, 5, 6);
         List<Integer> b = Arrays.asList(3, 4, 7, 8);
+        
+        
+        System.out.println(a.getClass().getSimpleName());
+        System.out.println(b.getClass().getSimpleName()); 
 
         Set<Integer> setA = new HashSet<>(a);
         Set<Integer> setB = new HashSet<>(b);
 
         setA.retainAll(setB);
+        
+        System.out.println(setA.getClass().getSimpleName()); 
 
         List<Integer> c = new ArrayList<>(setA);
 
         System.out.println(c);
+        System.out.println(c.getClass().getSimpleName()); 
 
 
 		System.out.println("--------------------------");
@@ -40,7 +47,11 @@ public class Tut001 {
 }
 
 /*
+ArrayList
+ArrayList
+HashSet
 [3, 4]
+ArrayList
 --------------------------
 tempo execução em ms: 0
 

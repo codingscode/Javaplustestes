@@ -1,22 +1,17 @@
 package programa;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class Tut001 {
 	
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 		
-		ArrayList<Integer> numeros = new ArrayList<>(List.of(3,4,5,6,7));
-
-		System.out.println(numeros);
-		
-		numeros.removeAll(new ArrayList<>(List.of(6,10)));
-		
-		System.out.println(numeros);
-		
-		
+				
         
 		System.out.println("--------------------------");
 
