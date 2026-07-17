@@ -16,7 +16,7 @@ public class Tut001 {
 		
 		String[] nomesArray = new String[4];
 		
-		nomesArray = nomes.toArray(nomesArray);
+		nomesArray = nomes.toArray(nomesArray); // tamanho aumenta para 6
 	    
 	    for(String cada : nomesArray) {
 	      System.out.println(cada);
