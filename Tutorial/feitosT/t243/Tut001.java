@@ -16,10 +16,8 @@ public class Tut001 {
 		
 		nomes.sort(null); // ordena alfabeticamente
 		
-		        
         System.out.println(nomes);
-
-
+        
 		System.out.println("--------------------------");
 
 		// Your code here

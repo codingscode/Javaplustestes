@@ -8,17 +8,16 @@ public class Tut001 {
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 		
-        // ArrayList metodos
-		// 
-		ArrayList<String> nomes = new ArrayList<>(List.of("mel", "aladim", "apolo", "lily", "pituxo", "preta"));
+        ArrayList<String> nomes = new ArrayList<>(List.of("mel", "aladim", "apolo", "lily", "pituxo", "preta"));
 		
 		System.out.println(nomes);
 		
-		Object[] nomesArray = nomes.toArray();
-	    
-	    for(Object cada : nomesArray) {
-	       System.out.println(cada);
-	    }
+		List<String> sublist = new ArrayList<>(nomes.subList(1, 3));
+	    sublist.set(0, "fiona");
+		
+		
+		System.out.println(nomes);
+		System.out.println(sublist);
         
 		System.out.println("--------------------------");
 
@@ -35,14 +34,11 @@ public class Tut001 {
 
 /*
 [mel, aladim, apolo, lily, pituxo, preta]
-mel
-aladim
-apolo
-lily
-pituxo
-preta
+[mel, aladim, apolo, lily, pituxo, preta]
+[fiona, apolo]
 --------------------------
 tempo execução em ms: 0
+
 
 
 

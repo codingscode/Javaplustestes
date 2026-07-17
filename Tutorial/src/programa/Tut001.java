@@ -1,17 +1,15 @@
 package programa;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 public class Tut001 {
 	
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 		
-				
+        
+		
         
 		System.out.println("--------------------------");
 
@@ -27,9 +25,13 @@ public class Tut001 {
 }
 
 /*
-true
+[mel, aladim, apolo, lily, pituxo, preta]
+[mel, aladim, apolo, lily, pituxo, preta]
+[fiona, apolo]
 --------------------------
 tempo execução em ms: 0
+
+
 
 
 */
