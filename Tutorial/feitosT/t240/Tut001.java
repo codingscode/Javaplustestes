@@ -17,7 +17,7 @@ public class Tut001 {
 		System.out.println(numeros1);
 		System.out.println(numeros2);
 		
-		numeros1.retainAll(numeros2);
+		numeros1.retainAll(numeros2); // interseção
                 
         System.out.println(numeros1);
 
