@@ -14,9 +14,9 @@ public class Tut001 {
 		
 		System.out.println(nomes);
 		
-		String[] nomesArray = nomes.toArray(String[]::new);
+		String[] nomesArray = nomes.toArray(String[]::new); // new String[0]
 	    
-	    for(String cada : nomesArray) {
+	    for (String cada : nomesArray) {
 	       System.out.println(cada);
 	    }
 
