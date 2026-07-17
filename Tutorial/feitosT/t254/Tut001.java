@@ -13,12 +13,9 @@ public class Tut001 {
 				
 	    System.out.println(carros);
 	    
-	    LinkedList<String> carros2 = (LinkedList<String>) carros.clone();
-	    System.out.println(carros2);
+	    LinkedList<String> carros2 = new LinkedList<String>(List.of("kombi", "jeep"));
 	    
-	    System.out.println(carros2.contains("fusca"));
-	    
-	    carros.clear();
+	    carros.addAll(1, carros2); // a partir do indice 1 injeta e afasta os que tem
 	    
 	    System.out.println(carros);
 		
@@ -38,9 +35,7 @@ public class Tut001 {
 
 /*
 [celta, fusca, l200, pajero]
-[celta, fusca, l200, pajero]
-true
-[]
+[celta, kombi, jeep, fusca, l200, pajero]
 --------------------------
 tempo execução em ms: 1
 

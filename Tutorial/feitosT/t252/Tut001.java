@@ -13,12 +13,7 @@ public class Tut001 {
 				
 	    System.out.println(carros);
 	    
-	    LinkedList<String> carros2 = (LinkedList<String>) carros.clone();
-	    System.out.println(carros2);
-	    
-	    System.out.println(carros2.contains("fusca"));
-	    
-	    carros.clear();
+	    carros.add(2, "d20");
 	    
 	    System.out.println(carros);
 		
@@ -38,11 +33,13 @@ public class Tut001 {
 
 /*
 [celta, fusca, l200, pajero]
-[celta, fusca, l200, pajero]
-true
-[]
+[celta, fusca, d20, l200, pajero]
 --------------------------
 tempo execução em ms: 1
+
+
+
+
 
 
 

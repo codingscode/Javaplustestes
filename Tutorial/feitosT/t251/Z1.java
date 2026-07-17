@@ -8,18 +8,10 @@ public class Tut001 {
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 		
-        // metodos LinkedList(encadeado ordem de inserção)
+        // metodos LinkedList
 		LinkedList<String> carros = new LinkedList<String>(List.of("celta", "fusca", "l200", "pajero"));
-				
-	    System.out.println(carros);
-	    
-	    LinkedList<String> carros2 = (LinkedList<String>) carros.clone();
-	    System.out.println(carros2);
-	    
-	    System.out.println(carros2.contains("fusca"));
-	    
-	    carros.clear();
-	    
+		
+		
 	    System.out.println(carros);
 		
         
@@ -38,9 +30,6 @@ public class Tut001 {
 
 /*
 [celta, fusca, l200, pajero]
-[celta, fusca, l200, pajero]
-true
-[]
 --------------------------
 tempo execução em ms: 1
 

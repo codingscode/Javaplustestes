@@ -1,25 +1,20 @@
 package programa;
 
 import java.util.LinkedList;
-import java.util.List;
 
 public class Tut001 {
 	
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 		
-        // metodos LinkedList(encadeado ordem de inserção)
-		LinkedList<String> carros = new LinkedList<String>(List.of("celta", "fusca", "l200", "pajero"));
-				
-	    System.out.println(carros);
-	    
-	    LinkedList<String> carros2 = (LinkedList<String>) carros.clone();
-	    System.out.println(carros2);
-	    
-	    System.out.println(carros2.contains("fusca"));
-	    
-	    carros.clear();
-	    
+        // metodos LinkedList
+		LinkedList<String> carros = new LinkedList<String>();
+		
+		carros.add("Volvo");
+		carros.add("BMW");
+		carros.add("Ford");
+		carros.add("Mazda");
+		
 	    System.out.println(carros);
 		
         
@@ -37,12 +32,13 @@ public class Tut001 {
 }
 
 /*
-[celta, fusca, l200, pajero]
-[celta, fusca, l200, pajero]
-true
-[]
+[Volvo, BMW, Ford, Mazda]
 --------------------------
 tempo execução em ms: 1
+
+
+
+
 
 
 
