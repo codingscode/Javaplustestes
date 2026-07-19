@@ -18,15 +18,12 @@ https://www.w3schools.com/java/java_ref_string.asp
 https://www.w3schools.com/java/java_ref_math.asp
 https://www.w3schools.com/java/java_ref_arrays.asp
 https://www.w3schools.com/java/java_ref_arraylist.asp
-
-
-
-
 https://www.w3schools.com/java/java_ref_linkedlist.asp
-offer
 
 
 
+https://www.w3schools.com/java/java_ref_hashmap.asp
+https://www.w3schools.com/java/ref_hashmap_compute.asp
 
 
 

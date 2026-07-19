@@ -14,20 +14,6 @@ public class Tut001 {
 		
 		System.out.println(produtos);
 		
-		HashMap<String, Integer> copia = (HashMap<String, Integer>) produtos.clone();
-				
-		System.out.println(copia);
-		
-		copia.remove("mouse");
-		
-		System.out.println(copia);
-		
-		System.out.println(produtos);
-		
-		produtos.clear();
-		System.out.println(produtos);
-		
-		
 		System.out.println("--------------------------");
 
 		// Your code here
@@ -43,10 +29,6 @@ public class Tut001 {
 
 /*
 {cpu=120, mouse=30, teclado=40, pendrive=20, ssd=200}
-{cpu=120, mouse=30, teclado=40, pendrive=20, ssd=200}
-{cpu=120, teclado=40, pendrive=20, ssd=200}
-{cpu=120, mouse=30, teclado=40, pendrive=20, ssd=200}
-{}
 --------------------------
 tempo execução em ms: 0
 
