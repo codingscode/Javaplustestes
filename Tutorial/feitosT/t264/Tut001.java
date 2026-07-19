@@ -9,13 +9,23 @@ public class Tut001 {
 		long startTime = System.nanoTime();
 		
         // metodos LinkedList(encadeado ordem de inserção)
-		LinkedList<String> carros = new LinkedList<String>(List.of("mercedez", "ferrari", "vectra", "l200", "pajero"));
+		LinkedList<String> carros = new LinkedList<String>(List.of("mercedez", "ferrari", "celta", "fusca", "vectra", "l200", "pajero"));
 		
-		LinkedList<String> carros2 = new LinkedList<String>(List.of("mercedez", "ferrari", "celta", "fusca", "vectra"));
+		System.out.println(carros);
+
+		carros.removeFirst(); // tira primeiro
 		
 		System.out.println(carros);
 		
-		carros.retainAll(carros2); // comum
+		carros.removeLast(); // tira ultimo
+		
+		System.out.println(carros);
+		
+		carros.removeIf(cada -> cada.charAt(0) == 'v');
+		
+		System.out.println(carros);
+		
+		carros.removeAll(carros);
 		
 		System.out.println(carros);
 		
@@ -34,10 +44,13 @@ public class Tut001 {
 }
 
 /*
-[mercedez, ferrari, vectra, l200, pajero]
-[mercedez, ferrari, vectra]
+[mercedez, ferrari, celta, fusca, vectra, l200, pajero]
+[ferrari, celta, fusca, vectra, l200, pajero]
+[ferrari, celta, fusca, vectra, l200]
+[ferrari, celta, fusca, l200]
+[]
 --------------------------
-tempo execução em ms: 1
+tempo execução em ms: 9
 
 
 
