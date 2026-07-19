@@ -23,7 +23,7 @@ https://www.w3schools.com/java/java_ref_arraylist.asp
 
 
 https://www.w3schools.com/java/java_ref_linkedlist.asp
-https://www.w3schools.com/java/ref_linkedlist_foreach.asp
+offer
 
 
 
