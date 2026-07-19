@@ -1,5 +1,6 @@
 package programa;
 
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -9,10 +10,15 @@ public class Tut001 {
 		long startTime = System.nanoTime();
 		
         // metodos LinkedList(encadeado ordem de inserção)
-		LinkedList<String> carros = new LinkedList<String>(List.of("celta", "fusca", "l200", "pajero", "fusca"));
+		LinkedList<String> carros = new LinkedList<String>(List.of("celta", "fusca", "l200", "pajero"));
 				
-		System.out.println(carros.indexOf("fusca"));
-		System.out.println(carros.lastIndexOf("fusca"));
+		// Get the iterator
+	    Iterator<String> it = carros.iterator();
+	    
+	    // Loop through a collection
+	    while(it.hasNext()) {
+	       System.out.println(it.next());
+	    }
 		
         
 		System.out.println("--------------------------");
@@ -29,8 +35,10 @@ public class Tut001 {
 }
 
 /*
-1
-4
+celta
+fusca
+l200
+pajero
 --------------------------
 tempo execução em ms: 1
 
