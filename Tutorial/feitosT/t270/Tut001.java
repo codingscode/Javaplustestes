@@ -18,7 +18,7 @@ public class Tut001 {
 				
 		System.out.println(produtos);
 		
-		produtos.computeIfPresent("pvideo", (k, v) -> v/2);
+		produtos.computeIfAbsent("webcam", (k) -> 40);
 		
 		System.out.println(produtos);
 		
@@ -37,9 +37,9 @@ public class Tut001 {
 }
 
 /*
-{cpu=120, mouse=30, teclado=40, ssd=200, pendrive=20}
-{cpu=120, mouse=30, teclado=40, ssd=200, pendrive=20, pvideo=100}
-{cpu=120, mouse=30, teclado=40, ssd=200, pendrive=20, pvideo=50}
+{mouse=30, cpu=120, teclado=40, pendrive=20, ssd=200}
+{mouse=30, cpu=120, teclado=40, pendrive=20, ssd=200, pvideo=100}
+{mouse=30, cpu=120, teclado=40, webcam=40, pendrive=20, ssd=200, pvideo=100}
 --------------------------
 tempo execução em ms: 8
 

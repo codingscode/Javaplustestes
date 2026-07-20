@@ -18,7 +18,7 @@ public class Tut001 {
 				
 		System.out.println(produtos);
 		
-		produtos.computeIfPresent("pvideo", (k, v) -> v/2);
+		produtos.compute("mouse", (k, v) -> 2*v);
 		
 		System.out.println(produtos);
 		
@@ -39,9 +39,9 @@ public class Tut001 {
 /*
 {cpu=120, mouse=30, teclado=40, ssd=200, pendrive=20}
 {cpu=120, mouse=30, teclado=40, ssd=200, pendrive=20, pvideo=100}
-{cpu=120, mouse=30, teclado=40, ssd=200, pendrive=20, pvideo=50}
+{cpu=120, mouse=60, teclado=40, ssd=200, pendrive=20, pvideo=100}
 --------------------------
-tempo execução em ms: 8
+tempo execução em ms: 13
 
 
 

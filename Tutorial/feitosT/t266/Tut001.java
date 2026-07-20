@@ -10,6 +10,7 @@ public class Tut001 {
 		long startTime = System.nanoTime();
 		
         // metodos LinkedList(encadeado ordem de inserção)
+		// replaceAll
 		LinkedList<String> nomes = new LinkedList<String>(List.of("mel", "aladim", "lily", "apolo", "pituxo"));
 		
 		System.out.println(nomes);
