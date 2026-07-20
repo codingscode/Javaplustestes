@@ -15,10 +15,11 @@ public class Tut001 {
 		System.out.println(produtos);
 		
 		produtos.put("pvideo", 100);
-		
+				
 		System.out.println(produtos);
 		
-		produtos.forEach((c,v) -> System.out.println(c));
+		System.out.println(produtos.containsValue(40));
+		System.out.println(produtos.containsValue(25));
 		
 		
 		System.out.println("--------------------------");
@@ -35,16 +36,12 @@ public class Tut001 {
 }
 
 /*
-{mouse=30, cpu=120, teclado=40, ssd=200, pendrive=20}
-{mouse=30, cpu=120, teclado=40, ssd=200, pendrive=20, pvideo=100}
-mouse
-cpu
-teclado
-ssd
-pendrive
-pvideo
+{cpu=120, mouse=30, teclado=40, pendrive=20, ssd=200}
+{cpu=120, mouse=30, teclado=40, pendrive=20, ssd=200, pvideo=100}
+true
+false
 --------------------------
-tempo execução em ms: 9
+tempo execução em ms: 0
 
 
 

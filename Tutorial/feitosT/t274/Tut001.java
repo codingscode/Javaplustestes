@@ -18,7 +18,7 @@ public class Tut001 {
 		
 		System.out.println(produtos);
 		
-		produtos.forEach((c,v) -> System.out.println(c));
+		System.out.println(produtos.entrySet()); // aparece com colchetes
 		
 		
 		System.out.println("--------------------------");
@@ -35,16 +35,11 @@ public class Tut001 {
 }
 
 /*
-{mouse=30, cpu=120, teclado=40, ssd=200, pendrive=20}
-{mouse=30, cpu=120, teclado=40, ssd=200, pendrive=20, pvideo=100}
-mouse
-cpu
-teclado
-ssd
-pendrive
-pvideo
+{mouse=30, cpu=120, teclado=40, pendrive=20, ssd=200}
+{mouse=30, cpu=120, teclado=40, pendrive=20, ssd=200, pvideo=100}
+[mouse=30, cpu=120, teclado=40, pendrive=20, ssd=200, pvideo=100]
 --------------------------
-tempo execução em ms: 9
+tempo execução em ms: 0
 
 
 
