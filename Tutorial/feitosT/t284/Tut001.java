@@ -10,21 +10,14 @@ public class Tut001 {
         // metodos Scanner
 		// 
 		      
-		// Create a scanner object
-		Scanner meu_objeto = new Scanner("Please send an email to info@example.com for more details.");
-
-		// Get the email address with a pattern
-		String email = meu_objeto.findInLine("[a-zA-Z]+@[a-zA-Z]+.[a-zA-Z]{2,}");
-
-		// Show the email if found
-		if (email != null) {
-		   System.out.println(email);
-		} else {
-		   System.out.println("nenhum email encontrado.");
-		}
+		Scanner meu_objeto = new Scanner("uma string para scanear");
+		      
+		// Find the delimiter
+		System.out.println(meu_objeto.delimiter());
 
 		// Close the scanner
 		meu_objeto.close();
+		
 				
 		System.out.println("--------------------------");
 
@@ -40,9 +33,9 @@ public class Tut001 {
 }
 
 /*
-info@example.com
+\p{javaWhitespace}+
 --------------------------
-tempo execução em ms: 35
+tempo execução em ms: 34
 
 
 
