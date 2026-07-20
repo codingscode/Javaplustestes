@@ -1,6 +1,5 @@
 package programa;
 
-import java.util.Locale;
 import java.util.Scanner;
 
 public class Tut001 {
@@ -9,26 +8,19 @@ public class Tut001 {
 		long startTime = System.nanoTime();
 		
         // metodos Scanner
-		// .useDelimiter(), .hasNextBoolean(), 
-		
-		Locale.setDefault(Locale.US); 
+		// 
 		      
 		// Create a scanner object
-		Scanner meu_objeto = new Scanner("a chance 45.8 porcento.");
+		Scanner meu_objeto = new Scanner("aladim@gmail.com melzinha123@hotmail.com lily81@yahoo.com");
+
+		//meu_objeto.useDelimiter("@");
 		
-		
-		while(meu_objeto.hasNext()) {
-		  if(meu_objeto.hasNextDouble()) {
-		    double valor = meu_objeto.nextDouble();
-            System.out.println(valor);
-		  }
-		  else {
-			  meu_objeto.next();
-		  }
-		  
+		// Read every token
+		while (meu_objeto.hasNext()) {
+		   System.out.println(meu_objeto.next());
 		}
-		meu_objeto.close();
 		
+		meu_objeto.close();
 				
 		System.out.println("--------------------------");
 
@@ -44,9 +36,11 @@ public class Tut001 {
 }
 
 /*
-45.8
+aladim@gmail.com
+melzinha123@hotmail.com
+lily81@yahoo.com
 --------------------------
-tempo execução em ms: 37
+tempo execução em ms: 35
 
 
 

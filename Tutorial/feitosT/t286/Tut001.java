@@ -1,6 +1,5 @@
 package programa;
 
-import java.util.Locale;
 import java.util.Scanner;
 
 public class Tut001 {
@@ -9,26 +8,23 @@ public class Tut001 {
 		long startTime = System.nanoTime();
 		
         // metodos Scanner
-		// .useDelimiter(), .hasNextBoolean(), 
-		
-		Locale.setDefault(Locale.US); 
+		// 
 		      
 		// Create a scanner object
-		Scanner meu_objeto = new Scanner("a chance 45.8 porcento.");
-		
-		
-		while(meu_objeto.hasNext()) {
-		  if(meu_objeto.hasNextDouble()) {
-		    double valor = meu_objeto.nextDouble();
-            System.out.println(valor);
-		  }
-		  else {
-			  meu_objeto.next();
-		  }
-		  
+		Scanner meu_objeto = new Scanner("aladim@gmail.com melzinha123@hotmail.com lily81@yahoo.com");
+
+		// Get the email address with a pattern
+		String email = meu_objeto.findWithinHorizon("[a-zA-Z]+@[a-zA-Z]+.[a-zA-Z]{2,}", 0); // encontra 1ª combinação
+
+		// Show the email if found
+		if (email != null) {
+		   System.out.println(email);
+		} else {
+		   System.out.println("nenhum email encontrado.");
 		}
+
+		// Close the scanner
 		meu_objeto.close();
-		
 				
 		System.out.println("--------------------------");
 
@@ -44,9 +40,9 @@ public class Tut001 {
 }
 
 /*
-45.8
+aladim@gmail.com
 --------------------------
-tempo execução em ms: 37
+tempo execução em ms: 35
 
 
 
