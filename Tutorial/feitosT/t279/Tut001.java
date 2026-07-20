@@ -13,15 +13,22 @@ public class Tut001 {
 		HashMap<String, Integer> produtos = new HashMap<>(Map.of(
 				"pendrive", 20, "ssd", 200, "mouse", 30, "teclado", 40, "cpu", 120));		
 		
+		HashMap<String, Integer> lista = new HashMap<>(Map.of("cha_gelado", 6, "pacoca", 5));
+		
 		
 		System.out.println(produtos);
 		
-		System.out.println(produtos.size());
+		produtos.put("pvideo", 93);
 		
-		System.out.println(produtos.values());
+		System.out.println(produtos);
 		
-		System.out.println( (produtos.values()).getClass().getSimpleName() );
+		produtos.putAll(lista);
 		
+		System.out.println(produtos);
+		
+		produtos.putIfAbsent("webcam", 21);
+		
+		System.out.println(produtos);
 				
 		System.out.println("--------------------------");
 
@@ -37,10 +44,10 @@ public class Tut001 {
 }
 
 /*
-{mouse=30, cpu=120, teclado=40, ssd=200, pendrive=20}
-5
-[30, 120, 40, 200, 20]
-Values
+{mouse=30, cpu=120, teclado=40, pendrive=20, ssd=200}
+{mouse=30, cpu=120, teclado=40, pendrive=20, ssd=200, pvideo=93}
+{mouse=30, teclado=40, pendrive=20, ssd=200, pvideo=93, cpu=120, cha_gelado=6, pacoca=5}
+{mouse=30, teclado=40, pendrive=20, ssd=200, pvideo=93, webcam=21, cpu=120, cha_gelado=6, pacoca=5}
 --------------------------
 tempo execução em ms: 0
 

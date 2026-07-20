@@ -16,11 +16,10 @@ public class Tut001 {
 		
 		System.out.println(produtos);
 		
-		System.out.println(produtos.size());
+		produtos.remove("teclado");
+		produtos.remove("mouse", 8); // só remove se o segundo bater
 		
-		System.out.println(produtos.values());
-		
-		System.out.println( (produtos.values()).getClass().getSimpleName() );
+		System.out.println(produtos);
 		
 				
 		System.out.println("--------------------------");
@@ -38,9 +37,7 @@ public class Tut001 {
 
 /*
 {mouse=30, cpu=120, teclado=40, ssd=200, pendrive=20}
-5
-[30, 120, 40, 200, 20]
-Values
+{mouse=30, cpu=120, ssd=200, pendrive=20}
 --------------------------
 tempo execução em ms: 0
 

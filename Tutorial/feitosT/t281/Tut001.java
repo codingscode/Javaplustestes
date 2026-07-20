@@ -16,11 +16,16 @@ public class Tut001 {
 		
 		System.out.println(produtos);
 		
-		System.out.println(produtos.size());
+		produtos.replace("ssd", 180);
+		produtos.replace("teclado", 50);
+		produtos.replace("pendrive", 15, 24); // so faz se o segundo bater
+				
+		System.out.println(produtos);
 		
-		System.out.println(produtos.values());
+		produtos.replaceAll((c,v) -> v + 5);
 		
-		System.out.println( (produtos.values()).getClass().getSimpleName() );
+		
+		System.out.println(produtos);
 		
 				
 		System.out.println("--------------------------");
@@ -37,12 +42,11 @@ public class Tut001 {
 }
 
 /*
-{mouse=30, cpu=120, teclado=40, ssd=200, pendrive=20}
-5
-[30, 120, 40, 200, 20]
-Values
+{mouse=30, cpu=120, teclado=40, pendrive=20, ssd=200}
+{mouse=30, cpu=120, teclado=50, pendrive=20, ssd=180}
+{mouse=35, cpu=125, teclado=55, pendrive=25, ssd=185}
 --------------------------
-tempo execução em ms: 0
+tempo execução em ms: 8
 
 
 
