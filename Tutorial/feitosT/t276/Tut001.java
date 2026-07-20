@@ -9,16 +9,20 @@ public class Tut001 {
 		long startTime = System.nanoTime();
 		
         // metodos HashMap
-		// merge -> em chave valor, atribui ou cria outro valor a valor e/ou cria outra chave
+		// .get(chave)
 		HashMap<String, Integer> produtos = new HashMap<>(Map.of(
 				"pendrive", 20, "ssd", 200, "mouse", 30, "teclado", 40, "cpu", 120));		
 		
 		System.out.println(produtos);
 		
-		produtos.merge("webcam", 23, (c,v) -> v + 10); // nao existe mas cria
-		produtos.merge("mouse", 40, (c,v) -> v - 12); // existe e modifica
-
+		produtos.put("pvideo", 100);
+		
 		System.out.println(produtos);
+		
+		System.out.println(produtos.get("mouse"));
+		System.out.println(produtos.getOrDefault("teclado", 10));
+		System.out.println(produtos.getOrDefault("webcam", 0));
+		
 		
 		System.out.println("--------------------------");
 
@@ -34,10 +38,13 @@ public class Tut001 {
 }
 
 /*
-{mouse=30, cpu=120, teclado=40, ssd=200, pendrive=20}
-{mouse=28, cpu=120, teclado=40, webcam=23, ssd=200, pendrive=20}
+{cpu=120, mouse=30, teclado=40, pendrive=20, ssd=200}
+{cpu=120, mouse=30, teclado=40, pendrive=20, ssd=200, pvideo=100}
+30
+40
+0
 --------------------------
-tempo execução em ms: 9
+tempo execução em ms: 0
 
 
 
