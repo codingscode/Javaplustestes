@@ -1,5 +1,9 @@
 package programa;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 public class Tut001 {
 	
 	public static void main(String[] args) {
@@ -7,16 +11,14 @@ public class Tut001 {
 		
         // 
 		// 
-		int[] fonte = {10, 20, 30, 40, 50, 60};
-        int[] destino = new int[4]; // Must be initialized first
-
-        // Copy elements 30, 40, 50 (indices 2, 3, 4) into destination starting at index 1
-        System.arraycopy(fonte, 2, destino, 1, 3);
-
-        // Print destination contents: [0, 30, 40, 50]
-        for (int cada : destino) {
-            System.out.println(cada);
-        }
+		ArrayList<Integer> numeros1 = new ArrayList<>(List.of(12, 5, 10, 3, 8, 4));
+		
+				
+		System.out.println(numeros1);
+		
+		Collections.fill(numeros1, 0);
+		
+		System.out.println(numeros1);
 		
 		System.out.println("--------------------------");
 
@@ -32,10 +34,8 @@ public class Tut001 {
 }
 
 /*
-0
-30
-40
-50
+[12, 5, 10, 3, 8, 4]
+[0, 0, 0, 0, 0, 0]
 --------------------------
 tempo execução em ms: 0
 
