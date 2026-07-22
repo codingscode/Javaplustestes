@@ -26,7 +26,7 @@ https://www.w3schools.com/java/java_ref_file.asp
 
 
 https://www.w3schools.com/java/java_ref_collections.asp
-reverse()
+copy()
 
 
 
