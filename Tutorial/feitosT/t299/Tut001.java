@@ -13,13 +13,14 @@ public class Tut001 {
 		// 
 		ArrayList<Integer> numeros = new ArrayList<>(List.of(12, 5, 10, 3, 8, 4));
 		
-		System.out.println(numeros);
+		ArrayList<String> frutas = new ArrayList<>(List.of("laranja", "uva", "laranja", "laranja", "maca", "graviola"));
 		
-		Integer maximo = Collections.max(numeros);
-		Integer minimo = Collections.min(numeros);
+		System.out.println(frutas);
 		
-		System.out.println(maximo);
-		System.out.println(minimo);
+		// frequencia laranja
+        int cont = Collections.frequency(frutas, "laranja");
+        
+		System.out.println(cont);
 		
 		System.out.println("--------------------------");
 
@@ -35,8 +36,7 @@ public class Tut001 {
 }
 
 /*
-[12, 5, 10, 3, 8, 4]
-12
+[laranja, uva, laranja, laranja, maca, graviola]
 3
 --------------------------
 tempo execução em ms: 0

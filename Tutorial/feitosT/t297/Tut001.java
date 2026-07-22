@@ -11,15 +11,17 @@ public class Tut001 {
 		
         // 
 		// 
+		
 		ArrayList<Integer> numeros = new ArrayList<>(List.of(12, 5, 10, 3, 8, 4));
 		
 		System.out.println(numeros);
 		
-		Integer maximo = Collections.max(numeros);
-		Integer minimo = Collections.min(numeros);
+		// Sort in descending order
+		numeros.sort(Collections.reverseOrder());
 		
-		System.out.println(maximo);
-		System.out.println(minimo);
+		
+		System.out.println(numeros);
+				
 		
 		System.out.println("--------------------------");
 
@@ -36,10 +38,14 @@ public class Tut001 {
 
 /*
 [12, 5, 10, 3, 8, 4]
-12
-3
+[12, 10, 8, 5, 4, 3]
 --------------------------
 tempo execução em ms: 0
+
+
+
+
+
 
 
 */
