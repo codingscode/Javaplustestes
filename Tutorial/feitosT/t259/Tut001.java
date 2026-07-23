@@ -20,7 +20,6 @@ public class Tut001 {
 	       System.out.println(it.next());
 	    }
 		
-        
 		System.out.println("--------------------------");
 
 		// Your code here

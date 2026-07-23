@@ -31,15 +31,7 @@ public class Tut001 {
 }
 
 /*
-celta
-fusca
-l200
-pajero
----
-pajero
-l200
-fusca
-celta
+[celta, fusca, l200, pajero, ferrari, mercedes]
 --------------------------
 tempo execução em ms: 1
 

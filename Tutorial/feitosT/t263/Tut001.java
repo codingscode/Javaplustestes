@@ -25,8 +25,6 @@ public class Tut001 {
 		
 		System.out.println(carros);
 		
-		
-		
 		carros.remove("pajero");
 		
 		System.out.println(carros);

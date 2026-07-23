@@ -14,6 +14,7 @@ public class Tut001 {
 	    System.out.println(carros);
 	    
 	    LinkedList<String> carros2 = (LinkedList<String>) carros.clone();
+	    
 	    System.out.println(carros2);
 	    
 	    System.out.println(carros2.contains("fusca"));
