@@ -11,7 +11,6 @@ public class Tut001 {
         // metodos LinkedList
 		LinkedList<String> carros = new LinkedList<String>(List.of("celta", "fusca", "l200", "pajero"));
 		
-		
 	    System.out.println(carros);
 		
         

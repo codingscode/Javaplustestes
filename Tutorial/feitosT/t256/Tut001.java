@@ -18,7 +18,6 @@ public class Tut001 {
 	    
 	    System.out.println(carros2.contains("fusca"));
 	    
-	    
 	    carros.clear();
 	    
 	    System.out.println(carros);

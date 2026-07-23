@@ -13,7 +13,7 @@ public class Tut001 {
 				
 	    System.out.println(carros);
 	    
-	    carros.add(2, "d20");
+	    carros.add(2, "d20"); // insere no indice e afasta o resto
 	    
 	    System.out.println(carros);
 		
