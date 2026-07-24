@@ -18,7 +18,7 @@ public class Tut001 {
 				
 		System.out.println(produtos);
 		
-		produtos.compute("mouse", (k, v) -> 2*v);
+		produtos.compute("mouse", (c, v) -> 2*v); // chave e valor
 		
 		System.out.println(produtos);
 		
