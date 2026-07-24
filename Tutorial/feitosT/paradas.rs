@@ -36,7 +36,7 @@ fazer revisao
 
 fazer revisão: t007, fim, t030,t032,fim,t040,t047,fim,t058,t066,t068,fim,t084,fim,t105,fim,
       t111,t122,fim,129,134,fim,138,142,143,fim,157,188,1995,214,222,234,240,250,fim,
-	  265,274
+	  265,281,
 
 
 
@@ -80,6 +80,10 @@ Soluções consagradas para problemas recorrentes na arquitetura de software. En
 Escrever código testável é uma habilidade de projeto indispensável. Dominar frameworks de testes, como o JUnit e o Mockito para isolar componentes, garante a estabilidade e a qualidade da aplicação à medida que ela cresce. 
 
 
+
+
+
+(a) orientação a objetos (b) programação funcional (c) programação estruturada/procedural (d) programação orientada a objetos ?
 
 
 

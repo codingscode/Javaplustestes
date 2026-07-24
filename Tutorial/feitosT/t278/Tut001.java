@@ -16,6 +16,9 @@ public class Tut001 {
 		System.out.println(produtos);
 		
 		produtos.merge("webcam", 23, (c,v) -> v + 10); // nao existe mas cria
+		
+		System.out.println(produtos);
+		
 		produtos.merge("mouse", 40, (c,v) -> v - 12); // existe e modifica
 
 		System.out.println(produtos);
@@ -35,6 +38,7 @@ public class Tut001 {
 
 /*
 {mouse=30, cpu=120, teclado=40, ssd=200, pendrive=20}
+{mouse=30, cpu=120, teclado=40, webcam=23, ssd=200, pendrive=20}
 {mouse=28, cpu=120, teclado=40, webcam=23, ssd=200, pendrive=20}
 --------------------------
 tempo execução em ms: 9
