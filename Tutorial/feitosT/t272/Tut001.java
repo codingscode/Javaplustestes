@@ -15,7 +15,7 @@ public class Tut001 {
 		System.out.println(produtos);
 		
 		produtos.put("pvideo", 100);
-				
+		
 		System.out.println(produtos);
 		
 		System.out.println(produtos.containsKey("ssd"));
