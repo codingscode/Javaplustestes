@@ -25,7 +25,6 @@ public class Tut001 {
 		Collections.reverse(numeros);
 		
 		System.out.println(numeros);
-				
 		
 		System.out.println("--------------------------");
 
@@ -47,10 +46,6 @@ public class Tut001 {
 [4, 8, 3, 10, 5, 12]
 --------------------------
 tempo execução em ms: 1
-
-
-
-
 
 
 

@@ -16,7 +16,7 @@ public class Tut001 {
 		
 		System.out.println(numeros);
 		
-		numeros.sort(null);
+		numeros.sort(null); // ordena
 		
 		System.out.println(numeros);
 		
@@ -31,7 +31,8 @@ public class Tut001 {
             System.out.print(" ");
             System.out.print("encontrado no indice: ");
             System.out.println(indiceResultado);
-        } else {
+        }
+        else {
             System.out.println("Elemento não encontrado.");
         }
 		

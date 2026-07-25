@@ -19,9 +19,7 @@ public class Tut001 {
 		// Sort in descending order
 		numeros.sort(Collections.reverseOrder());
 		
-		
 		System.out.println(numeros);
-				
 		
 		System.out.println("--------------------------");
 

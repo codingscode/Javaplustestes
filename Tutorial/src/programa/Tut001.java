@@ -1,5 +1,8 @@
 package programa;
 
+import java.util.Locale;
+import java.util.Scanner;
+
 public class Tut001 {
 	
 	public static void main(String[] args) {
@@ -7,9 +10,26 @@ public class Tut001 {
 		
         // 
 		// 
+        Locale.setDefault(Locale.US);
 		
+		// Create a scanner object
+		Scanner meu_objeto = new Scanner("A string to scan");
+
+		// Change configuration
+		meu_objeto.useDelimiter(",");
+		meu_objeto.useRadix(16);
+
+		System.out.println(meu_objeto.delimiter());
 		
+		// Reset the configuration
+		meu_objeto.reset();
+
+		// Read configuration values
+		System.out.println(meu_objeto.delimiter());
+		System.out.println(meu_objeto.locale());
+		System.out.println(meu_objeto.radix());
 		
+		meu_objeto.close();
 		
 		System.out.println("--------------------------");
 
@@ -25,10 +45,12 @@ public class Tut001 {
 }
 
 /*
-[12, 14, 16, 18]
-[12, 16, 18]
+,
+\p{javaWhitespace}+
+en_US
+10
 --------------------------
-tempo execução em ms: 1
+tempo execução em ms: 33
 
 
 
