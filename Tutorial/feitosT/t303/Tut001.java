@@ -12,11 +12,10 @@ public class Tut001 {
         // 
 		// 
 		ArrayList<Integer> numeros1 = new ArrayList<>(List.of(12, 5, 10, 3, 8, 4));
-		
 				
 		System.out.println(numeros1);
 		
-		Collections.fill(numeros1, 0);
+		Collections.fill(numeros1, 0); // preenche tudo com 0
 		
 		System.out.println(numeros1);
 		

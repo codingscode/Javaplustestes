@@ -15,8 +15,8 @@ public class Tut001 {
 		
 		System.out.println(numeros);
 		
-		Integer maximo = Collections.max(numeros);
-		Integer minimo = Collections.min(numeros);
+		int maximo = Collections.max(numeros);
+		int minimo = Collections.min(numeros);
 		
 		System.out.println(maximo);
 		System.out.println(minimo);

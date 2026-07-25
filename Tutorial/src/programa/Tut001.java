@@ -1,7 +1,8 @@
 package programa;
 
-import java.util.Locale;
-import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 public class Tut001 {
 	
@@ -10,26 +11,16 @@ public class Tut001 {
 		
         // 
 		// 
-        Locale.setDefault(Locale.US);
+ArrayList<Integer> numeros = new ArrayList<>(List.of(12, 5, 10, 3, 8, 4));
 		
-		// Create a scanner object
-		Scanner meu_objeto = new Scanner("A string to scan");
-
-		// Change configuration
-		meu_objeto.useDelimiter(",");
-		meu_objeto.useRadix(16);
-
-		System.out.println(meu_objeto.delimiter());
+		System.out.println(numeros);
 		
-		// Reset the configuration
-		meu_objeto.reset();
-
-		// Read configuration values
-		System.out.println(meu_objeto.delimiter());
-		System.out.println(meu_objeto.locale());
-		System.out.println(meu_objeto.radix());
+		int maximo = Collections.max(numeros);
+		int minimo = Collections.min(numeros);
 		
-		meu_objeto.close();
+		System.out.println(maximo);
+		System.out.println(minimo);
+		
 		
 		System.out.println("--------------------------");
 
@@ -46,11 +37,10 @@ public class Tut001 {
 
 /*
 ,
-\p{javaWhitespace}+
-en_US
-10
+[laranja, uva, laranja, laranja, maca, graviola]
+3
 --------------------------
-tempo execução em ms: 33
+tempo execução em ms: 0
 
 
 

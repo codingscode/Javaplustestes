@@ -12,10 +12,9 @@ public class Tut001 {
 		// 
 		ArrayList<Integer> numeros1 = new ArrayList<>(List.of(12, 5, 10, 3, 8, 4));
 		
-				
 		System.out.println(numeros1);
 		
-		numeros1.replaceAll(cada -> cada +1);
+		numeros1.replaceAll(cada -> cada + 1);
 		
 		System.out.println(numeros1);
 		
