@@ -19,7 +19,8 @@ public class Tut001 {
 		// Show the email if found
 		if (email != null) {
 		   System.out.println(email);
-		} else {
+		}
+		else {
 		   System.out.println("nenhum email encontrado.");
 		}
 

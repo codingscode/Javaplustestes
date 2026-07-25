@@ -27,10 +27,7 @@ public class Tut001 {
 		   System.out.println("um erro ocorreu.");
 		   e.printStackTrace();
 		}
-		
-		
-		
-				
+						
 		System.out.println("--------------------------");
 
 		// Your code here

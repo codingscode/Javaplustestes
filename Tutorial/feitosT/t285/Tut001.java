@@ -9,7 +9,7 @@ public class Tut001 {
 		
         // metodos Scanner
 		// 
-		      
+		
 		// Create a scanner object
 		Scanner meu_objeto = new Scanner("Please send an email to info@example.com for more details.");
 
@@ -19,7 +19,8 @@ public class Tut001 {
 		// Show the email if found
 		if (email != null) {
 		   System.out.println(email);
-		} else {
+		}
+		else {
 		   System.out.println("nenhum email encontrado.");
 		}
 

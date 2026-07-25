@@ -22,11 +22,9 @@ public class Tut001 {
 				
 		System.out.println(produtos);
 		
-		produtos.replaceAll((c,v) -> v + 5);
-		
+		produtos.replaceAll((c,v) -> v + 5); // chave e valor
 		
 		System.out.println(produtos);
-		
 				
 		System.out.println("--------------------------");
 
