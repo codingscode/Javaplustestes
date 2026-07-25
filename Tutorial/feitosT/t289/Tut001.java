@@ -18,13 +18,13 @@ public class Tut001 {
 		
 		
 		while(meu_objeto.hasNext()) {
-		  if(meu_objeto.hasNextDouble()) {
-		    double valor = meu_objeto.nextDouble();
-            System.out.println(valor);
-		  }
-		  else {
-			  meu_objeto.next();
-		  }
+		   if(meu_objeto.hasNextDouble()) {
+		      double valor = meu_objeto.nextDouble();
+              System.out.println(valor);
+		   }
+		   else {
+		      meu_objeto.next();
+		   }
 		  
 		}
 		meu_objeto.close();

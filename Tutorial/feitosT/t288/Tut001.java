@@ -15,11 +15,12 @@ public class Tut001 {
 		
 		// Print the value of every byte in the scanner
 		while(meu_objeto.hasNext()) {
-		  if(meu_objeto.hasNextByte()) {
-		    System.out.println(meu_objeto.nextByte());
-		  } else {
-			  meu_objeto.next();
-		  }
+		   if(meu_objeto.hasNextByte()) {
+		      System.out.println(meu_objeto.nextByte());
+		   }
+		   else {
+		      meu_objeto.next();
+		   }
 		}
 		
 		meu_objeto.close();

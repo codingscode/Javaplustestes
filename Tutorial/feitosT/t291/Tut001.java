@@ -14,20 +14,19 @@ public class Tut001 {
 		Locale.setDefault(Locale.US); 
 		      
 		// Create a scanner object
-		Scanner meu_objeto = new Scanner("um inteiro é um número entre -2,147,483,648 and 2,147,483,647");
+		Scanner meu_objeto = new Scanner("um inteiro é um número entre -2,147,483,648 e 2,147,483,647");
 		
 		while(meu_objeto.hasNext()) {
-		  if(meu_objeto.hasNextInt()) {
-		    System.out.println(meu_objeto.nextInt());
-		  }
-		  else {
-			  meu_objeto.next();
-		  }
-		  
+		   if(meu_objeto.hasNextInt()) {
+		      System.out.println(meu_objeto.nextInt());
+		   }
+		   else {
+		      meu_objeto.next();
+		   }
 		}
-		meu_objeto.close();
 		
-				
+		meu_objeto.close();
+						
 		System.out.println("--------------------------");
 
 		// Your code here
