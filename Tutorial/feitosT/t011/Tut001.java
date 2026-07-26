@@ -7,10 +7,10 @@ public class Tut001 {
 
 		int[] lista = {5, 2, 7, 4};
 
+		
 		for (int cada : lista) {
 			System.out.println(cada);
 		}
-		
 		
 		System.out.println("--------------------------");
 

@@ -11,7 +11,7 @@ public class Tut001 {
 			System.out.println(num);
 			num += 1;
 		}
-		while (num <6 );
+		while (num < 6 );
 		
 		System.out.println("--------------------------");
 

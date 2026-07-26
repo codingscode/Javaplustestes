@@ -32,9 +32,15 @@ public class Tut001 {
 1
 2
 3
+5
+6
+7
+8
+9
+
 --------------------------
-tempo execução em ms:
-0
+tempo execução em ms: 0
+
 
 
 */
