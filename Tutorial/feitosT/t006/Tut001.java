@@ -24,7 +24,7 @@ public class Tut001 {
         System.out.println("--------------------------");
         
         double ale1 = Math.random();
-        int ale2 = (int) (Math.random() * 101);
+        int ale2 = (int) (Math.random() * 101); // de 0 a 100
         
         System.out.println(ale1);
         System.out.println(ale2);

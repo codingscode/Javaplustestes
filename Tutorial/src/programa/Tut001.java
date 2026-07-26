@@ -8,6 +8,14 @@ public class Tut001 {
         // 
 		// 
         
+        int valor = 1 + (int) (Math.random()*5 );
+        
+        while (valor != 1) {
+        	System.out.println(valor);
+        	valor = 1 + (int) (Math.random()*5 );
+        }
+        
+        
 		
 		
         System.out.println("");

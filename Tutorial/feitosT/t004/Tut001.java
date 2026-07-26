@@ -9,8 +9,8 @@ public class Tut001 {
         System.out.println(animal);
         System.out.println(animal.length());
         
-        System.out.println(animal.indexOf("no"));
-        System.out.println(animal.charAt(3));
+        System.out.println(animal.indexOf("no")); // 8
+        System.out.println(animal.charAt(3)); // a
 
         System.out.println("--------------------------");
         String s1 = "oi";
