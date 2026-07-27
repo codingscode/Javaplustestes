@@ -19,8 +19,6 @@ public class Tut001 {
 		System.out.println(Arrays.toString(nomes));
 		
 		
-		
-		
 		System.out.println("--------------------------");
 
 		// Your code here
