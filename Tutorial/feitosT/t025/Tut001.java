@@ -22,7 +22,6 @@ public class Tut001 {
 		objeto.saudacao();
 		System.out.println(valor(x));
 		
-		
 		System.out.println("--------------------------");
 
 		// Your code here

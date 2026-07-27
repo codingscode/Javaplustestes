@@ -26,7 +26,6 @@ public class Tut001 {
 		System.out.println(obj2.v3);
 		
 		
-		
 		System.out.println("--------------------------");
 
 		// Your code here
@@ -45,6 +44,11 @@ public class Tut001 {
 4
 12
 5
+
+3
+10
+5
+
 --------------------------
 tempo execução em ms:
 0

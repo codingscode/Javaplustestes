@@ -16,7 +16,6 @@ public class Tut001 {
 		System.out.println(meuobjeto.x);
 		
 		
-		
 		System.out.println("--------------------------");
 
 		// Your code here

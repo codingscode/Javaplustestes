@@ -5,7 +5,7 @@ public class Tut001 {
 	int idade;
 	String nome;
 	
-	public Tut001(int i, String n) {
+	public Tut001(int i, String n) { // construtor
 		idade = i;
 		nome = n;
 	}
