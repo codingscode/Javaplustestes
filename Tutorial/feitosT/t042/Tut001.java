@@ -7,6 +7,7 @@ public class Tut001 {
 		
 		// 
 		long startTime = System.nanoTime();
+		
 		Cachorro cachorro = new Cachorro();
 		cachorro.imprimaTipo();
 		

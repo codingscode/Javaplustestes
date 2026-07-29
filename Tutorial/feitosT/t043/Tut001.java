@@ -5,7 +5,7 @@ public class Tut001 {
 	
 	public static void main(String[] args) {
 		
-		// 
+		//
 		long startTime = System.nanoTime();
 		Cachorro cachorro = new Cachorro(); // chama o construtor de Cachorro
 		
