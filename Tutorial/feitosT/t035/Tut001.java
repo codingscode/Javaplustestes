@@ -15,6 +15,7 @@ public class Tut001 {
 	    System.out.println(objeto.idade);
 	    System.out.println("raça");
 	    System.out.println(objeto.raca);
+	    
 	    objeto.latir(); // call abstract method
 		
 		System.out.println("--------------------------");

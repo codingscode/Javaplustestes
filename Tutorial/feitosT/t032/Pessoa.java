@@ -2,7 +2,7 @@ package programa;
 
 class Pessoa {
 	public String nome;
-	private int idade = 30;
+	private int idade = 30; // invisivel
 	
 	
 }
