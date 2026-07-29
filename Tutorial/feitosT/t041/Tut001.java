@@ -7,6 +7,7 @@ public class Tut001 {
 		
 		// 
 		long startTime = System.nanoTime();
+		
 		Cachorro cachorro = new Cachorro();
 		cachorro.somAnimal();
 		
@@ -30,9 +31,6 @@ cachorro faz aua au
 --------------------------
 tempo execução em ms:
 0
-
-
-
 
 
 */
