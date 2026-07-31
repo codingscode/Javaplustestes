@@ -10,8 +10,6 @@ public class Tut001 {
         // 
 		// 
 		
-
-		
 		
 		System.out.println("--------------------------");
 
