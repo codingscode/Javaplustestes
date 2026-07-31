@@ -9,8 +9,8 @@ public class Tut001 {
 		long startTime = System.nanoTime();
 		
 		ClasseExterna.ClasseInterna dentro = new ClasseExterna.ClasseInterna();
+		
 		System.out.println(dentro.y);
-
 		
 		System.out.println("--------------------------");
 

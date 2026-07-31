@@ -10,9 +10,6 @@ public class Tut001 {
 		/*
         
         
-
-        
-        
 		*/
 		Cachorro objeto = new Cachorro();
 		objeto.somAnimal();
