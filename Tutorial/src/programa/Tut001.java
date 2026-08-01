@@ -9,7 +9,8 @@ public class Tut001 {
 		
         // 
 		// 
-		
+        
+
 		
 		System.out.println("--------------------------");
 
@@ -26,6 +27,9 @@ public class Tut001 {
 
 /*
 
+medio nivel
+--------------------------
+tempo execução em ms: 0
 
 
 

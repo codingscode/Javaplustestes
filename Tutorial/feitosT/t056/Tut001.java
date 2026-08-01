@@ -14,7 +14,6 @@ public class Tut001 {
 		
 		// Enum
 		
-		
 		for (Nivel cada: Nivel.values()){
 			System.out.println(cada);
 		}		

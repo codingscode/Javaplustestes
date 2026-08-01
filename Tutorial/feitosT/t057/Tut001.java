@@ -3,8 +3,6 @@ package programa;
 public class Tut001 {
 	
 	
-	
-	
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 		
@@ -32,8 +30,6 @@ medio nivel
 --------------------------
 tempo execução em ms:
 0
-
-
 
 
 
