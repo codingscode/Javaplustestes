@@ -1,6 +1,7 @@
 package programa;
 
-import java.time.LocalTime;
+import java.io.FileOutputStream;
+import java.io.IOException;
 
 public class Tut001 {
 	
@@ -11,8 +12,15 @@ public class Tut001 {
 		
         // 
 		// 
-		LocalTime objeto = LocalTime.now(); // 
-		System.out.println(objeto); //
+		try {
+			FileOutputStream output = new FileOutputStream("./src/programa/arquivo.txt");
+		    output.write("Ola".getBytes());
+		    output.close();  // must close manually
+		    System.out.println("escreveu com sucesso o arquivo.");
+		}
+		catch (IOException e) {
+			System.out.println("erro ao escrever arquivo.");
+		}
 
 		
 		System.out.println("--------------------------");
