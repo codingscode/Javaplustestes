@@ -1,5 +1,7 @@
 package programa;
 
+import java.time.LocalTime;
+
 public class Tut001 {
 	
 		
@@ -9,7 +11,8 @@ public class Tut001 {
 		
         // 
 		// 
-        
+		LocalTime objeto = LocalTime.now(); // 
+		System.out.println(objeto); //
 
 		
 		System.out.println("--------------------------");

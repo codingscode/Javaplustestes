@@ -8,7 +8,7 @@ public class Tut001 {
 		long startTime = System.nanoTime();
 		
 		LocalDateTime objeto = LocalDateTime.now(); // 
-		System.out.println(objeto); // 
+		System.out.println(objeto); // data e horario
 		
 		System.out.println("--------------------------");
 
