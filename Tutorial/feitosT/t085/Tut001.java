@@ -8,13 +8,13 @@ public class Tut001 {
 		long startTime = System.nanoTime();
 
 		ArrayList<String> carros = new ArrayList<String>();
+		
 		carros.add("celta");
 		carros.add("fusca");
 		carros.add("scudo");
 		carros.add("l200");
-	    System.out.println(carros);
-
-		
+	    
+		System.out.println(carros);
 		
 		System.out.println("--------------------------");
 
