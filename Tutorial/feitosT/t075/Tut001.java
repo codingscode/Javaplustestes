@@ -9,7 +9,7 @@ public class Tut001 {
 
 		File objeto = new File("./src/programa/meuarquivo.txt");
 
-	    if (objeto.delete()) { 
+	    if (objeto.delete()) {
 	      System.out.println("apagou o arquivo: " + objeto.getName());
 	    }
 	    else {
@@ -35,7 +35,6 @@ apagou o arquivo: meuarquivo.txt
 --------------------------
 tempo execução em ms:
 7
-
 
 
 
