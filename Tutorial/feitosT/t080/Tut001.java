@@ -8,7 +8,7 @@ public class Tut001 {
 
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
-
+        
 		// Copy image.jpg into copy.jpg
 		try (FileInputStream entrada = new FileInputStream("./src/programa/mouse.jpg");
 			FileOutputStream saida = new FileOutputStream("./src/programa/novo.jpg")) {

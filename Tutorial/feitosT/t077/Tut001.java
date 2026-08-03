@@ -15,8 +15,8 @@ public class Tut001 {
 
 	      // Read one byte at a time until end of file (-1 means "no more data")
 	      while ((i = entrada.read()) != -1) {
-	        // Convert the byte to a character and print it to the console
-	        System.out.print((char) i);
+	         // Convert the byte to a character and print it to the console
+	         System.out.print((char) i);
 	      }
 
 	    }
