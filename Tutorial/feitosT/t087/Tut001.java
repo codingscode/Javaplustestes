@@ -14,9 +14,8 @@ public class Tut001 {
 		capitalPais.put("alemanha", "berlim");
 		capitalPais.put("noruega", "oslo");
 		capitalPais.put("eua", "washington");
-	    System.out.println(capitalPais);
 
-		
+		System.out.println(capitalPais);
 		
 		System.out.println("--------------------------");
 

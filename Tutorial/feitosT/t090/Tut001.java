@@ -10,6 +10,7 @@ public class Tut001 {
 		// interface List
 		// metodo add() para adicionar
 		ArrayList<String> carros = new ArrayList<String>();
+		
 		carros.add("Volvo");
 		carros.add("BMW");
 		carros.add("Ford");
@@ -36,14 +37,6 @@ public class Tut001 {
 --------------------------
 tempo execução em ms:
 0
-
-
-
-
-
-
-
-
 
 
 */

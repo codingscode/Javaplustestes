@@ -9,14 +9,14 @@ public class Tut001 {
 
 		// HashSet nao aceita repetição
 		HashSet<String> carros = new HashSet<String>();
+		
 		carros.add("celta");
 		carros.add("fusca");
 		carros.add("scudo");
 		carros.add("celta"); // duplicado
 		carros.add("l200");
-	    System.out.println(carros);
-
 		
+	    System.out.println(carros);
 		
 		System.out.println("--------------------------");
 
