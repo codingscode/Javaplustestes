@@ -10,6 +10,7 @@ public class Tut001 {
 		// interface List
 		// metodo size() para mostrar tamanho
 		ArrayList<String> carros = new ArrayList<String>();
+		
 		carros.add("Volvo");
 		carros.add("BMW");
 		carros.add("Ford");
