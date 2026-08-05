@@ -10,10 +10,13 @@ public class Tut001 {
 		// interface List
 		// metodo remove(index) para remover elemento no tal index
 		ArrayList<String> carros = new ArrayList<String>();
+		
 		carros.add("Volvo");
 		carros.add("BMW");
 		carros.add("Ford");
 		carros.add(0, "Mazda");
+		
+		System.out.println(carros);
 		
 		carros.remove(2);
 		
@@ -34,21 +37,10 @@ public class Tut001 {
 }
 
 /*
+[Mazda, Volvo, BMW, Ford]
 [Mazda, Volvo, Ford]
 --------------------------
-tempo execução em ms:
-0
-
-
-
-
-
-
-
-
-
-
-
+tempo execução em ms: 0
 
 
 */

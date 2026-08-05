@@ -9,15 +9,16 @@ public class Tut001 {
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 		
-        ArrayList<String> carros = new ArrayList<String>();
+ArrayList<String> carros = new ArrayList<String>();
 		
 		carros.add("Volvo");
 		carros.add("BMW");
 		carros.add("Ford");
+		carros.add(0, "Mazda");
 		
 		System.out.println(carros);
 		
-		carros.add(0, "Mazda"); // insere elemento no index 0 da lista
+		carros.remove(2);
 		
 	    System.out.println(carros);
 		
