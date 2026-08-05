@@ -1,7 +1,6 @@
 package programa;
 
-import java.io.FileOutputStream;
-import java.io.IOException;
+import java.util.ArrayList;
 
 public class Tut001 {
 	
@@ -10,17 +9,18 @@ public class Tut001 {
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 		
-        // 
-		// 
-		try {
-			FileOutputStream output = new FileOutputStream("./src/programa/arquivo.txt");
-		    output.write("Ola".getBytes());
-		    output.close();  // must close manually
-		    System.out.println("escreveu com sucesso o arquivo.");
-		}
-		catch (IOException e) {
-			System.out.println("erro ao escrever arquivo.");
-		}
+        ArrayList<String> carros = new ArrayList<String>();
+		
+		carros.add("Volvo");
+		carros.add("BMW");
+		carros.add("Ford");
+		
+		System.out.println(carros);
+		
+		carros.add(0, "Mazda"); // insere elemento no index 0 da lista
+		
+	    System.out.println(carros);
+		
 
 		
 		System.out.println("--------------------------");
@@ -38,9 +38,7 @@ public class Tut001 {
 
 /*
 
-medio nivel
---------------------------
-tempo execução em ms: 0
+
 
 
 

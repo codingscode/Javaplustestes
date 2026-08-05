@@ -10,11 +10,14 @@ public class Tut001 {
 		// interface List
 		// metodo add() para adicionar
 		ArrayList<String> carros = new ArrayList<String>();
-		
+				
 		carros.add("Volvo");
 		carros.add("BMW");
 		carros.add("Ford");
-		carros.add(0, "Mazda"); // insere elemento no index 0 da lista
+		
+		System.out.println(carros);
+		
+		carros.add(0, "Mazda"); // insere elemento no index 0 da lista e afasta o resto
 		
 	    System.out.println(carros);
 		
@@ -33,10 +36,11 @@ public class Tut001 {
 }
 
 /*
+[Volvo, BMW, Ford]
 [Mazda, Volvo, BMW, Ford]
 --------------------------
-tempo execução em ms:
-0
+tempo execução em ms: 0
+
 
 
 */
