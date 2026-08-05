@@ -3,6 +3,7 @@ package programa;
 import java.util.ArrayList;
 import java.util.Collections;
 
+
 public class Tut001 {
 
 	public static void main(String[] args) {
@@ -19,7 +20,7 @@ public class Tut001 {
 		
 		System.out.println(carros);
 		
-		Collections.sort(carros);
+		Collections.sort(carros); // ordem crescente
 		
 		System.out.println(carros);
 				
