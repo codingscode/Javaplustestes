@@ -12,10 +12,12 @@ public class Tut001 {
         // LinkedList usado para manipular dados
 		// metodos usados: addFirst(), addLast(), removeFirst(), removeLast(), getFirst(), getLast() 
 		List<String> carros = new LinkedList<String>();
+		
 		carros.add("Volvo");
 		carros.add("BMW");
 		carros.add("Ford");
 		carros.add("Mazda");
+		
 	    System.out.println(carros);
 				
 		System.out.println("--------------------------");

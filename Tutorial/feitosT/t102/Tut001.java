@@ -11,6 +11,7 @@ public class Tut001 {
 		// interface List
        
 		ArrayList<Integer> numeros = new ArrayList<Integer>();
+		
 		numeros.add(33);
 		numeros.add(15);
 		numeros.add(20);
