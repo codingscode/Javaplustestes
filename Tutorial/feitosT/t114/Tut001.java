@@ -13,6 +13,7 @@ public class Tut001 {
 		// mesma ideia do ultimo
 		
 		LinkedHashMap<String, Integer> produtos = new LinkedHashMap<>();
+		
 		produtos.put("camisa", 90);
 		produtos.put("bermuda", 50);
 		produtos.put("calca", 100);
