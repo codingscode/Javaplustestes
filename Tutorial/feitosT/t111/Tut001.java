@@ -12,6 +12,7 @@ public class Tut001 {
 		// put(), get(), remove(), containsKey(), keySet()
 		
 		TreeMap<String, Integer> produtos = new TreeMap<>();
+		
 		produtos.put("camisa", 90);
 		produtos.put("bermuda", 50);
 		produtos.put("calca", 100);

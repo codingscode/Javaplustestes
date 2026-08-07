@@ -1,6 +1,7 @@
 package programa;
 
-import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
 
 public class Tut001 {
 	
@@ -9,19 +10,14 @@ public class Tut001 {
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 		
-ArrayList<String> carros = new ArrayList<String>();
+        HashMap<String, Integer> frutas = new HashMap<String, Integer>();
 		
-		carros.add("Volvo");
-		carros.add("BMW");
-		carros.add("Ford");
-		carros.add(0, "Mazda");
+		frutas.put("laranja", 4);
+		frutas.put("maca", 8);
+		frutas.put("banana", 5);
+		frutas.put("abacaxi", 4);
 		
-		System.out.println(carros);
-		
-		carros.remove(2);
-		
-	    System.out.println(carros);
-		
+		System.out.println(Arrays.toString(frutas.keySet()));
 
 		
 		System.out.println("--------------------------");
