@@ -9,6 +9,7 @@ public class Tut001 {
 		
 		// LinkedHashSet -> mantem ordem de inserção
 		LinkedHashSet<String> carros = new LinkedHashSet<>();
+		
 		carros.add("Volvo");
 		carros.add("BMW");
 		carros.add("Ford");
@@ -17,7 +18,6 @@ public class Tut001 {
 
 	    System.out.println(carros);
 	    
-
 		System.out.println("--------------------------");
 
 		// Your code here

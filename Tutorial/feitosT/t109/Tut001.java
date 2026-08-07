@@ -10,6 +10,7 @@ public class Tut001 {
 		// LinkedHashSet -> mantem ordem de inserção
 		// contains(), remove(), clear(), size()
 		LinkedHashSet<String> carros = new LinkedHashSet<>();
+		
 		carros.add("Volvo");
 		carros.add("BMW");
 		carros.add("Ford");
