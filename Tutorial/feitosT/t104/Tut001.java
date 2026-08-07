@@ -10,6 +10,7 @@ public class Tut001 {
 		// interface Set
 		// metodos -> add(), remove(), contains(), size(), clear()
 		HashSet<String> carros = new HashSet<String>();
+		
 		carros.add("Volvo");
 		carros.add("BMW");
 		carros.add("Ford");
@@ -20,7 +21,7 @@ public class Tut001 {
 	    	System.out.println(cada);
 	    }
 	    
-				
+		
 		System.out.println("--------------------------");
 
 		// Your code here
