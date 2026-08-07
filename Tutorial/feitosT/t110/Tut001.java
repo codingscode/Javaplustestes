@@ -10,6 +10,7 @@ public class Tut001 {
 		// Map interface
 		// put(), get(), remove(), containsKey(), keySet()
 		HashMap<String, Integer> frutas = new HashMap<String, Integer>();
+		
 		frutas.put("laranja", 4);
 		frutas.put("maca", 8);
 		frutas.put("banana", 5);
