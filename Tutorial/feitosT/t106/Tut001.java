@@ -9,6 +9,7 @@ public class Tut001 {
 		
 		// TreeSet -> ordena o conjunto
 		TreeSet<String> carros = new TreeSet<>();
+		
 		carros.add("Volvo");
 		carros.add("BMW");
 		carros.add("Ford");

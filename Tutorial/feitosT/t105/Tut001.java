@@ -12,6 +12,7 @@ public class Tut001 {
 		// var carros = new HashSet<String>();
 		// Set<String> carros = new HashSet<>();
 		HashSet<String> carros = new HashSet<String>();
+		
 		carros.add("Volvo");
 		carros.add("BMW");
 		carros.add("Ford");
@@ -22,7 +23,6 @@ public class Tut001 {
 	    	System.out.println(cada);
 	    }
 	    
-				
 		System.out.println("--------------------------");
 
 		// Your code here
