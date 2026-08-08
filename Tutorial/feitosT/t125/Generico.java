@@ -1,6 +1,6 @@
 package programa;
 
-public class Generic<T> {
+public class Generico<T> {
 	T valor; // T é um espaço reservado para qualquer tipo de dado
 
 	void set(T valor) {

@@ -9,11 +9,13 @@ public class Tut001 {
 		// Primitive Data Type -> int, char, double, boolean...
 
 		Integer inteiro = 100;
+		
 	    String umaString = inteiro.toString();
+	    
 	    System.out.println(umaString);
+	    
 	    System.out.println(umaString.length());
 		
-
 		System.out.println("--------------------------");
 
 		// Your code here
