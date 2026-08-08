@@ -11,6 +11,7 @@ public class Tut001 {
 		// algoritmos
 		// trocar
 		ArrayList<Integer> numeros = new ArrayList<>();
+		
 		numeros.add(8);
 		numeros.add(5);
 		numeros.add(3);
@@ -18,11 +19,11 @@ public class Tut001 {
 		numeros.add(9);
 		numeros.add(7);
 		numeros.add(5);
-		
-		
+				
 		System.out.println(numeros);
 		
 		Collections.swap(numeros, 0, 2); // Swap first and third element
+		
 		System.out.println(numeros);
 	  
 		System.out.println("--------------------------");

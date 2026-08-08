@@ -11,6 +11,7 @@ public class Tut001 {
 		// algoritmos
 		// embaralhar
 		ArrayList<Integer> numeros = new ArrayList<>();
+		
 		numeros.add(8);
 		numeros.add(5);
 		numeros.add(3);
@@ -18,6 +19,7 @@ public class Tut001 {
 		numeros.add(7);
 		
 		Collections.shuffle(numeros);
+		
 		System.out.println(numeros);
 	  
 		System.out.println("--------------------------");
