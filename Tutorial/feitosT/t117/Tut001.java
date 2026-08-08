@@ -9,6 +9,7 @@ public class Tut001 {
 		long startTime = System.nanoTime();
 		
 		ArrayList<Integer> numeros = new ArrayList<Integer>();
+		
 		numeros.add(12);
 		numeros.add(8);
 		numeros.add(2);
@@ -18,8 +19,9 @@ public class Tut001 {
 	    
 	    Iterator<Integer> it = numeros.iterator();
 	    
-	    while(it.hasNext()) {
+	    while (it.hasNext()) {
 	       Integer i = it.next();
+	       
 	       if(i < 10) {
 	          it.remove();
 	       }

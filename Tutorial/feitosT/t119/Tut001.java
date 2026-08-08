@@ -10,6 +10,7 @@ public class Tut001 {
 		
 		// algoritmos
 		ArrayList<Integer> numeros = new ArrayList<>();
+		
 		numeros.add(8);
 		numeros.add(5);
 		numeros.add(3);
@@ -19,7 +20,6 @@ public class Tut001 {
         System.out.println(Collections.max(numeros));
 	    System.out.println(Collections.min(numeros));
 	    
-	  
 		System.out.println("--------------------------");
 
 		// Your code here

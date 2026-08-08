@@ -1,7 +1,7 @@
 package programa;
 
-import java.util.Arrays;
-import java.util.HashMap;
+import java.util.ArrayList;
+import java.util.Collections;
 
 public class Tut001 {
 	
@@ -10,14 +10,22 @@ public class Tut001 {
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 		
-        HashMap<String, Integer> frutas = new HashMap<String, Integer>();
+ArrayList<String> nomes = new ArrayList<>();
 		
-		frutas.put("laranja", 4);
-		frutas.put("maca", 8);
-		frutas.put("banana", 5);
-		frutas.put("abacaxi", 4);
-		
-		System.out.println(Arrays.toString(frutas.keySet()));
+		nomes.add("Liam");
+		nomes.add("Jenny");
+		nomes.add("Kasper");
+		nomes.add("Angie");
+
+	    Collections.sort(nomes); // must be sorted first
+	    
+	    System.out.println(nomes);
+	    
+	    int index = Collections.binarySearch(nomes, "Angie");
+	    
+	    System.out.print("Angie está no indice: ");
+	    
+	    System.out.println(index);
 
 		
 		System.out.println("--------------------------");

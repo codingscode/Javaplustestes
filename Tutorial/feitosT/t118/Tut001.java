@@ -10,17 +10,22 @@ public class Tut001 {
 		
 		// algoritmos
 		ArrayList<String> nomes = new ArrayList<>();
+		
 		nomes.add("Liam");
 		nomes.add("Jenny");
 		nomes.add("Kasper");
 		nomes.add("Angie");
 
 	    Collections.sort(nomes); // must be sorted first
+	    
+	    System.out.println(nomes);
+	    
 	    int index = Collections.binarySearch(nomes, "Angie");
+	    
 	    System.out.print("Angie está no indice: ");
+	    
 	    System.out.println(index);
 	    
-	  
 		System.out.println("--------------------------");
 
 		// Your code here
@@ -36,21 +41,10 @@ public class Tut001 {
 }
 
 /*
+[Angie, Jenny, Kasper, Liam]
 Angie está no indice: 0
 --------------------------
-tempo execução em ms:
-0
-
-
-
-
-
-
-
-
-
-
-
+tempo execução em ms: 0
 
 
 
