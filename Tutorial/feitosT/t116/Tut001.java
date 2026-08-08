@@ -19,7 +19,7 @@ public class Tut001 {
 	    // Get the iterator
 	    Iterator<String> it = carros.iterator();
 
-	    while(it.hasNext()) { // enquanto houver próximo
+	    while (it.hasNext()) { // enquanto houver próximo
     	   System.out.println(it.next());
     	}
 
