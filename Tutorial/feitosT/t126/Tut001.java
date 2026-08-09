@@ -7,7 +7,7 @@ public class Tut001 {
 
 		// Generics
 		
-		 // Array de Strings
+		// Array de Strings
 	    String[] nomes = {"aladim", "mel", "lily", "fiona"};
 
 	    // Array de Integers
@@ -15,10 +15,11 @@ public class Tut001 {
 
 	    // Call the generic method with both arrays
 	    Generico.imprimirArray(nomes);
+	    
 	    System.out.println("************************");
+	    
 	    Generico.imprimirArray(numeros);
 		
-
 		System.out.println("--------------------------");
 
 		// Your code here

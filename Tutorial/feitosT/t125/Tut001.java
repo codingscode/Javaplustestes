@@ -10,20 +10,20 @@ public class Tut001 {
 		// Generics
 		
 		// cria uma classe Generic para guardar uma string
-		Generico<String> stringGeneric = new Generico<>();
+		Generico<String> str_generico = new Generico<>();
 		
-		stringGeneric.set("Olá");
+		str_generico.set("Olá");
 		
 		System.out.print("Valor: ");
-		System.out.println(stringGeneric.get());
+		System.out.println(str_generico.get());
 
 		// cria uma classe Generic para guardar um integer
-		Generico<Integer> intGeneric = new Generico<>();
+		Generico<Integer> int_generico = new Generico<>();
 		
-		intGeneric.set(50);
+		int_generico.set(50);
 		
 		System.out.print("Valor: ");
-		System.out.println(intGeneric.get());
+		System.out.println(int_generico.get());
 		
 		System.out.println("--------------------------");
 

@@ -9,12 +9,14 @@ public class Tut001 {
 		// Use com Integer
 	    Integer[] intnums = {10, 20, 30, 40};
 	    Generico<Integer> intGeneric = new Generico<>(intnums);
+	    
 	    System.out.print("media Integer: ");
 	    System.out.println(intGeneric.media());
 
 	    // Use com Double
 	    Double[] doublenums = {1.5, 2.5, 3.5};
 	    Generico<Double> doubleStats = new Generico<>(doublenums);
+	    
 	    System.out.print("media Double: ");
 	    System.out.println(doubleStats.media());
 
