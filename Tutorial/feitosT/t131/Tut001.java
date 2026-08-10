@@ -14,7 +14,6 @@ public class Tut001 extends Thread{
 	    
 	    System.out.println("este código está fora da thread");
 		
-
 		System.out.println("--------------------------");
 
 		// Your code here

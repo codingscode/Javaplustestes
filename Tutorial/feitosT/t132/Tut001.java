@@ -8,8 +8,11 @@ public class Tut001 implements Runnable {
 
 		// Threads
 		Tut001 objeto = new Tut001();
+		
 		Thread thread = new Thread(objeto);
+		
 	    thread.start();
+	    
 	    System.out.println("este código está fora da thread");
 	    
 

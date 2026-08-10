@@ -1,14 +1,21 @@
 package programa;
 
-public class Tut001 {
+public class Tut001 extends Thread{
 	
-		
+	public static int quantidade = 4;
 	
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 		
-			
-		
+		// Threads
+		Tut001 thread = new Tut001();
+				
+		thread.start();
+
+		System.out.println(quantidade);
+		quantidade++;
+				
+		System.out.println(quantidade);
 		
 		
 		System.out.println("--------------------------");
@@ -21,12 +28,17 @@ public class Tut001 {
 		System.out.print("tempo execução em ms: ");
 		System.out.println(duration);
 	}
+	
+	public void run() {
+    	quantidade++;
+	}
+	
 
 }
 
 /*
-Valor: Olá
-Valor: 50
+4
+6
 --------------------------
 tempo execução em ms: 0
 
