@@ -17,9 +17,9 @@ public class Tut001 {
 		// usando lambda
 		
 		Consumer<Integer> metodo = (cada) -> { System.out.println(cada); }; // nao eficiente
+		
 		numeros.forEach(metodo);
-		
-		
+				
 		System.out.println("--------------------------");
 
 		// Your code here

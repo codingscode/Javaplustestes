@@ -8,10 +8,11 @@ public class Tut001 extends Thread {
 
 		// Threads
 		Tut001 thread = new Tut001();
+		
 	    thread.start();
 	    
 	    // Wait for the thread to finish
-	    while(thread.isAlive()) {
+	    while (thread.isAlive()) {
 	       System.out.println("esperando...");
 	    }
 	    
