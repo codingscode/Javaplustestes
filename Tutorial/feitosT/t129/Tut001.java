@@ -3,9 +3,9 @@ package programa;
 
 
 class Animal {
-	  void fazSom() {
-		  System.out.println("Animal som");
-	  }
+	void fazSom() {
+	    System.out.println("Animal som");
+	}
 }
 
 class Cachorro extends Animal {
@@ -23,8 +23,8 @@ public class Tut001 {
 
 		// Annotations
 		// exemplos: @Override, @Deprecated, @SuppressWarnings
-		Animal metPet = new Cachorro();
-		metPet.fazSom();
+		Animal meuPet = new Cachorro();
+		meuPet.fazSom();
 
 		System.out.println("--------------------------");
 
