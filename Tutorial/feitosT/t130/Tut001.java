@@ -10,7 +10,9 @@ public class Tut001 {
 
 		// expressões regulares
 		Pattern padrao = Pattern.compile("moleque", Pattern.CASE_INSENSITIVE);
+		
 	    Matcher correspondente = padrao.matcher("pé de moleque!");
+	    
 	    boolean corresEncontrado = correspondente.find();
 	    
 	    if (corresEncontrado) {

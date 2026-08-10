@@ -9,7 +9,9 @@ public class Tut001 extends Thread{
 		// Threads
 		
 		Tut001 thread = new Tut001();
+		
 	    thread.start();
+	    
 	    System.out.println("este código está fora da thread");
 		
 
