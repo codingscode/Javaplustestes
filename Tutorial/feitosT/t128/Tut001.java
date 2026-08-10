@@ -9,12 +9,13 @@ public class Tut001 {
 
 		// Generics
 		ArrayList<String> lista = new ArrayList<>();
+		
 		lista.add("jaca");
+		
 		String fruta = lista.get(0); // nao precisa usar cast 				 
 		
 		System.out.println(fruta);
 		
-
 		System.out.println("--------------------------");
 
 		// Your code here
