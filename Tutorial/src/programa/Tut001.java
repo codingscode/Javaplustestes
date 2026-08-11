@@ -18,7 +18,7 @@ public class Tut001 {
 		// lambda
 		
 		FuncaoString exclamacao = (s) -> s + "!";
-		
+				
 		FuncaoString pergunta = (s) -> s + "?";
 		
 		imprimirFormatado("Olá", exclamacao);

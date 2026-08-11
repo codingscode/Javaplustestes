@@ -13,9 +13,9 @@ public class Tut001 {
 
 		
 		Saldacao g = () -> System.out.println("Olá de lambda");
+		
 		g.digaOla();
 		
-
 		System.out.println("--------------------------");
 
 		// Your code here

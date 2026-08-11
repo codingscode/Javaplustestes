@@ -3,7 +3,7 @@ package programa;
 
 //Functional interface (one abstract method)
 interface Saldacao {
-	void digaOla();
+	void digaOla(); // sem corpo
 }
 
 public class Tut001 {
