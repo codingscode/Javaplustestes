@@ -2,9 +2,8 @@ package programa;
 
 
 
-
 interface FuncaoString {
-	  String executar(String str);
+	String executar(String str); // a funcao nao pode ter corpo
 }
 
 public class Tut001 {
@@ -19,12 +18,14 @@ public class Tut001 {
 
 		// lambda
 		
-		FuncaoString exclamacao = (s) -> s + "!";
+		FuncaoString exclamacao = (s) -> s + "!"; // implementa o metodo 'executar'
+
 		FuncaoString pergunta = (s) -> s + "?";
-	    imprimirFormatado("Olá", exclamacao);
-	    imprimirFormatado("Olá", pergunta);
-		
-		
+	    
+		imprimirFormatado("Olá", exclamacao);
+	    
+		imprimirFormatado("Olá", pergunta);
+				
 		System.out.println("--------------------------");
 
 		// Your code here
@@ -43,11 +44,6 @@ Olá!
 Olá?
 --------------------------
 tempo execução em ms: 12
-
-
-
-
-
 
 
 

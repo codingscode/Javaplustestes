@@ -1,22 +1,29 @@
 package programa;
 
-public class Tut001 extends Thread{
+
+interface FuncaoString {
+	String executar(String str);
+}
+
+public class Tut001 {
 	
-	public static int quantidade = 4;
+	public static void imprimirFormatado(String str, FuncaoString formato) {
+	    String resultado = formato.executar(str);
+	    System.out.println(resultado);
+	}
 	
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 		
-		// Threads
-		Tut001 thread = new Tut001();
-				
-		thread.start();
-
-		System.out.println(quantidade);
-		quantidade++;
-				
-		System.out.println(quantidade);
+		// lambda
 		
+		FuncaoString exclamacao = (s) -> s + "!";
+		
+		FuncaoString pergunta = (s) -> s + "?";
+		
+		imprimirFormatado("Olá", exclamacao);
+		
+		imprimirFormatado("Olá", pergunta);
 		
 		System.out.println("--------------------------");
 
@@ -29,22 +36,16 @@ public class Tut001 extends Thread{
 		System.out.println(duration);
 	}
 	
-	public void run() {
-    	quantidade++;
-	}
+	
 	
 
 }
 
 /*
-4
-6
+Olá!
+Olá?
 --------------------------
-tempo execução em ms: 0
-
-
-
-
+tempo execução em ms: 10
 
 
 
