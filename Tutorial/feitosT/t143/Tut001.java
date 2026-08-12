@@ -9,7 +9,8 @@ public class Tut001 {
 		long startTime = System.nanoTime();
 
 		// Create a list of cars
-	    ArrayList<Carro> meusCarros = new ArrayList<Carro>();    
+	    ArrayList<Carro> meusCarros = new ArrayList<Carro>();
+	    
 	    meusCarros.add(new Carro("BMW", "X5", 1999));
 	    meusCarros.add(new Carro("Honda", "Accord", 2006));
 	    meusCarros.add(new Carro("Ford", "Mustang", 1970));

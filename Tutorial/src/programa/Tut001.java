@@ -1,29 +1,22 @@
 package programa;
 
-
-interface FuncaoString {
-	String executar(String str);
-}
+import java.util.Arrays;
 
 public class Tut001 {
 	
-	public static void imprimirFormatado(String str, FuncaoString formato) {
-	    String resultado = formato.executar(str);
-	    System.out.println(resultado);
-	}
 	
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 		
-		// lambda
+		int[] numeros = {33,15,20,34,8,12};
 		
-		FuncaoString exclamacao = (s) -> s + "!";
-				
-		FuncaoString pergunta = (s) -> s + "?";
 		
-		imprimirFormatado("Olá", exclamacao);
+
+		System.out.println(Arrays.toString(numeros));
 		
-		imprimirFormatado("Olá", pergunta);
+		Arrays.sort(numeros);
+		
+		System.out.println(Arrays.toString(numeros));
 		
 		System.out.println("--------------------------");
 
@@ -42,10 +35,10 @@ public class Tut001 {
 }
 
 /*
-Olá!
-Olá?
+[33, 15, 20, 34, 8, 12]
+[8, 12, 15, 20, 33, 34]
 --------------------------
-tempo execução em ms: 10
+tempo execução em ms: 0
 
 
 
