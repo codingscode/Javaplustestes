@@ -4,10 +4,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
-//Same functional interface
-interface Saldacao {
-	void digaOla();
-}
 
 public class Tut001 {
 
