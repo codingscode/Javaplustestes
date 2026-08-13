@@ -15,7 +15,7 @@ public class Tut001 {
         String algo2 = String.valueOf(caracs); // converte array de char para String
         
         System.out.println(algo2);
-                
+        
 		System.out.println("--------------------------");
 
 		// Your code here
