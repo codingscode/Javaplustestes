@@ -1,23 +1,13 @@
 package programa;
 
-import java.util.Arrays;
-
 public class Tut001 {
 	
 	
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 		
-		int[] numeros = {33,15,20,34,8,12};
 		
-		boolean tem = numeros.contains(15);
 		
-
-		System.out.println(Arrays.toString(numeros));
-		
-		Arrays.sort(numeros);
-		
-		System.out.println(Arrays.toString(numeros));
 		
 		System.out.println("--------------------------");
 

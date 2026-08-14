@@ -12,8 +12,7 @@ public class Tut001 {
 		String texto = "banana";
 		
 		HashMap<Character, Integer> frequencia = new HashMap<>();
-		
-		
+				
 		for (char cada : texto.toCharArray()) {
            frequencia.put(cada, frequencia.getOrDefault(cada, 0) + 1);	
 		}
