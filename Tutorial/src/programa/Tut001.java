@@ -10,6 +10,7 @@ public class Tut001 {
 		
 		int[] numeros = {33,15,20,34,8,12};
 		
+		boolean tem = numeros.contains(15);
 		
 
 		System.out.println(Arrays.toString(numeros));

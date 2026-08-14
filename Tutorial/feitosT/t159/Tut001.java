@@ -11,7 +11,6 @@ public class Tut001 {
 		String aparado = texto.trim();
 
 		System.out.println(aparado);
-
 		
 		
 		System.out.println("--------------------------");
@@ -31,7 +30,6 @@ public class Tut001 {
 estrada bonita
 --------------------------
 tempo execução em ms: 0
-
 
 
 
