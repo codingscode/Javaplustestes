@@ -9,6 +9,7 @@ public class Tut001 {
 		
         // hashmap loop
 		HashMap<String, Integer> nomes_idades = new HashMap<>();
+		
 		nomes_idades.put("joao", 18);
 		nomes_idades.put("maria", 30);
 		nomes_idades.put("jose", 22);

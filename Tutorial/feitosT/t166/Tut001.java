@@ -11,6 +11,7 @@ public class Tut001 {
 		
         // remover duplicados de um array
 		Integer[] numeros = {1, 2, 2, 3, 4, 4, 5};
+		
 		HashSet<Integer> unicos = new HashSet<>();
 		
 		for (Integer cada : numeros) {

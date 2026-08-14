@@ -9,6 +9,7 @@ public class Tut001 {
 		String string1 = "bacana";
 		String string2 = "bacana";
 		String string3 = "aladim";
+		
 		System.out.println(string1.compareTo(string2)); // Returns 0 because they are equal
 		System.out.println(string1.compareTo(string3));
 		
