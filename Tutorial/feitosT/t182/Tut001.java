@@ -10,10 +10,12 @@ public class Tut001 {
 		String s1 = "aladim";
 		String s2 = "mel";
 		String s3 = "Aladim";
+		String s4 = "aladim";
 		
 		System.out.println(s1.hashCode());
 		System.out.println(s2.hashCode());
 		System.out.println(s3.hashCode());
+		System.out.println(s4.hashCode());
 		System.out.println( (s1.hashCode()) == (s2.hashCode()) );
 		System.out.println( (s1.hashCode()) == (s3.hashCode()) );
 		
@@ -35,6 +37,7 @@ public class Tut001 {
 -1415210190
 107988
 1963624274
+-1415210190
 false
 false
 --------------------------

@@ -9,6 +9,7 @@ public class Tut001 {
 		// primeira ocorrencia
 		
 		String s1 = "bacana planeta terra.";
+		
 		System.out.println(s1.indexOf("planeta"));
 		System.out.println(s1.indexOf("p"));
 		
