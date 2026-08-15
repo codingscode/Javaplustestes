@@ -14,7 +14,7 @@ public class Tut001 {
 		String uma_string = "abacatesverdes";
 		uma_string.getChars(7, 12, um_array, 4);
 		
-		System.out.println(um_array);				
+		System.out.println(um_array);
 		
 		System.out.println("--------------------------");
 
