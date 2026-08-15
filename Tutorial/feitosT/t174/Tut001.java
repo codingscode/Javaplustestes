@@ -9,6 +9,7 @@ public class Tut001 {
 		String string1 = "bacana";
 		String string2 = "BaCana";
 		String string3 = "aladim";
+		
 		System.out.println(string1.compareToIgnoreCase(string2)); // desc caixa alta baixa, 0 se iguais
 		System.out.println(string1.compareToIgnoreCase(string3));
 		

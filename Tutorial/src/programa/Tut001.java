@@ -1,25 +1,21 @@
 package programa;
 
-import java.util.Arrays;
-import java.util.HashSet;
-
 public class Tut001 {
 	
 	
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 		
-		// remover duplicados de um array
-		Integer[] numeros = {1, 2, 2, 3, 4, 4, 5};
-				
-		HashSet<Integer> unicos = new HashSet<>();
+		String s1 = "sa";
+		String s2 = "ba";
+		String s3 = s1.concat(s2);
 		
-		for (Integer cada : numeros) {
-			unicos.add(cada);
-		}
-				
-		System.out.println(Arrays.toString(numeros));
-		System.out.println(unicos);
+		System.out.print("s1: ");
+		System.out.println(s1);
+		System.out.print("s2: ");
+		System.out.println(s2);
+		System.out.print("s3: ");
+		System.out.println(s3);
 		
 		
 		System.out.println("--------------------------");

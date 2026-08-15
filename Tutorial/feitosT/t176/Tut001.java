@@ -7,8 +7,7 @@ public class Tut001 {
 		
         // strings
 		String s1 = "Aladim";
-		
-		
+				
 		System.out.println(s1.contains("l"));
 		System.out.println(s1.contains("im"));
 		System.out.println(s1.contains("L"));
