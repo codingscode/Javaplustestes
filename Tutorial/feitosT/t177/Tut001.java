@@ -7,8 +7,7 @@ public class Tut001 {
 		
         // strings
 		String s1 = "aladim";
-		
-		
+				
 		System.out.println(s1.contentEquals("aladim"));
 		System.out.println(s1.contentEquals("im"));
 		System.out.println(s1.contentEquals("di"));

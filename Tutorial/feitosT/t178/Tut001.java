@@ -9,8 +9,11 @@ public class Tut001 {
 		// metodo copia de valor
 		
 		char[] s1 = {'b', 'o', 'r', 'b', 'o', 'l', 'e', 't', 'a'};
+		
 		String s2 = "";
+		
 		s2 = s2.copyValueOf(s1, 0, 5);
+		//s2 = String.copyValueOf(s1, 0, 5);
 		
 		System.out.print("string retornada: ");
 		System.out.println(s2);
