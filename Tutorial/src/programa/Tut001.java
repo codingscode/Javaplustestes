@@ -1,23 +1,24 @@
 package programa;
 
+import java.util.Arrays;
+
 public class Tut001 {
 	
 	
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 		
-		String s1 = "aladim";
-		String s2 = "mel";
-		String s3 = "Aladim";
-		String s4 = "aladim";
+        String s1 = "divida uma string em espacos, e também pontuacao.";
 		
-		System.out.println(s1.hashCode());
-		System.out.println(s2.hashCode());
-		System.out.println(s3.hashCode());
-		System.out.println(s4.hashCode());
-		System.out.println( (s1.hashCode()) == (s2.hashCode()) );
-		System.out.println( (s1.hashCode()) == (s3.hashCode()) );
+		String regex = "[,\\.\\s]";
 		
+		String[] meu_array = s1.split(regex);
+		
+		System.out.println(Arrays.toString(meu_array));
+		
+		for (String cada : meu_array) {
+			System.out.println(cada);
+		}
 		
 		
 		System.out.println("--------------------------");

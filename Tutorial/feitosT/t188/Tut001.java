@@ -10,6 +10,7 @@ public class Tut001 {
 		
 		String s1 = "bacana, mundo!";
 		String s2 = "novo mundo";
+		
 		System.out.println(s1.regionMatches(7, s2, 4, 5));
 		System.out.println(s1.regionMatches(0, s2, 0, 5));		
 		

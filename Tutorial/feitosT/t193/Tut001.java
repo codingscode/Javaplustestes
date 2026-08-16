@@ -18,6 +18,9 @@ public class Tut001 {
 		
 		System.out.println(Arrays.toString(meu_array));
 		
+		for (String cada : meu_array) {
+			System.out.println(cada);
+		}
 		
 		System.out.println("--------------------------");
 
@@ -33,9 +36,18 @@ public class Tut001 {
 }
 
 /*
-[divida, uma, string, em, espacos, , e, também, pontuacao]
+divida, uma, string, em, espacos, , e, também, pontuacao]
+divida
+uma
+string
+em
+espacos
+
+e
+também
+pontuacao
 --------------------------
-tempo execução em ms: 10
+tempo execução em ms: 9
 
 
 
