@@ -14,7 +14,7 @@ public class Tut001 {
 		char[] meu_array = s1.toCharArray();
 		
 		System.out.println(Arrays.toString(meu_array));
-		//System.out.println(meu_array);
+		System.out.println(meu_array);
 		System.out.println(meu_array[0]);
 		
 		System.out.println("--------------------------");
@@ -32,6 +32,7 @@ public class Tut001 {
 
 /*
 [b, a, c, a, n, a]
+bacana
 b
 --------------------------
 tempo execução em ms: 0

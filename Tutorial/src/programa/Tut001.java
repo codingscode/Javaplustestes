@@ -8,17 +8,15 @@ public class Tut001 {
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 		
-        String s1 = "divida uma string em espacos, e também pontuacao.";
-		
-		String regex = "[,\\.\\s]";
-		
-		String[] meu_array = s1.split(regex);
+        
+		String s1 = "bacana";
+		char[] meu_array = s1.toCharArray();
 		
 		System.out.println(Arrays.toString(meu_array));
+		System.out.println(meu_array);
+		System.out.println(meu_array[0]);
 		
-		for (String cada : meu_array) {
-			System.out.println(cada);
-		}
+		
 		
 		
 		System.out.println("--------------------------");

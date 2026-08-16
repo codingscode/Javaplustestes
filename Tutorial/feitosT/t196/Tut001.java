@@ -9,6 +9,7 @@ public class Tut001 {
 		// .startsWith(), 
 		
 		String s1 = "disciplina+sabedoria";
+		
 		System.out.println(s1.substring(7, 12)); // é tipo String
 		
 		
