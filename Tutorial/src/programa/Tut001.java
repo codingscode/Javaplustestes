@@ -1,7 +1,5 @@
 package programa;
 
-import java.util.Arrays;
-
 public class Tut001 {
 	
 	
@@ -9,14 +7,11 @@ public class Tut001 {
 		long startTime = System.nanoTime();
 		
         
-		String s1 = "bacana";
-		char[] meu_array = s1.toCharArray();
-		
-		System.out.println(Arrays.toString(meu_array));
-		System.out.println(meu_array);
-		System.out.println(meu_array[0]);
+		int x = 1;
 		
 		
+		
+		System.out.println( ((Object) Math.abs(-4.7)).getClass().getSimpleName() );
 		
 		
 		System.out.println("--------------------------");

@@ -9,6 +9,7 @@ public class Tut001 {
 		// .toUpperCase(), .toLowerCase(), .toString(), .trim(), 
 		
 		char[] meu_array = {'b', 'a', 'c', 'a', 'n', 'a'};
+		
 		System.out.println(String.valueOf(meu_array));
 		System.out.println(String.valueOf('A'));
 		System.out.println(String.valueOf(true));

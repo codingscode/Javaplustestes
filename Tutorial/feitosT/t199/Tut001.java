@@ -10,7 +10,8 @@ public class Tut001 {
 		
 		System.out.println(Math.abs(-4.7));
 		System.out.println(Math.abs(4.7));
-		System.out.println(Math.abs(-3)); 
+		System.out.println(Math.abs(-3));
+		System.out.println( ((Object) Math.abs(-4.7)).getClass().getSimpleName() );
 		
 		System.out.println("--------------------------");
 
