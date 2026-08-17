@@ -7,11 +7,7 @@ public class Tut001 {
 		long startTime = System.nanoTime();
 		
         
-		int x = 1;
 		
-		
-		
-		System.out.println( ((Object) Math.abs(-4.7)).getClass().getSimpleName() );
 		
 		
 		System.out.println("--------------------------");
