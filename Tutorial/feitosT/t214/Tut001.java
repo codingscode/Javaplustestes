@@ -14,7 +14,6 @@ public class Tut001 {
 		
 		System.out.println(Arrays.toString(carros2));
 		
-		
 		System.out.println("--------------------------");
 
 		// Your code here

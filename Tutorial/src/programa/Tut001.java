@@ -9,7 +9,6 @@ public class Tut001 {
         
 		
 		
-		
 		System.out.println("--------------------------");
 
 		// Your code here
@@ -28,6 +27,11 @@ public class Tut001 {
 
 /*
 
+1
+2
+5
+--------------------------
+tempo execução em ms: 0
 
 
 
