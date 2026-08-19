@@ -20,9 +20,9 @@ public class Tut001 {
         // Returns 2 because array3 is a prefix, mismatch occurs where array3 ends
         int prefixDiff = Arrays.mismatch(array1, array3); 
 
-        System.out.print("primeiro indice de diferenca: ");
+        System.out.print("primeiro indice diferente: ");
         System.out.println(indexDiff); // Output: 2
-        System.out.print("indie prefixo de diferenca: "); // Output: 2
+        System.out.print("indice prefixo de diferenca: "); // Output: 2
         System.out.println(prefixDiff); // Output: 2
 		
 		
@@ -40,8 +40,8 @@ public class Tut001 {
 }
 
 /*
-primeiro indice de diferenca: 2
-indie prefixo de diferenca: 2
+primeiro indice diferente: 2
+indice prefixo de diferenca: 2
 --------------------------
 tempo execução em ms: 0
 

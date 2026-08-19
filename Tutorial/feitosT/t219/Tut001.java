@@ -17,8 +17,7 @@ public class Tut001 {
 		Arrays.sort(lista, 1, 4); // ordena somente do indice 1 ao 3
 		
 		System.out.println(Arrays.toString(numeros));
-		System.out.println(Arrays.toString(lista));
-		
+		System.out.println(Arrays.toString(lista));		
 		
 		System.out.println("--------------------------");
 
