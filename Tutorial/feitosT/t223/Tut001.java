@@ -8,7 +8,6 @@ public class Tut001 {
 		long startTime = System.nanoTime();
 		
         // ArrayList metodos
-		// 
 		
 		ArrayList<String> carros = new ArrayList<String>();
 		carros.add("Volvo");

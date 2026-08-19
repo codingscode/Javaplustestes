@@ -11,12 +11,12 @@ public class Tut001 {
 		// 
 		
 		ArrayList<String> carros = new ArrayList<String>();
+		
 		carros.add("celta");
 		carros.add("komb");
 		carros.add("pampa");
 		carros.add("l200");
-	    
-	    
+	    	    
 	    System.out.println(carros);
 		
 		System.out.println("--------------------------");
