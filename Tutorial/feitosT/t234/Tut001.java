@@ -18,7 +18,7 @@ public class Tut001 {
 	    
 	    // Loop through the list
 	    while(it.hasNext()) {
-	      System.out.println(it.next());
+	       System.out.println(it.next());
 	    }
 	    
 	    System.out.println("voltando");

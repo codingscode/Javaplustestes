@@ -18,7 +18,6 @@ public class Tut001 {
         
         System.out.println(numeros);
 		
-		
 		System.out.println("--------------------------");
 
 		// Your code here

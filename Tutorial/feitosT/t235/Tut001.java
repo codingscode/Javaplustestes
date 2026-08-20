@@ -11,6 +11,7 @@ public class Tut001 {
         // ArrayList metodos
 		// 
 		ArrayList<Integer> numeros = new ArrayList<>(List.of(3,4,5,6,7));
+		
 		ArrayList<String> nomes = new ArrayList<>(List.of("mel", "aladim", "lily"));
 		
         System.out.println(numeros);
