@@ -25,7 +25,7 @@ public class Tut001 {
 	    
 	    // Loop backwards through the list
 	    while(it.hasPrevious()) {
-	      System.out.println(it.previous());
+	       System.out.println(it.previous());
 	    }
 	   
 		System.out.println("--------------------------");

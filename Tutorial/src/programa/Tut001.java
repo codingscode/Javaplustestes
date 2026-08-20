@@ -1,8 +1,5 @@
 package programa;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-
 public class Tut001 {
 	
 	
@@ -10,14 +7,7 @@ public class Tut001 {
 		long startTime = System.nanoTime();
 		
         
-        ArrayList<String> carros = new ArrayList<>();
-		
-		carros.add("celta");
-		carros.add("komb");
-		carros.add("pampa");
-		carros.add("l200");
-	    	    
-	    System.out.println(carros);
+        
 		
 		System.out.println("--------------------------");
 
@@ -37,11 +27,9 @@ public class Tut001 {
 
 /*
 
-1
-2
-5
---------------------------
-tempo execução em ms: 0
+
+
+
 
 
 

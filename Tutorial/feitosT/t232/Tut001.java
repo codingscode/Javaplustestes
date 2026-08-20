@@ -18,9 +18,9 @@ public class Tut001 {
 	    
 	    // Loop through a collection
 	    while (it.hasNext()) {
-	      System.out.println(it.next());
+	       System.out.println(it.next());
 	    }
-	   
+	    
 		System.out.println("--------------------------");
 
 		// Your code here

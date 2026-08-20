@@ -12,7 +12,6 @@ public class Tut001 {
 		
 		System.out.println(Arrays.asList(numeros).contains(1));
 		
-		
         
 		System.out.println("--------------------------");
 
