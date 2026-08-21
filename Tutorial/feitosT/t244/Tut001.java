@@ -15,7 +15,7 @@ public class Tut001 {
 		System.out.println(nomes.size()); // quantidade elementos
 		
 		nomes.sort( (a, b) -> { return -1 * a.compareTo(b); } ); // reverso
-		        
+		
         System.out.println(nomes);
 
 
