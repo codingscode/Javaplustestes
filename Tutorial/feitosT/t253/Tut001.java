@@ -19,7 +19,6 @@ public class Tut001 {
 	    
 	    System.out.println(carros);
 		
-        
 		System.out.println("--------------------------");
 
 		// Your code here

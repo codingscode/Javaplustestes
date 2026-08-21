@@ -16,8 +16,7 @@ public class Tut001 {
 		carros.add("Mazda");
 		
 	    System.out.println(carros);
-		
-        
+		        
 		System.out.println("--------------------------");
 
 		// Your code here
