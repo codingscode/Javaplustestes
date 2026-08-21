@@ -11,6 +11,8 @@ public class Tut001 {
         // metodos LinkedList(encadeado ordem de inserção)
 		LinkedList<String> fila = new LinkedList<String>(List.of("celta", "fusca", "l200", "pajero"));
 				
+		System.out.println(fila);
+		
 		fila.offer("ferrari");
 		fila.offer("mercedes");
 		
@@ -31,6 +33,7 @@ public class Tut001 {
 }
 
 /*
+[celta, fusca, l200, pajero]
 [celta, fusca, l200, pajero, ferrari, mercedes]
 --------------------------
 tempo execução em ms: 1

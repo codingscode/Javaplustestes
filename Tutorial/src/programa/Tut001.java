@@ -9,9 +9,14 @@ public class Tut001 {
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 		
-		LinkedList<String> carros = new LinkedList<String>(List.of("celta", "fusca", "l200", "pajero", "fusca"));
-
-		System.out.println(carros);
+		LinkedList<String> fila = new LinkedList<String>(List.of("celta", "fusca", "l200", "pajero"));
+		
+		System.out.println(fila);
+		
+		fila.offer("ferrari");
+		fila.offer("mercedes");
+		
+		System.out.println(fila);
 		
 		
 		System.out.println("--------------------------");
