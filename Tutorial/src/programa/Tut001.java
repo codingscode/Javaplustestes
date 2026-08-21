@@ -6,9 +6,8 @@ public class Tut001 {
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 		
-        
-        
 		
+
 		
 		
 		
@@ -29,8 +28,6 @@ public class Tut001 {
 }
 
 /*
-
-
 
 
 

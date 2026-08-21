@@ -5,27 +5,23 @@ import java.util.List;
 
 public class Tut001 {
 	
+	
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 		
-        // ArrayList metodos
-		// 
-		String[] algo = {"caderno", "lapis"};
-		
-		System.out.println(algo.getClass().getSimpleName());
-        
-        ArrayList<String> nomes = new ArrayList<>(List.of("mel", "aladim", "apolo", "lily", "pituxo", "preta"));
+		ArrayList<String> nomes = new ArrayList<>(List.of("mel", "aladim", "apolo", "lily", "pituxo", "preta"));
+
+		// Converte para array de String
+		String[] nomesArray = nomes.toArray(new String[0]);
 		
 		System.out.println(nomes);
 		
-		Object[] nomesArray = nomes.toArray(); // converte para array tipo Object
-	    
-		System.out.println(nomesArray.getClass().getSimpleName());
+		System.out.println(nomesArray);
 		
-	    for(Object cada : nomesArray) {
-	       System.out.println(cada);
-	    }
-        
+		for (String cada : nomesArray) {
+			System.out.println(cada);
+		}
+		
 		System.out.println("--------------------------");
 
 		// Your code here
@@ -36,13 +32,15 @@ public class Tut001 {
 		System.out.print("tempo execução em ms: ");
 		System.out.println(duration);
 	}
+	
+	
+	
 
 }
 
 /*
-String[]
 [mel, aladim, apolo, lily, pituxo, preta]
-Object[]
+[Ljava.lang.String;@659e0bfd
 mel
 aladim
 apolo
@@ -51,7 +49,6 @@ pituxo
 preta
 --------------------------
 tempo execução em ms: 0
-
 
 
 */
