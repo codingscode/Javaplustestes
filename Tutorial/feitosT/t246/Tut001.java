@@ -13,6 +13,8 @@ public class Tut001 {
 		ArrayList<String> nomes = new ArrayList<>(List.of("mel", "aladim", "apolo", "lily", "pituxo", "preta"));
 		
 		System.out.println(nomes.subList(1, 3));
+		
+		// ArrayList<String> sub = new ArrayList<>(nomes.subList(1, 3));
 
 		System.out.println("--------------------------");
 

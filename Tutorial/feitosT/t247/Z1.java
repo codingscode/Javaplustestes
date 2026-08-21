@@ -14,8 +14,7 @@ public class Tut001 {
 		
 		List<String> sublist = new ArrayList<>(nomes.subList(1, 3));
 	    sublist.set(0, "fiona");
-		
-		
+				
 		System.out.println(nomes);
 		System.out.println(sublist);
         
