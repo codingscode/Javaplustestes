@@ -12,14 +12,12 @@ public class Tut001 {
         // ArrayList metodos
 		// 
 		ArrayList<Integer> numeros = new ArrayList<>(List.of(3,4,5,6,7));
-		
-		
+				
         System.out.println(numeros);
         
         numeros.removeIf( cada -> cada % 2 == 1 );
                 
         System.out.println(numeros);
-				
 		
 		System.out.println("--------------------------");
 

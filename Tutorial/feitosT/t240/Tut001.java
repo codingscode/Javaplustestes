@@ -21,7 +21,6 @@ public class Tut001 {
                 
         System.out.println(numeros1);
 
-
 		System.out.println("--------------------------");
 
 		// Your code here

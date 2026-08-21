@@ -11,12 +11,13 @@ public class Tut001 {
         // ArrayList metodos
 		// 
 		ArrayList<Integer> numeros = new ArrayList<>(List.of(3,4,5,6,7));
+		
 		ArrayList<Integer> remover = new ArrayList<>(List.of(5,6));
 		
         System.out.println(numeros);
         
         numeros.removeAll(remover);
-                
+        
         System.out.println(numeros);
 		
 		

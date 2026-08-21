@@ -16,7 +16,6 @@ public class Tut001 {
 		List<Integer> a = Arrays.asList(1, 2, 3, 4, 5, 6);
         List<Integer> b = Arrays.asList(3, 4, 7, 8);
         
-        
         System.out.println(a.getClass().getSimpleName());
         System.out.println(b.getClass().getSimpleName()); 
 

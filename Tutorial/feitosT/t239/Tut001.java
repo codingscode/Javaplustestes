@@ -12,13 +12,11 @@ public class Tut001 {
 		// 
 		ArrayList<Integer> numeros = new ArrayList<>(List.of(3,4,5,6,7));
 		
-		
         System.out.println(numeros);
         
         numeros.replaceAll( cada -> cada + 1 );
         
         System.out.println(numeros);
-
 
 		System.out.println("--------------------------");
 
