@@ -17,14 +17,14 @@ public class Tut001 {
 	    
 	    // Loop through the list
 	    while(it.hasNext()) {
-	      System.out.println(it.next());
+	       System.out.println(it.next());
 	    }
 	    
 	    System.out.println("---");
 	    
 	    // Loop backwards through the list
 	    while(it.hasPrevious()) {
-	      System.out.println(it.previous());
+	       System.out.println(it.previous());
 	    }
 		
         

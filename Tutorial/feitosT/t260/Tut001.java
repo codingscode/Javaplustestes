@@ -11,10 +11,12 @@ public class Tut001 {
         // metodos LinkedList(encadeado ordem de inserção)
 		LinkedList<String> carros = new LinkedList<String>(List.of("celta", "fusca", "l200", "pajero", "fusca"));
 				
+		System.out.println(carros);
+		
 		System.out.println(carros.indexOf("fusca"));
+		
 		System.out.println(carros.lastIndexOf("fusca"));
 		
-        
 		System.out.println("--------------------------");
 
 		// Your code here
@@ -29,6 +31,7 @@ public class Tut001 {
 }
 
 /*
+[celta, fusca, l200, pajero, fusca]
 1
 4
 --------------------------

@@ -14,11 +14,11 @@ public class Tut001 {
 	    System.out.println(carros);
 	    
 	    carros.addFirst("d20"); //
+	    
 	    carros.addLast("hilux");
 	    
 	    System.out.println(carros);
 		
-        
 		System.out.println("--------------------------");
 
 		// Your code here
