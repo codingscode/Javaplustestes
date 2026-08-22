@@ -35,7 +35,6 @@ public class Tut001 {
 		
 		System.out.println(Arrays.toString(outro));
 		
-        
 		System.out.println("--------------------------");
 
 		// Your code here

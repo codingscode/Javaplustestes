@@ -1,6 +1,6 @@
 package programa;
 
-import java.util.LinkedList;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Tut001 {
@@ -9,14 +9,15 @@ public class Tut001 {
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 		
-		LinkedList<String> fila = new LinkedList<String>(List.of("celta", "fusca", "l200", "pajero"));
+		ArrayList<String> nomes = new ArrayList<String>(List.of("lily", "aladin", "mel"));
 		
-		System.out.println(fila);
 		
-		fila.offer("ferrari");
-		fila.offer("mercedes");
+		System.out.println(nomes);
+
 		
-		System.out.println(fila);
+		
+		System.out.println(nomes);
+		
 		
 		
 		System.out.println("--------------------------");

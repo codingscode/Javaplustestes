@@ -15,7 +15,7 @@ public class Tut001 {
 				
 		System.out.println(lista);
 		
-		lista.remove(Integer.valueOf(14));
+		lista.remove(Integer.valueOf(14)); // remove objeto 14
 		
 		System.out.println(lista);
 		
