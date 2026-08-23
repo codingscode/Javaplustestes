@@ -15,7 +15,6 @@ public class Tut001 {
 		
 		HashMap<String, Integer> lista = new HashMap<>(Map.of("cha_gelado", 6, "pacoca", 5));
 		
-		
 		System.out.println(produtos);
 		
 		produtos.put("pvideo", 93);
