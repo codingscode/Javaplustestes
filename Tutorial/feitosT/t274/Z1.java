@@ -13,10 +13,10 @@ public class Tut001 {
 				"pendrive", 20, "ssd", 200, "mouse", 30, "teclado", 40, "cpu", 120));
 		
 		// Usando entrySet para percorrer o mapa
-		for (String chave : produtos.keySet()) {
-			Integer valor = produtos.get(chave);
-			
-		    
+		for (Map.Entry<String, Integer> entrada : produtos.entrySet()) {
+			System.out.print(entrada.getKey());
+			System.out.print(": ");
+		    System.out.println(entrada.getValue());
 		}
 		
 		
