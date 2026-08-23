@@ -18,7 +18,7 @@ public class Tut001 {
 				
 		System.out.println(produtos);
 		
-		produtos.computeIfPresent("pvideo", (k, v) -> v/2);
+		produtos.computeIfPresent("pvideo", (c, v) -> v/2);
 		
 		System.out.println(produtos);
 		
