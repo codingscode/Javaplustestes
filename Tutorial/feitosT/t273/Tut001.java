@@ -21,7 +21,6 @@ public class Tut001 {
 		System.out.println(produtos.containsValue(40));
 		System.out.println(produtos.containsValue(25));
 		
-		
 		System.out.println("--------------------------");
 
 		// Your code here
