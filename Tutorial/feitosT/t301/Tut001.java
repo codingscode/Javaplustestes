@@ -20,8 +20,7 @@ public class Tut001 {
 		boolean nada_comum = Collections.disjoint(numeros1, numeros2);
 		
 		System.out.println(nada_comum);
-		
-		
+				
 		System.out.println("--------------------------");
 
 		// Your code here

@@ -1,7 +1,7 @@
 package programa;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Tut001 {
 	
@@ -9,10 +9,12 @@ public class Tut001 {
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 		
-		HashMap<String, Integer> produtos = new HashMap<>(Map.of(
-				"pendrive", 20, "ssd", 200, "mouse", 30, "teclado", 40, "cpu", 120));
+        ArrayList<Integer> numeros = new ArrayList<>(List.of(12, 5, 10, 3, 8, 4));
 		
-		System.out.println(produtos.values());
+		System.out.println(numeros);
+		
+		// view, original intacto
+		ArrayList<Integer> outro = new ArrayList<>(numeros.reversed());
 		
 		
 		System.out.println("--------------------------");

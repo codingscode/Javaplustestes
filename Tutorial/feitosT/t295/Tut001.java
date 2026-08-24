@@ -35,7 +35,6 @@ public class Tut001 {
             System.out.println("Elemento não encontrado.");
         }
 		
-		
 		System.out.println("--------------------------");
 
 		// Your code here
