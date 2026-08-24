@@ -26,8 +26,8 @@ public class Tut001 {
 		   meu_leitor.close();
 		}
 		catch (FileNotFoundException e) {
-		      System.out.println("um erro ocorreu.");
-		      e.printStackTrace();
+		   System.out.println("um erro ocorreu.");
+		   e.printStackTrace();
 		}
 				
 		System.out.println("--------------------------");

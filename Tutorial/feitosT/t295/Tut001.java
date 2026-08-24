@@ -10,7 +10,6 @@ public class Tut001 {
 		long startTime = System.nanoTime();
 		
         // 
-		// 
 		
 		ArrayList<Integer> numeros = new ArrayList<>(List.of(12, 5, 10, 3, 8, 4));
 		
