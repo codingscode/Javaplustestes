@@ -15,9 +15,8 @@ public class Tut001 {
 		      
 		// Create a scanner object
 		Scanner meu_objeto = new Scanner("a chance 45.8 porcento.");
-		
-		
-		while(meu_objeto.hasNext()) {
+				
+		while (meu_objeto.hasNext()) {
 		   if(meu_objeto.hasNextDouble()) {
 		      double valor = meu_objeto.nextDouble();
               System.out.println(valor);

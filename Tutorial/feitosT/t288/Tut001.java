@@ -14,7 +14,7 @@ public class Tut001 {
 		Scanner meu_objeto = new Scanner("A byte is a number between -128 and 127");
 		
 		// Print the value of every byte in the scanner
-		while(meu_objeto.hasNext()) {
+		while (meu_objeto.hasNext()) {
 		   if(meu_objeto.hasNextByte()) {
 		      System.out.println(meu_objeto.nextByte());
 		   }

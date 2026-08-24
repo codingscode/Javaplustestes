@@ -18,7 +18,6 @@ public class Tut001 {
 		// Close the scanner
 		meu_objeto.close();
 		
-		
 		System.out.println("--------------------------");
 
 		// Your code here

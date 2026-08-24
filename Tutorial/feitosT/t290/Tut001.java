@@ -16,14 +16,14 @@ public class Tut001 {
 		// Create a scanner object
 		Scanner meu_objeto = new Scanner("a chance 45.8 porcento.");
 		
-		while(meu_objeto.hasNext()) {
+		while (meu_objeto.hasNext()) {
 		   if(meu_objeto.hasNextFloat()) {
 		      float valor = meu_objeto.nextFloat();
               System.out.println(valor);
 		   }
-		  else {
-			  meu_objeto.next();
-		  }
+		   else {
+		      meu_objeto.next();
+		   }
 		  
 		}
 		
