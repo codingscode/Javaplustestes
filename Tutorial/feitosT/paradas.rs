@@ -37,19 +37,20 @@ fazer revisão: t007, fim, t030,t032,fim,t040,t047,fim,t058,t066,t068,fim,t084,f
 	  265,281,294,305,fim,
 
 
-
-
-
+****************************************************************
 
 https://www.geeksforgeeks.org/java/java/
 
+https://www.geeksforgeeks.org/java/java-identifiers/
+
+
+
+fazer revisao:
 
 
 
 
-
-
-
+****************************************************************
 
 Dominar o Java puro (Core Java) é essencial para estruturar qualquer projeto, pois cria a base necessária para compreender os frameworks modernos. Os 12 tópicos mais importantes para a criação de projetos reais são: 
 1. Programação Orientada a Objetos (POO)
