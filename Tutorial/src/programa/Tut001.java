@@ -1,44 +1,28 @@
 package programa;
 
-import java.util.Scanner;
+import java.util.Locale;
 
 public class Tut001 {
-	
-	
-	/*
-	nextInt() for whole numbers
-    nextLine() for full text lines
-    nextDouble() for decimal numbers
-    next() for single words
-		
-	*/
-	
+
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
+
+		Locale.setDefault(Locale.US);
+
 		
-		Scanner scn = new Scanner(System.in);
-
-        // Reading a single line string
-        System.out.print("digite uma sentença: ");
-        String sentence = scn.nextLine();
-        System.out.print("sentença digitada: ");
-        System.out.println(sentence);
-
-        // Reading an integer
-        System.out.print("digite um inteiro: ");
-        int x = Integer.parseInt(scn.nextLine());
-        System.out.print("inteiro digitado: ");
-        System.out.println(x);
-
-        // Reading a float value
-        System.out.print("digite um valor float: ");
-        float f = Float.parseFloat(scn.nextLine());
-        System.out.print("valor float digitado: ");
-        System.out.println(f);
-
-        scn.close();	
+		int a, b;
+		double divisao;
+		   
+		a = 5;
+		b = 2;
+		divisao = a/b;
+		   
+		System.out.println("divisao: " + divisao);
+		   
+		divisao = (double) a/b; // cast
+		System.out.println("divisao: " + divisao);
 		
-		
+
 		System.out.println("--------------------------");
 
 		// Your code here
@@ -49,29 +33,17 @@ public class Tut001 {
 		System.out.print("tempo execução em ms: ");
 		System.out.println(duration);
 	}
-	
-	
-	
 
 }
 
 /*
-digite uma sentença: aladim cachorro
-sentença digitada: aladim cachorro
-digite um inteiro: 4
-inteiro digitado: 4
-digite um valor float: 1.2
-valor float digitado: 1.2
+divisao: 2.0
+divisao: 2.5
 --------------------------
-tempo execução em ms: 14876
+tempo execução em ms: 16
 
 
-
-
-
-
-
-
-
-
+ 
+ 
+ 
 */
