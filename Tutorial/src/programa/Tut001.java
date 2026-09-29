@@ -2,17 +2,13 @@ package programa;
 
 public class Tut001 {
 
-		
 	
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 
 		//Locale.setDefault(Locale.US);
-
         
 		
-		
-
 		
 
 		System.out.println("--------------------------");
@@ -29,7 +25,6 @@ public class Tut001 {
 }
 
 /*
-
 
 
 
