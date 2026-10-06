@@ -7,7 +7,6 @@ public class Tut001 {
 		long startTime = System.nanoTime();
 
 		//Locale.setDefault(Locale.US);
-        
 		
 		
 
@@ -25,10 +24,7 @@ public class Tut001 {
 }
 
 /*
-Exception in thread "main" java.lang.Error: Unresolved compilation problem: 
-	Cannot instantiate the type Conta
 
-	at programa.Tut001.main(Tut001.java:15)
 
 
 
