@@ -13,7 +13,7 @@ public class Teste1 {
 	public static void main(String[] args) {
 		List<Integer> lista = new ArrayList<>();
 
-		String caminho = "/home/misterhp/Documentos/de_la/util/java/java_base/Base_001/src/programa/in.txt";
+		String caminho = "./src/programa/in.txt";
 
 		try (BufferedReader br = new BufferedReader(new FileReader(caminho))) {
 
