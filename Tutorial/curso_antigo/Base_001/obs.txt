@@ -1,0 +1,34 @@
+
+quais frameworks/bibliotecas não estudar/usar em java:
+Frameworks e Tecnologias a Evitar
+Struts (especialmente Struts 1.x): Foi um framework MVC muito popular no passado, mas é considerado obsoleto há muitos anos. O Struts 2 ainda existe, mas a maioria dos novos projetos web em Java usa Spring MVC/Spring Boot ou Jakarta EE.
+EJB (Enterprise JavaBeans) 1.x e 2.x: As versões iniciais do EJB eram complexas e cheias de configurações verbosas. As versões 3.x e seguintes (parte do Jakarta EE) melhoraram muito, mas o termo EJB em si muitas vezes remete a sistemas legados e complexos. Para novos projetos, soluções como Spring Boot, Micronaut ou Quarkus são preferidas.
+Java Applets: Completamente mortos e sem suporte nos navegadores modernos. Não há nenhuma razão para aprender ou usar Applets hoje em dia.
+Java Web Start: Similar aos Applets, foi descontinuado e não é mais uma tecnologia relevante para iniciar aplicações Java desktop a partir de um navegador.
+Swing / AWT (para novas aplicações GUI): Embora ainda existam sistemas legados que usam Swing, ele é considerado ultrapassado para o desenvolvimento de novas interfaces gráficas de desktop modernas. Se precisar de uma GUI em Java, JavaFX é a alternativa mais atual, embora o desenvolvimento web (com frameworks como Vaadin ou a dupla React/Angular + Spring Boot API) seja muito mais comum no mercado.
+GWT (Google Web Toolkit): Já foi uma forma de escrever front-end em Java e compilar para JavaScript, mas sua popularidade diminuiu drasticamente com a ascensão de frameworks front-end modernos como React, Angular e Vue.js.
+JSP (JavaServer Pages) para lógica de negócios: Embora o JSP ainda seja usado em sistemas legados, a prática moderna é separar completamente a lógica de negócios do front-end. O uso de APIs REST (com Spring Boot, por exemplo) e frameworks de front-end modernos é o padrão.
+CORBA/RMI: Tecnologias antigas para comunicação distribuída. Hoje em dia, a comunicação entre sistemas é feita predominantemente através de web services (SOAP ou, mais comumente, REST com JSON/XML). 
+
+Foco nos Frameworks Atuais
+Em vez dos listados acima, concentre seus esforços em aprender:
+Spring / Spring Boot: O ecossistema dominante para desenvolvimento corporativo Java moderno.
+Jakarta EE (anteriormente Java EE, com foco em tecnologias atuais como JPA, JSF, CDI, RESTful Web Services).
+Frameworks modernos e leves para microserviços e cloud-native, como Quarkus, Micronaut e Helidon. 
+
+
+
+
+
+Janani-Balasooriya/Java-Beginner-Projects
+parthasarathy27/Java_beginner_practice
+iluwatar/java-design-patterns
+TheAlgorithms/Java
+cidacastello/curso-java-iniciantes
+
+
+
+
+
+
+

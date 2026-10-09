@@ -1,0 +1,46 @@
+package programa;
+
+import java.util.HashMap;
+import java.util.Locale;
+import java.util.Map;
+
+import entidades.Produto;
+
+public class Teste1 {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+
+		Map<Produto, Double> estoque = new HashMap<>();
+
+		Produto p1 = new Produto("Tv", 900.0);
+		Produto p2 = new Produto("Notebook", 1200.0);
+		Produto p3 = new Produto("Tablet", 400.0);
+
+		estoque.put(p1, 10000.0);
+		estoque.put(p2, 20000.0);
+		estoque.put(p3, 15000.0);
+
+		Produto ps = new Produto("Tv", 900.0);
+
+		System.out.println("contém chave 'ps': " + estoque.containsKey(ps));		
+
+		System.out.println();
+	}
+
+}
+
+/*
+contém chave 'ps': false
+
+
+------------------------------------
+Map<K, V>
+pares chave valor
+
+
+implementações: hashmap, treemap, linkedhashmap
+
+
+
+*/
