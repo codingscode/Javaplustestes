@@ -10,8 +10,10 @@ public class Teste1 {
 		Locale.setDefault(Locale.US);
 
 		List<Integer> listaInt = new ArrayList<Integer>();
+		
 		listaInt.add(10);
 		listaInt.add(5);
+		
 		List<? extends Number> lista = listaInt;
 		Number x = lista.get(0);
 		lista.add(20); // erro de compilacao
@@ -21,7 +23,7 @@ public class Teste1 {
 
 }
 /*
-Area total: 40.84070
+
 
  
 ------------------------------------

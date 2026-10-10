@@ -11,12 +11,17 @@ public class Teste1 {
 		Locale.setDefault(Locale.US);
 
 		List<Integer> meusInts = Arrays.asList(1, 2, 3, 4);
+		
 		List<Double> meusDouble = Arrays.asList(3.14, 6.28);
+		
 		List<Object> meusObjs = new ArrayList<Object>();
+		
 		copiar(meusInts, meusObjs);
 		imprimirList(meusObjs);
+		
 		copiar(meusDouble, meusObjs);
 		imprimirList(meusObjs);
+		
 		System.out.println();
 	}
 

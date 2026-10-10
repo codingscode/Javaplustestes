@@ -12,16 +12,18 @@ public class Teste1 {
 		List<Object> meusObjs = new ArrayList<Object>();
 		meusObjs.add("Maria");
 		meusObjs.add("Alex");
+		
 		List<? super Number> meusNums = meusObjs;
 		meusNums.add(10);
 		meusNums.add(3.14);
+		
 		Number x = meusNums.get(0); // erro de compilacao
 		System.out.println();
 	}
 
 }
 /*
-Area total: 40.84070
+
 
 ------------------------------------
 curingas delimitados (bounded wildcards)
