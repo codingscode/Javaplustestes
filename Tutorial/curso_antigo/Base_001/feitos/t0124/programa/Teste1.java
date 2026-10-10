@@ -27,7 +27,8 @@ public class Teste1 {
 			System.out.println("Max:");
 			System.out.println(x);
 
-		} catch (IOException e) {
+		}
+		catch (IOException e) {
 			System.out.println("Erro: " + e.getMessage());
 		}
 
