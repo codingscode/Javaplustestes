@@ -14,6 +14,7 @@ public class Teste1 {
 		Locale.setDefault(Locale.US);
 
 		List<Forma> minhasFormas = new ArrayList<>();
+		
 		minhasFormas.add(new Retangulo(3.0, 2.0));
 		minhasFormas.add(new Circulo(2.0));
 

@@ -16,7 +16,7 @@ public class Teste1 {
 		Locale.setDefault(Locale.US);
 		List<Produto> lista = new ArrayList<>();
 
-		String caminho = "/home/misterhp/Documentos/de_la/util/java/java_base/Base_001/src/programa/in.txt";
+		String caminho = "./src/programa/in.txt";
 
 		try (BufferedReader br = new BufferedReader(new FileReader(caminho))) {
 
@@ -31,7 +31,8 @@ public class Teste1 {
 			System.out.println("Mais caro:");
 			System.out.println(x);
 
-		} catch (IOException e) {
+		}
+		catch (IOException e) {
 			System.out.println("Erro: " + e.getMessage());
 		}
 

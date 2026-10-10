@@ -10,6 +10,7 @@ public class Teste1 {
 		Locale.setDefault(Locale.US);
 		
 		List<Integer> meusInts = Arrays.asList(5, 2, 10);
+		
 		imprimirList(meusInts);
 		System.out.println();
 	}
