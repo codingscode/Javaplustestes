@@ -41,8 +41,8 @@ public class LogEntrada {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		LogEntrada other = (LogEntrada) obj;
-		return Objects.equals(nomeusu, other.nomeusu);
+		LogEntrada outro = (LogEntrada) obj;
+		return Objects.equals(nomeusu, outro.nomeusu);
 	}
 	
 }

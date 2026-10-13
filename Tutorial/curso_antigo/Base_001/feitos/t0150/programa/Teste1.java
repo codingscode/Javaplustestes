@@ -17,7 +17,7 @@ public class Teste1 {
 		Locale.setDefault(Locale.US);
 		
 		// caminho do arquivo
-		String caminho = "/home/misterhp/Documentos/de_la/util/java/java_base/Base_001/src/programa/in.txt";
+		String caminho = "./src/programa/in.txt";
 		
 		try (BufferedReader br = new BufferedReader(new FileReader(caminho))) {
 
@@ -36,7 +36,8 @@ public class Teste1 {
 			}
 			System.out.println("Total de usuários: " + set.size());
 
-		} catch (IOException e) {
+		}
+		catch (IOException e) {
 			System.out.println("Erro: " + e.getMessage());
 		}
 
