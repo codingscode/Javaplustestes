@@ -12,6 +12,7 @@ public class Teste1 {
 		Locale.setDefault(Locale.US);
 
 		Set<Produto> set = new HashSet<>();
+		
 		set.add(new Produto("TV", 900.0));
 		set.add(new Produto("Notebook", 1200.0));
 		set.add(new Produto("Tablet", 400.0));

@@ -45,7 +45,6 @@ public class Cliente {
 		Cliente other = (Cliente) obj;
 		return Objects.equals(email, other.email) && Objects.equals(nome, other.nome);
 	}
-
 	
 		
 	

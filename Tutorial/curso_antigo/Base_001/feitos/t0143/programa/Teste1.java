@@ -9,7 +9,8 @@ public class Teste1 {
 	public static void main(String[] args) {
 		Locale.setDefault(Locale.US);
 
-		Set<String> set = new LinkedHashSet<>();
+		Set<String> set = new LinkedHashSet<>(); // mantem ordem de inserção
+		
 		set.add("TV");
 		set.add("Tablet");
 		set.add("Notebook");

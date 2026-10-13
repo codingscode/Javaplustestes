@@ -10,6 +10,7 @@ public class Teste1 {
 		Locale.setDefault(Locale.US);
 
 		Set<String> set = new LinkedHashSet<>();
+		
 		set.add("TV");
 		set.add("Tablet");
 		set.add("Notebook");
