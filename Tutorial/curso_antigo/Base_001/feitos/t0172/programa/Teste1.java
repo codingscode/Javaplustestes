@@ -19,6 +19,7 @@ public class Teste1 {
 		lista.add(new Produto("Mouse", 50.00));
 		lista.add(new Produto("Tablet", 350.50));
 		lista.add(new Produto("HD Case", 80.90));
+		
 		imprimir(lista);
 		System.out.println();
 
