@@ -14,6 +14,7 @@ public class Teste1 {
 		int[] x = {1, 2, 3};
 		
 		Stream<Integer> st1 = lista.stream();
+		
 		System.out.println(Arrays.toString(st1.toArray()));
 		System.out.println(Arrays.toString(x));
 

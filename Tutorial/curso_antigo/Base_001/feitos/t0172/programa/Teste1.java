@@ -24,6 +24,7 @@ public class Teste1 {
 		System.out.println();
 
 		Function<Produto, String> func = p -> p.getNome().toUpperCase();
+		
 		List<String> nomes = lista.stream().map( func ).collect(Collectors.toList());
 
 		nomes.forEach(System.out::println);
