@@ -20,7 +20,7 @@ public class Teste1 {
 		Scanner sc = new Scanner(System.in);
 		
 		//caminho completo
-		String caminho = "/home/misterhp/Documentos/de_la/util/java/java_base/Base_001/src/programa/in.txt";
+		String caminho = "./src/programa/in.txt";
 		
 		try (BufferedReader br = new BufferedReader(new FileReader(caminho))) {
 
