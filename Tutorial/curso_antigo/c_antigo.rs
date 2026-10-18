@@ -6,6 +6,10 @@ paradas:
 
 
 
+video:
+pasta 20 -> 7,fim
+pasta 21 -> 4,
+
 
 
 
