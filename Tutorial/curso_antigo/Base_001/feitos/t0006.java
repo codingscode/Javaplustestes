@@ -16,3 +16,6 @@ public class Teste1 {
 	}
 
 }
+/*
+maria tem 23 anos e ganha R$ 2000.00 
+*/

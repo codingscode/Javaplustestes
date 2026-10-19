@@ -14,3 +14,7 @@ public class Teste1 {
 	}
 
 }
+/*
+resultado = 5.81 metros
+
+*/

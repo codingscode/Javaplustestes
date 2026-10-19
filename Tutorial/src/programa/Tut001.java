@@ -1,13 +1,16 @@
 package programa;
 
+import java.util.Locale;
+
 public class Tut001 {
 
 	
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 
+		
         
-        
+		
 		
 		
 		
