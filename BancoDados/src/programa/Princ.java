@@ -7,9 +7,10 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class Principal {
+public class Princ {
 
 	public static void main(String[] args) {
+		long startTime = System.nanoTime();
 		
 		// Altere "nome_do_seu_banco" para o nome real do seu banco de dados
         String url = "jdbc:postgresql://localhost:5432/postgres"; // "jdbc:postgresql://localhost:5432/nome_do_seu_banco";
@@ -40,11 +41,34 @@ public class Principal {
             e.printStackTrace();
         }
 
+        System.out.println("--------------------------");
+
+		// Your code here
+		long endTime = System.nanoTime(); // total time in nanoseconds
+		long duration = (endTime - startTime);
+
+		// milliseconds
+		System.out.print("tempo execução em ns: ");
+		System.out.println(duration);
 	}
 
 }
 
 /*
+Conexão efetuada com sucesso!
+
+Idade: 21 | Nome: paulo
+Idade: 26 | Nome: roberto
+Idade: 16 | Nome: celso
+Idade: 21 | Nome: paulo
+Idade: 38 | Nome: sonia
+Idade: 30 | Nome: katia
+Idade: 30 | Nome: guilherme
+Idade: 16 | Nome: paulo
+Idade: 15 | Nome: roberto
+Idade: 39 | Nome: guilherme
+--------------------------
+tempo execução em ns: 703306600
 
 
 

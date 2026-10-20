@@ -6,14 +6,6 @@ public class Tut001 {
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 
-		int a = 4;
-		int b = 2;
-		
-        String res = a > b ? "maior" : "menor";
-        
-        
-		
-		System.out.println(res);
 		
 		
 
