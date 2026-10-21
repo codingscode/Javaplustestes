@@ -20,7 +20,6 @@ public class Teste1 {
 
 	}
 
-
 }
 /*
 circunferencia: 31.42
