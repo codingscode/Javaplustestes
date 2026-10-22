@@ -3,7 +3,6 @@ package programa;
 import java.util.Locale;
 
 
-
 public class Teste1 {
 
 	public static void main(String[] args) {

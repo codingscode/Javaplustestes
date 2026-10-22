@@ -30,12 +30,12 @@ public class Teste1 {
 
 }
 /*
+[]
 [aladin, mel, lili, liu]
 aladin
 mel
 lili
 liu
-
 
 
 ------------------------------------

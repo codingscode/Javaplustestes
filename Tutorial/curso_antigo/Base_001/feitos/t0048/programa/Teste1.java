@@ -15,7 +15,7 @@ public class Teste1 {
 		for (String cada : vetor) {
 			System.out.println(cada);
 		}		
-		
+
 	}
 
 }
