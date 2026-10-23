@@ -28,10 +28,12 @@ public class Teste1 {
 		
 		System.out.println("-----------");
 		// 1º elemento atendendo criterio
-		String nome = lista.stream().filter(cada -> cada.charAt(0) == 'l').findFirst().orElse(null);
+		String nome = lista.stream().filter(cada -> cada.charAt(0) == 'l')
+				.findFirst().orElse(null);
 		System.out.println(nome);
 		
-		String nome2 = lista.stream().filter(cada -> cada.charAt(0) == 'k').findFirst().orElse(null);
+		String nome2 = lista.stream().filter(cada -> cada.charAt(0) == 'k')
+				.findFirst().orElse(null);
 		System.out.println(nome2);
 	}
 

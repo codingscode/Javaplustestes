@@ -34,7 +34,10 @@ public class Teste1 {
 		System.out.println(lista);
 		System.out.println("tamanho: " + lista.size());
 		System.out.println("-----------");
-		List<String> resultado = lista.stream().filter(cada -> cada.charAt(0) == 'l').collect(Collectors.toList());
+		
+		List<String> resultado = lista.stream()
+				.filter(cada -> cada.charAt(0) == 'l')
+				.collect(Collectors.toList());
 		System.out.println(resultado);
 	}
 

@@ -5,7 +5,6 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 
-
 public class Teste1 {
 
 	public static void main(String[] args) {
@@ -26,7 +25,6 @@ public class Teste1 {
 		System.out.println("d05: " + d05);
 		System.out.println("d06: " + d06);
 		System.out.println("d07: " + d07);
-		
 				
 		System.out.println();
 

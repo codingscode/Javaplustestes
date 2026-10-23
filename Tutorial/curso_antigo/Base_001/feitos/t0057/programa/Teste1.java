@@ -7,8 +7,6 @@ import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 
 
-
-
 public class Teste1 {
 
 	public static void main(String[] args) {
