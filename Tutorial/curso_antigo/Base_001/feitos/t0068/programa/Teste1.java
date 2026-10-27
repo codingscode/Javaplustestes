@@ -28,7 +28,7 @@ public class Teste1 {
 		// quantidade contratos
 		int n = 3;
 
-		Date dataContrato1 = sdf.parse("20/08/2018");		
+		Date dataContrato1 = sdf.parse("20/08/2018");
 		double horaValor1 = 50;
 		int horas1 = 20;
 		ContratoHora contrato1 = new ContratoHora(dataContrato1, horaValor1, horas1);
