@@ -7,7 +7,12 @@ public class Tut001 {
 		long startTime = System.nanoTime();
 
         
-
+        StringBuilder sb = new StringBuilder();
+        
+        sb.append("oi");
+        sb.append(" algo");
+        
+        System.out.println(sb);
 		
 		
 		
