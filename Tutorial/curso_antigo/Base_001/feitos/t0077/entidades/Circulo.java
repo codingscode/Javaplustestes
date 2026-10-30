@@ -8,7 +8,7 @@ public class Circulo extends Forma{
 	public Circulo(){
 		super();
 	}
-			
+	
 	public Circulo(Cor cor, Double raio) {
 		super(cor);
 		this.raio = raio;

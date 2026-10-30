@@ -10,7 +10,6 @@ public class Teste1 {
 		System.out.println("inicio");
 		method1();
 		
-
 		System.out.println("fim do programa");
 		System.out.println();
 	}

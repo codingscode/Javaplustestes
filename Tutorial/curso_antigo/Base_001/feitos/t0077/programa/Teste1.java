@@ -44,7 +44,7 @@ public class Teste1 {
 		System.out.println("áreas formas:");
 		
 		for (Forma cada : lista){
-			System.out.println(String.format("%.2f",  cada.area()));
+			System.out.println(String.format("%.2f", cada.area()));
 		}
 		System.out.println();
 

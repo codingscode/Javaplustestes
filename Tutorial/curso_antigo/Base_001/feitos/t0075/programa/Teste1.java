@@ -32,7 +32,7 @@ Exception in thread "main" java.lang.Error: Unresolved compilation problem:
 ------------------------------------
 classes abstratas
 - nao podem ser instanciadas
-- garante herança total, somente subclasses nao abstratas podem ser instanciadas , mas nunca uma superclasse abstrata
+- garante herança total, somente subclasses nao abstratas podem ser instanciadas, mas nunca uma superclasse abstrata
 
 
 */
