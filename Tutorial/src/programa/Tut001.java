@@ -7,16 +7,7 @@ public class Tut001 {
 		long startTime = System.nanoTime();
 
         
-        try {
-        	int a = 4;
-        	String b = "oi";
-        	int c = a + b;
-        	System.out.println(c);
-        }
-        catch (Exception e) {
-        	System.out.println("houve erro");
-        }
-		
+      
 		
 		
 

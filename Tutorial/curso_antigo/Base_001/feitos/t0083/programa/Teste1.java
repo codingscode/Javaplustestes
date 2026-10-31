@@ -58,9 +58,6 @@ erro na reserva: datas reserva para atualizar devem ser futuras!
 
 
 
-
-
-
 ------------------------------------
 bloco finally
 
