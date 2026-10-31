@@ -48,7 +48,6 @@ Reserva: Quarto 8021, entrada: 19/09/2019, saida: 30/09/2019, 11 noites
 
 
 
-
 ------------------------------------
 bloco finally
 
