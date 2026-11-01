@@ -9,8 +9,7 @@ public class Teste1 {
 
 	public static void main(String[] args) {
 		String caminho = "./src/programa/meutexto.txt";
-		//String caminho = "/cu";
-		
+				
 		FileReader fr = null;
 		BufferedReader br = null;
 		

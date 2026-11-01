@@ -9,7 +9,6 @@ public class DominioExcecoes extends RuntimeException {
 	}
 	
 	
-	
 }
 /*
 RuntimeException -> faz nao tratar 
