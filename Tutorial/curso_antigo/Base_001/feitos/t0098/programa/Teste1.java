@@ -6,7 +6,7 @@ public class Teste1 {
 
 	public static void main(String[] args) {
 		// caminho da pasta
-		String strCam = "/home/misterhp/Documentos/de_la/util/java/java_base/Base_001/src/programa";
+		String strCam = "./src/programa";
 		
 		File caminho = new File(strCam);
 		
