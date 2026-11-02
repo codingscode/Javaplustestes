@@ -45,7 +45,7 @@ public class Teste1 {
 fatura:
 pagamento basico: 50.0
 Imposto: 10.0
-Pagamento total: 40.0
+Pagamento total: 60.0
 
 
 
@@ -59,5 +59,5 @@ a interface estabelece um contrato que a classe deve cumprir
 
  
 
- * 
- */
+ 
+*/
