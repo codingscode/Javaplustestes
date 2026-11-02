@@ -17,6 +17,5 @@ public abstract class FormaAbstrata implements Forma{
 		this.cor = cor;
 	}
 	
-	
 
 }
