@@ -30,7 +30,7 @@ public class Fatura {
 	}
 	
 	public Double pagamentoTotal(){
-		return getPagamentoBase() - getImposto();
+		return getPagamentoBase() + getImposto();
 	}
 	
 	
