@@ -47,9 +47,7 @@ Alex Brown, 5000.0
 Marta Blue, 6100.0
 
 
- 
- 
- 
+
 ------------------------------------
 combinação interface + classe abstrata
  
