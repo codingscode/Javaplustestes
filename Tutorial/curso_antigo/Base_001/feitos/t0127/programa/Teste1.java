@@ -27,8 +27,7 @@ public class Teste1 {
 10
 
 
- 
- 
+  
  
 ------------------------------------
 generics permitem que classes,
@@ -39,6 +38,7 @@ reuso, type safety, performance uso comum: coleções
 Genéricos delimitados
  
 Tipos curinga (wildcard types))
-com tipos curinga podemos fazer métodos que recebem um genérico de "qualquer tipo" 
+com tipos curinga podemos fazer métodos que recebem um genérico de 
+"qualquer tipo" 
  
 */
