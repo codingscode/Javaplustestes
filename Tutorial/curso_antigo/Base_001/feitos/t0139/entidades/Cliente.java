@@ -42,8 +42,8 @@ public class Cliente {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Cliente other = (Cliente) obj;
-		return Objects.equals(email, other.email) && Objects.equals(nome, other.nome);
+		Cliente outro = (Cliente) obj;
+		return Objects.equals(email, outro.email) && Objects.equals(nome, outro.nome);
 	}
 
 
