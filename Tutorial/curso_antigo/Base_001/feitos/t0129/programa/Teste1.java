@@ -44,7 +44,8 @@ reuso, type safety, performance uso comum: coleções
 Genéricos delimitados
  
 Tipos curinga (wildcard types))
-com tipos curinga podemos fazer métodos que recebem um genérico de "qualquer tipo"
+com tipos curinga podemos fazer métodos que recebem um genérico de 
+"qualquer tipo"
 porém nao é possível adicionar dados a uma coleção de tipo curinga
 
 
