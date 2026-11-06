@@ -64,8 +64,6 @@ HD Case, 88.99
 
 
 
-
-
 ------------------------------------
 programação funcional e calculo lambda
 
