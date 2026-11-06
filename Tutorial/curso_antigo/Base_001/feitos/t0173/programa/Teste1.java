@@ -71,5 +71,4 @@ Function(exemplo com map)
 
 funcões que recebem funções como parametro
 
-
 */
