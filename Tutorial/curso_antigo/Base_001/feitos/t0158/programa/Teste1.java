@@ -19,7 +19,6 @@ public class Teste1 {
 		list.add(new Produto("Tablet", 450.00));
 
 		// função anonima
-
 		list.sort((p1, p2) -> p1.getNome().toUpperCase().compareTo(p2.getNome().toUpperCase()));
 
 		for (Produto cada : list) {
