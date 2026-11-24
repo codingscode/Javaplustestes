@@ -14,19 +14,15 @@ public class Tut001 {
 
 		//
         
-        LocalDateTime agora = LocalDateTime.now();
+        LocalDateTime momento = LocalDateTime.of(2023,10,16,12,23,05,200);
 
-		System.out.println(agora);
+		System.out.println(momento);
 		
 		// formatador ano/mes/dia hora:minuto:segundo:milisegundos
 		DateTimeFormatter formatador = DateTimeFormatter.ofPattern("YYYY/MM/dd HH:mm:ss.SSS");
 
-		System.out.println(agora.format(formatador));
-		
-		
-		
-		
-		
+		System.out.println(momento.format(formatador));
+			
         
 		System.out.println("--------------------------");
 
@@ -42,15 +38,10 @@ public class Tut001 {
 }
 
 /*
-2026-11-24T12:35:26.532612258
-2026/11/24 12:35:26.532
+2023-10-16T12:23:05.000000200
+2023/10/16 12:23:05.000
 --------------------------
-tempo execução em ns: 77549043
-
-
-
-
-
+tempo execução em ns: 45325538
 
 
 
