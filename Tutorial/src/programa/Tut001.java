@@ -17,9 +17,15 @@ public class Tut001 {
 
 		System.out.println(agora);
 		
-		// milisegundos, nanosegundos
-		System.out.println(agora.getNano()/1000000);
-		System.out.println(agora.getNano());
+		// milisegundos desde 1/1/1970
+		System.out.println(System.currentTimeMillis());
+		
+		// anos desde 1/1/1970
+		System.out.println(System.currentTimeMillis()/(1000*60*60*24*365.25));
+		
+		
+		
+		
 		
         
 		System.out.println("--------------------------");
@@ -36,9 +42,11 @@ public class Tut001 {
 }
 
 /*
-
-
-
+2026-11-24T12:26:18.257584574
+1795533978258
+56.89703837611225
+--------------------------
+tempo execução em ns: 30043945
 
 
 
