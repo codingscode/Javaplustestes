@@ -14,7 +14,7 @@ public class Tut001 {
 
 		//
         
-        LocalDateTime momento = LocalDateTime.of(2023,10,16,12,23,05,200);
+        LocalDateTime momento = LocalDateTime.parse("2023-10-16T12:23:05.200");
 
 		System.out.println(momento);
 		
@@ -38,10 +38,10 @@ public class Tut001 {
 }
 
 /*
-2023-10-16T12:23:05.000000200
-2023/10/16 12:23:05.000
+2023-10-16T12:23:05.200
+2023/10/16 12:23:05.200
 --------------------------
-tempo execução em ns: 45325538
+tempo execução em ns: 50660104
 
 
 
