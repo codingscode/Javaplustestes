@@ -14,24 +14,29 @@ public class Tut001 {
 		long startTime = System.nanoTime();
 
 		// formatador ano/mes/dia hora:minuto:segundo:milisegundos
-		DateTimeFormatter formatador = DateTimeFormatter.ofPattern("YYYY/MM/dd HH:mm:ss.SSS");
+		DateTimeFormatter formatador = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss.SSS");
         
-        LocalDateTime momento1 = LocalDateTime.parse("2023-10-16T12:23:05.200");
+        LocalDateTime momento1 = LocalDateTime.parse("2023/10/16 12:23:05.200", formatador);
 
-        LocalDateTime momento2 = LocalDateTime.parse("2023-10-17T17:42:37.543");
+        LocalDateTime momento2 = LocalDateTime.parse("2023/10/17 17:42:37.543", formatador);
         
         Duration diferenca = Duration.between(momento1, momento2);
 		
 
-		System.out.println(momento1.format(formatador));
-		System.out.println(momento2.format(formatador));
+		System.out.println(momento1);
+		System.out.println(momento2);
                 
-        System.out.println(diferenca);
+		System.out.println(diferenca);
 		
-        System.out.println(diferenca.toHours());
-        System.out.println(diferenca.toMinutesPart());
-        System.out.println(diferenca.toSecondsPart());
-        System.out.println(diferenca.toMillisPart());
+		// segundos totais
+        System.out.println(diferenca.getSeconds()/(60*60));
+        
+        // minutos totais
+        
+        
+        // horas totais
+		
+        
         
         
 		System.out.println("--------------------------");
