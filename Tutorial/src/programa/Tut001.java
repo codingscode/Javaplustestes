@@ -2,6 +2,7 @@
 package programa;
 
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 
 public class Tut001 {
@@ -17,11 +18,10 @@ public class Tut001 {
 
 		System.out.println(agora);
 		
-		// milisegundos desde 1/1/1970
-		System.out.println(System.currentTimeMillis());
-		
-		// anos desde 1/1/1970
-		System.out.println(System.currentTimeMillis()/(1000*60*60*24*365.25));
+		// formatador ano/mes/dia hora:minuto:segundo:milisegundos
+		DateTimeFormatter formatador = DateTimeFormatter.ofPattern("YYYY/MM/dd HH:mm:ss.SSS");
+
+		System.out.println(agora.format(formatador));
 		
 		
 		
@@ -42,11 +42,14 @@ public class Tut001 {
 }
 
 /*
-2026-11-24T12:26:18.257584574
-1795533978258
-56.89703837611225
+2026-11-24T12:35:26.532612258
+2026/11/24 12:35:26.532
 --------------------------
-tempo execução em ns: 30043945
+tempo execução em ns: 77549043
+
+
+
+
 
 
 
