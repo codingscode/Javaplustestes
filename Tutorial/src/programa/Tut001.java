@@ -17,18 +17,9 @@ public class Tut001 {
 
 		System.out.println(agora);
 		
-		// hora, minuto, segundo
-		System.out.println(agora.getHour());
-		System.out.println(agora.getMinute());
-		System.out.println(agora.getSecond());
-		
-		// ano, mes, dia
-		System.out.println(agora.getYear());
-		System.out.println(agora.getMonthValue());
-		System.out.println(agora.getDayOfMonth());
-		
-		
-		
+		// milisegundos, nanosegundos
+		System.out.println(agora.getNano()/1000000);
+		System.out.println(agora.getNano());
 		
         
 		System.out.println("--------------------------");
