@@ -1,17 +1,20 @@
+
 package programa;
 
 public class Tut001 {
-	
+
+
 	
 	
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 
-		// 
+		//
         
-		
+        
 
 		
+        
 		System.out.println("--------------------------");
 
 		// Your code here
@@ -26,11 +29,6 @@ public class Tut001 {
 }
 
 /*
-
-
-
-
-
 
 
 
