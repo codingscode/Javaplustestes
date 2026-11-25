@@ -2,8 +2,8 @@
 package programa;
 
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 
 public class Tut001 {
@@ -14,18 +14,15 @@ public class Tut001 {
 		long startTime = System.nanoTime();
 
 		// formatador ano/mes/dia hora:minuto:segundo:milisegundos
-		//DateTimeFormatter formatador = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss.SSS");
+		DateTimeFormatter formatador = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss.SSS");
         
-        //LocalDateTime momento1 = LocalDateTime.parse("2023/10/16 12:23:05.200", formatador);
-        //LocalDateTime momento2 = LocalDateTime.parse("2023/10/18 08:42:31.580", formatador);
-        
-        // nao é bom
-        SimpleDateFormat formatador = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss.SSS");
-        Date momento = formatador.parse("16/10/2023 12:23:05.200");
+        LocalDateTime momento1 = LocalDateTime.parse("16/10/2023 12:23:05.200", formatador);
+        LocalDateTime momento2 = LocalDateTime.parse("18/10/2023 08:42:31.580", formatador);
         
         
-		System.out.println(momento);
-		        
+        System.out.println(momento1.format(formatador));
+        System.out.println(momento2.format(formatador));
+		
         
 		System.out.println("--------------------------");
         // Your code here
@@ -40,9 +37,10 @@ public class Tut001 {
 }
 
 /*
-Mon Oct 16 12:23:05 BRT 2023
+16/10/2023 12:23:05.200
+18/10/2023 08:42:31.580
 --------------------------
-tempo execução em ns: 80210103
+tempo execução em ns: 17122540
 
 
 
