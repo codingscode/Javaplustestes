@@ -17,20 +17,19 @@ public class Tut001 {
 		DateTimeFormatter formatador = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss.SSS");
         
         LocalDateTime momento1 = LocalDateTime.parse("2023/10/16 12:23:05.200", formatador);
-
-		System.out.println(momento1);
-                
-		// +2 dias
-        System.out.println(momento1.plusDays(2));
+        LocalDateTime momento2 = LocalDateTime.parse("2023/10/18 08:42:31.580", formatador);
+        LocalDateTime momento3 = LocalDateTime.parse("2023/10/16 12:23:05.200", formatador);
         
-        // +3 meses
-        System.out.println(momento1.plusMonths(3));
+		System.out.println(momento1);
 		
-        // +5 anos
-        System.out.println(momento1.plusYears(5));
-		
-        // +2 semanas
-        System.out.println(momento1.plusWeeks(2));
+		System.out.println(momento2);
+        
+		// antes
+		System.out.println(momento1.isAfter(momento2));
+		// depois
+		System.out.println(momento1.isBefore(momento2));
+		// igual
+		System.out.println(momento1.isEqual(momento3));
 		
         
 		System.out.println("--------------------------");
@@ -47,12 +46,12 @@ public class Tut001 {
 
 /*
 2023-10-16T12:23:05.200
-2023-10-18T12:23:05.200
-2024-01-16T12:23:05.200
-2028-10-16T12:23:05.200
-2023-10-30T12:23:05.200
+2023-10-18T08:42:31.580
+false
+true
+true
 --------------------------
-tempo execução em ns: 17259267
+tempo execução em ns: 17672445
 
 
 
