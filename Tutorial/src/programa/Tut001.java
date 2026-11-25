@@ -1,7 +1,6 @@
 
 package programa;
 
-import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
@@ -18,19 +17,12 @@ public class Tut001 {
         
         LocalDateTime momento1 = LocalDateTime.parse("2023/10/16 12:23:05.200", formatador);
         LocalDateTime momento2 = LocalDateTime.parse("2023/10/18 08:42:31.580", formatador);
-        LocalDateTime momento3 = LocalDateTime.parse("2023/10/16 12:23:05.200", formatador);
         
-		System.out.println(momento1);
-		
-		System.out.println(momento2);
         
-		// antes
-		System.out.println(momento1.isAfter(momento2));
-		// depois
-		System.out.println(momento1.isBefore(momento2));
-		// igual
-		System.out.println(momento1.isEqual(momento3));
+		System.out.println(momento1.format(formatador));
 		
+		System.out.println(momento2.format(formatador));
+        
         
 		System.out.println("--------------------------");
         // Your code here
@@ -45,26 +37,10 @@ public class Tut001 {
 }
 
 /*
-2023-10-16T12:23:05.200
-2023-10-18T08:42:31.580
-false
-true
-true
+2023/10/16 12:23:05.200
+2023/10/18 08:42:31.580
 --------------------------
-tempo execução em ns: 17672445
-
-
-
-
-
-
-
-
-
-
-
-
-
+tempo execução em ns: 16669578
 
 
 
