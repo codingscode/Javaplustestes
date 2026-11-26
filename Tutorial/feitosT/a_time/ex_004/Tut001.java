@@ -19,7 +19,7 @@ public class Tut001 {
 		System.out.println(agora);
 		
 		// formatador ano/mes/dia hora:minuto:segundo:milisegundos
-		DateTimeFormatter formatador = DateTimeFormatter.ofPattern("YYYY/MM/dd HH:mm:ss.SSS");
+		DateTimeFormatter formatador = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss.SSS");
 
 		System.out.println(agora.format(formatador));
 		

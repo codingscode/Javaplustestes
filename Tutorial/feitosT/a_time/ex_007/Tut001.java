@@ -14,7 +14,7 @@ public class Tut001 {
 		long startTime = System.nanoTime();
 
 		// formatador ano/mes/dia hora:minuto:segundo:milisegundos
-		DateTimeFormatter formatador = DateTimeFormatter.ofPattern("YYYY/MM/dd HH:mm:ss.SSS");
+		DateTimeFormatter formatador = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss.SSS");
         
         LocalDateTime momento1 = LocalDateTime.parse("2023-10-16T12:23:05.200");
 
