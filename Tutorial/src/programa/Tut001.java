@@ -2,8 +2,6 @@
 package programa;
 
 import java.text.ParseException;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 
 
 public class Tut001 {
@@ -12,16 +10,14 @@ public class Tut001 {
 	
 	public static void main(String[] args) throws ParseException {
 		long startTime = System.nanoTime();
-
-		// formatador ano/mes/dia hora:minuto:segundo:milisegundos
-		DateTimeFormatter formatador = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss.SSS");
+        // 29
+		// converter tipo char valor '5' para tipo valor int imprimindo como 5 int
+        char valchar = '5';
         
-        LocalDateTime momento1 = LocalDateTime.parse("16/10/2023 12:23:05.200", formatador);
-        LocalDateTime momento2 = LocalDateTime.parse("18/10/2023 08:42:31.580", formatador);
-        
-        
-        System.out.println(momento1.format(formatador));
-        System.out.println(momento2.format(formatador));
+        int valint = valchar - '0';
+		
+		System.out.println(valchar);
+		System.out.println(valint);
 		
         
 		System.out.println("--------------------------");
@@ -37,12 +33,10 @@ public class Tut001 {
 }
 
 /*
-16/10/2023 12:23:05.200
-18/10/2023 08:42:31.580
+5
+5
 --------------------------
-tempo execução em ns: 17122540
-
-
+tempo execução em ns: 384598
 
 
 
