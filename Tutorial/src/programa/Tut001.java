@@ -2,7 +2,6 @@
 package programa;
 
 import java.time.OffsetDateTime;
-import java.time.ZoneOffset;
 import java.time.format.DateTimeFormatter;
 
 public class Tut001 {
@@ -16,18 +15,16 @@ public class Tut001 {
         
 		DateTimeFormatter formatador = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss.SSS");
 		
-		// Converter entre offsets diferentes
+		// Fazer parse e formatar com offset (ISO-8601)
 		
-		OffsetDateTime emUtc = OffsetDateTime.parse("2026-11-27T13:18:15.2000Z");
-		
-		OffsetDateTime emBrasilia = emUtc.withOffsetSameInstant(ZoneOffset.of("-03:00"));
-		// Resultado: 2026-11-27T10:18:00-03:00
+		OffsetDateTime parsed = OffsetDateTime.parse("2026-11-27T10:18:00-03:00");
 
-		System.out.println(emUtc);
-		System.out.println(formatador.format(emUtc));
+		String isoFormatado = parsed.format(DateTimeFormatter.ISO_OFFSET_DATE_TIME);
+
+        System.out.println(parsed);
+        
+        System.out.println(isoFormatado);
 		
-		System.out.println(emBrasilia);
-		System.out.println(formatador.format(emBrasilia));
 
 		System.out.println("--------------------------");
 		// Your code here
@@ -42,16 +39,10 @@ public class Tut001 {
 }
 
 /*
-2026-11-27T13:18:15.200Z
-27/11/2026 13:18:15.200
-2026-11-27T10:18:15.200-03:00
-27/11/2026 10:18:15.200
+2026-11-27T10:18-03:00
+2026-11-27T10:18:00-03:00
 --------------------------
-tempo execução em ns: 18032931
-
-
-
-
+tempo execução em ns: 18063591
 
 
 
