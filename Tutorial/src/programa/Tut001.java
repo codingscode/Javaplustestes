@@ -2,29 +2,28 @@
 package programa;
 
 import java.time.Instant;
-import java.time.ZoneId;
-import java.time.ZoneOffset;
-import java.time.ZonedDateTime;
-import java.time.format.DateTimeFormatter;
+import java.time.OffsetDateTime;
 
 public class Tut001 {
 
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 		
-		// Converter UTC para um fuso horário local
+		// Converter string para UTC
 
 		
 		// formatador ano/mes/dia hora:minuto:segundo:nanosegundos
-		DateTimeFormatter formatador = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss.SSS").withZone(ZoneOffset.UTC);
+		// Formato ISO-8601 com 'Z' (UTC)
+        Instant instant = Instant.parse("2026-11-26T22:42:00Z");
 
-		Instant utc = Instant.parse("2024-10-14T01:42:00Z");
-		ZonedDateTime aqui = utc.atZone(ZoneId.of("America/Fortaleza"));
+        // Formato ISO-8601 com offset explícito (ex: -03:00)
+        OffsetDateTime odt = OffsetDateTime.parse("2026-11-26T22:42:00-03:00");
+        Instant instantFromOffset = odt.toInstant();        
 		
-		System.out.println(utc);
-		System.out.println(aqui);
         
-		
+        System.out.println(odt);
+        System.out.println(instantFromOffset);
+        
         
 
 		System.out.println("--------------------------");
@@ -40,15 +39,10 @@ public class Tut001 {
 }
 
 /*
-2024-10-14T01:42:00Z
-2024-10-13T22:42-03:00[America/Fortaleza]
+2026-11-26T22:42-03:00
+2026-11-27T01:42:00Z
 --------------------------
-tempo execução em ns: 34517648
-
-
-
-
-
+tempo execução em ns: 18915417
 
 
 
