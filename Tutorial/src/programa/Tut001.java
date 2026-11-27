@@ -2,27 +2,32 @@
 package programa;
 
 import java.time.Instant;
-import java.time.OffsetDateTime;
+import java.time.ZoneId;
+import java.time.ZoneOffset;
+import java.time.format.DateTimeFormatter;
 
 public class Tut001 {
 
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 		
-		// Converter string para UTC
-
-		
 		// formatador ano/mes/dia hora:minuto:segundo:nanosegundos
-		// Formato ISO-8601 com 'Z' (UTC)
-        Instant instant = Instant.parse("2026-11-26T22:42:00Z");
+        DateTimeFormatter formatadorGmt = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss.SSS").withZone(ZoneOffset.UTC);
 
-        // Formato ISO-8601 com offset explícito (ex: -03:00)
-        OffsetDateTime odt = OffsetDateTime.parse("2026-11-26T22:42:00-03:00");
-        Instant instantFromOffset = odt.toInstant();        
-		
+        DateTimeFormatter formatadorLocal = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss.SSS").withZone(ZoneId.systemDefault());
         
-        System.out.println(odt);
-        System.out.println(instantFromOffset);
+		
+		// gmt
+		Instant agoraGmt = Instant.now();
+		
+        System.out.println(agoraGmt);
+        
+		System.out.println("gmt:");
+        System.out.println(formatadorGmt.format(agoraGmt));
+        
+		System.out.println("local:");
+        System.out.println(formatadorLocal.format(agoraGmt));
+		
         
         
 
@@ -39,10 +44,14 @@ public class Tut001 {
 }
 
 /*
-2026-11-26T22:42-03:00
-2026-11-27T01:42:00Z
+2026-11-27T13:03:51.548104565Z
+gmt:
+27/11/2026 13:03:51.548
+local:
+27/11/2026 10:03:51.548
 --------------------------
-tempo execução em ns: 18915417
+tempo execução em ns: 36548734
+
 
 
 
