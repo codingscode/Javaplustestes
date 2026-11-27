@@ -2,8 +2,7 @@
 package programa;
 
 import java.time.OffsetDateTime;
-import java.time.ZoneId;
-import java.time.ZonedDateTime;
+import java.time.ZoneOffset;
 import java.time.format.DateTimeFormatter;
 
 public class Tut001 {
@@ -17,18 +16,18 @@ public class Tut001 {
         
 		DateTimeFormatter formatador = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss.SSS");
 		
-		// Converter de um fuso horário (ZoneId) para OffsetDateTime
+		// Converter entre offsets diferentes
 		
-		ZonedDateTime zdt = ZonedDateTime.now(ZoneId.of("America/Sao_Paulo"));
+		OffsetDateTime emUtc = OffsetDateTime.parse("2026-11-27T13:18:15.2000Z");
 		
-		OffsetDateTime odt = zdt.toOffsetDateTime();
+		OffsetDateTime emBrasilia = emUtc.withOffsetSameInstant(ZoneOffset.of("-03:00"));
+		// Resultado: 2026-11-27T10:18:00-03:00
+
+		System.out.println(emUtc);
+		System.out.println(formatador.format(emUtc));
 		
-		
-		System.out.println(zdt);
-		System.out.println(formatador.format(zdt));
-		
-		System.out.println(odt);
-		System.out.println(formatador.format(odt));
+		System.out.println(emBrasilia);
+		System.out.println(formatador.format(emBrasilia));
 
 		System.out.println("--------------------------");
 		// Your code here
@@ -43,12 +42,12 @@ public class Tut001 {
 }
 
 /*
-2026-11-27T10:35:48.546153665-03:00[America/Sao_Paulo]
-27/11/2026 10:35:48.546
-2026-11-27T10:35:48.546153665-03:00
-27/11/2026 10:35:48.546
+2026-11-27T13:18:15.200Z
+27/11/2026 13:18:15.200
+2026-11-27T10:18:15.200-03:00
+27/11/2026 10:18:15.200
 --------------------------
-tempo execução em ns: 32730252
+tempo execução em ns: 18032931
 
 
 
