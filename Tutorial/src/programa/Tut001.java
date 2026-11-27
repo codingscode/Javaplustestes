@@ -14,18 +14,20 @@ public class Tut001 {
         //DateTimeFormatter formatadorGmt = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss.SSS").withZone(ZoneOffset.UTC);
         //DateTimeFormatter formatadorLocal = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss.SSS").withZone(ZoneId.systemDefault());
         
+		DateTimeFormatter formatador = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss.SSS");
 		
-		ZonedDateTime gmt = ZonedDateTime.now(ZoneId.of("GMT"));
-        ZonedDateTime gmtMenos3 = ZonedDateTime.now(ZoneId.of("GMT-3"));
+		ZonedDateTime local = ZonedDateTime.now(ZoneId.of("America/Fortaleza"));
+        ZonedDateTime emGmt = local.withZoneSameInstant(ZoneId.of("GMT"));
 
-        DateTimeFormatter formatador = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss.SSS");
-
-        System.out.println("GMT:");
-        System.out.println(gmt.format(formatador));
         
-        System.out.println("GMT-3:");
-        System.out.println(gmtMenos3.format(formatador));
+        System.out.println("local:");
+        System.out.println(formatador.format(local));
+        
+        System.out.println("em gmt:");
+        System.out.println(formatador.format(emGmt));
+				
 		
+        
         
         
 
@@ -42,12 +44,12 @@ public class Tut001 {
 }
 
 /*
-GMT:
-27/11/2026 13:09:56.042
-GMT-3:
-27/11/2026 10:09:56.043
+local:
+27/11/2026 10:16:34.081
+em gmt:
+27/11/2026 13:16:34.081
 --------------------------
-tempo execução em ns: 15453087
+tempo execução em ns: 31110973
 
 
 
