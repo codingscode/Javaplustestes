@@ -25,9 +25,9 @@ public class Tut001 {
 		
 		System.out.println(offsetMenos3);
 		
-		System.out.println(agoraMenos3);
+		System.out.println(formatador.format(agoraMenos3));
 		
-		System.out.println(agoraUtc);
+		System.out.println(formatador.format(agoraUtc));
         
         
         
@@ -46,10 +46,10 @@ public class Tut001 {
 
 /*
 -03:00
-2026-11-27T10:25:34.668054779-03:00
-2026-11-27T13:25:34.668182330Z
+27/11/2026 10:28:20.983
+27/11/2026 13:28:20.983
 --------------------------
-tempo execução em ns: 14005743
+tempo execução em ns: 13832143
 
 
 
