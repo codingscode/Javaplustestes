@@ -1,29 +1,34 @@
 
 package programa;
 
+import java.time.Instant;
 import java.time.LocalDateTime;
+import java.time.ZoneOffset;
 import java.time.format.DateTimeFormatter;
 
 public class Tut001 {
 
-    
-	
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
-        
-
-		LocalDateTime agora = LocalDateTime.now();
-
-		System.out.println(agora);
 		
-		// formatador ano/mes/dia hora:minuto:segundo:milisegundos
-		DateTimeFormatter formatador = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss.SSS");
+		// formatador ano/mes/dia hora:minuto:segundo:nanosegundos
+		DateTimeFormatter formatador = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss.SSS").withZone(ZoneOffset.UTC);
 
-		System.out.println(agora.format(formatador));
+		// utc
+		Instant agoraUtc = Instant.now();
 		
+        System.out.println(agoraUtc);
+        System.out.println(formatador.format(agoraUtc));
         
+		
+		LocalDateTime momento1 = LocalDateTime.parse("16/10/2023 12:23:05.200", formatador);
+
+		System.out.println(momento1);
+
+
+
 		System.out.println("--------------------------");
-        // Your code here
+		// Your code here
 		long endTime = System.nanoTime(); // total time in nanoseconds
 		long duration = (endTime - startTime);
 
@@ -35,6 +40,11 @@ public class Tut001 {
 }
 
 /*
+2026-11-27T01:59:35.568334279Z
+27/11/2026 01:59:35.568
+2023-10-16T12:23:05.200
+--------------------------
+tempo execução em ns: 17778638
 
 
 
