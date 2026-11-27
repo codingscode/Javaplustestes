@@ -2,7 +2,8 @@
 package programa;
 
 import java.time.OffsetDateTime;
-import java.time.ZoneOffset;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class Tut001 {
@@ -16,21 +17,18 @@ public class Tut001 {
         
 		DateTimeFormatter formatador = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss.SSS");
 		
-		ZoneOffset offsetMenos3 = ZoneOffset.of("-03:00");
-				
-		OffsetDateTime agoraMenos3 = OffsetDateTime.now(offsetMenos3);
+		// Converter de um fuso horário (ZoneId) para OffsetDateTime
 		
-		OffsetDateTime agoraUtc = OffsetDateTime.now(ZoneOffset.UTC);
+		ZonedDateTime zdt = ZonedDateTime.now(ZoneId.of("America/Sao_Paulo"));
+		
+		OffsetDateTime odt = zdt.toOffsetDateTime();
 		
 		
-		System.out.println(offsetMenos3);
+		System.out.println(zdt);
+		System.out.println(formatador.format(zdt));
 		
-		System.out.println(formatador.format(agoraMenos3));
-		
-		System.out.println(formatador.format(agoraUtc));
-        
-        
-        
+		System.out.println(odt);
+		System.out.println(formatador.format(odt));
 
 		System.out.println("--------------------------");
 		// Your code here
@@ -45,11 +43,14 @@ public class Tut001 {
 }
 
 /*
--03:00
-27/11/2026 10:28:20.983
-27/11/2026 13:28:20.983
+2026-11-27T10:35:48.546153665-03:00[America/Sao_Paulo]
+27/11/2026 10:35:48.546
+2026-11-27T10:35:48.546153665-03:00
+27/11/2026 10:35:48.546
 --------------------------
-tempo execução em ns: 13832143
+tempo execução em ns: 32730252
+
+
 
 
 
