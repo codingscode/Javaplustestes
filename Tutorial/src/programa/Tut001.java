@@ -2,7 +2,6 @@
 package programa;
 
 import java.time.Instant;
-import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.time.ZoneOffset;
 import java.time.ZonedDateTime;
@@ -15,20 +14,15 @@ public class Tut001 {
 		
 		// Converter UTC para um fuso horário local
 
-
 		
 		// formatador ano/mes/dia hora:minuto:segundo:nanosegundos
 		DateTimeFormatter formatador = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss.SSS").withZone(ZoneOffset.UTC);
 
-		LocalDateTime local = LocalDateTime.parse("16/10/2023 12:23:05.200", formatador);
-		ZoneId zonaLocal = ZoneId.of("America/Fortaleza"); // UTC-3
+		Instant utc = Instant.parse("2024-10-14T01:42:00Z");
+		ZonedDateTime aqui = utc.atZone(ZoneId.of("America/Fortaleza"));
 		
-		ZonedDateTime zonedLocal = local.atZone(zonaLocal);
-        Instant utc = zonedLocal.toInstant();
-		
-        
-        System.out.println(zonedLocal);
-        System.out.println(utc);
+		System.out.println(utc);
+		System.out.println(aqui);
         
 		
         
@@ -46,10 +40,10 @@ public class Tut001 {
 }
 
 /*
-2023-10-16T12:23:05.200-03:00[America/Fortaleza]
-2023-10-16T15:23:05.200Z
+2024-10-14T01:42:00Z
+2024-10-13T22:42-03:00[America/Fortaleza]
 --------------------------
-tempo execução em ns: 35569843
+tempo execução em ns: 34517648
 
 
 
