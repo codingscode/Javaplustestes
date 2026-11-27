@@ -1,8 +1,8 @@
 
 package programa;
 
-import java.time.ZoneId;
-import java.time.ZonedDateTime;
+import java.time.OffsetDateTime;
+import java.time.ZoneOffset;
 import java.time.format.DateTimeFormatter;
 
 public class Tut001 {
@@ -16,17 +16,18 @@ public class Tut001 {
         
 		DateTimeFormatter formatador = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss.SSS");
 		
-		ZonedDateTime local = ZonedDateTime.now(ZoneId.of("America/Fortaleza"));
-        ZonedDateTime emGmt = local.withZoneSameInstant(ZoneId.of("GMT"));
-
-        
-        System.out.println("local:");
-        System.out.println(formatador.format(local));
-        
-        System.out.println("em gmt:");
-        System.out.println(formatador.format(emGmt));
+		ZoneOffset offsetMenos3 = ZoneOffset.of("-03:00");
 				
+		OffsetDateTime agoraMenos3 = OffsetDateTime.now(offsetMenos3);
 		
+		OffsetDateTime agoraUtc = OffsetDateTime.now(ZoneOffset.UTC);
+		
+		
+		System.out.println(offsetMenos3);
+		
+		System.out.println(agoraMenos3);
+		
+		System.out.println(agoraUtc);
         
         
         
@@ -44,12 +45,13 @@ public class Tut001 {
 }
 
 /*
-local:
-27/11/2026 10:16:34.081
-em gmt:
-27/11/2026 13:16:34.081
+-03:00
+2026-11-27T10:25:34.668054779-03:00
+2026-11-27T13:25:34.668182330Z
 --------------------------
-tempo execução em ns: 31110973
+tempo execução em ns: 14005743
+
+
 
 
 
