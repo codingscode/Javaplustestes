@@ -1,7 +1,8 @@
 
 package programa;
 
-import java.time.Instant;
+import java.time.OffsetDateTime;
+import java.time.format.DateTimeFormatter;
 
 public class Tut001 {
 
@@ -15,16 +16,17 @@ public class Tut001 {
 		//DateTimeFormatter formatador = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss.SSS");
 		
 		// ISO 8601
-		// Timestamp em UTC (Instant)
-		Instant agoraUtc = Instant.now();
-		String textoIso = agoraUtc.toString();
+		// Data e hora com deslocamento (OffsetDateTime)
+		OffsetDateTime comOffset = OffsetDateTime.now();
+		
+		String formatado = comOffset.format(DateTimeFormatter.ISO_OFFSET_DATE_TIME);
 
-		Instant parseado = Instant.parse("2026-11-27T23:31:00Z");
+		OffsetDateTime lido = OffsetDateTime.parse("2026-11-27T23:31:00-03:00");
 		
 		
-        System.out.println(agoraUtc);
-        System.out.println(textoIso);
-        System.out.println(parseado);
+        System.out.println(comOffset);
+        System.out.println(formatado);
+        System.out.println(lido);
 		
 
 		System.out.println("--------------------------");
@@ -40,11 +42,12 @@ public class Tut001 {
 }
 
 /*
-2026-11-28T02:38:09.571492568Z
-2026-11-28T02:38:09.571492568Z
-2026-11-27T23:31:00Z
+2026-11-27T23:41:53.982623098-03:00
+2026-11-27T23:41:53.982623098-03:00
+2026-11-27T23:31-03:00
 --------------------------
-tempo execução em ns: 18702357
+tempo execução em ns: 38426658
+
 
 
 
