@@ -1,8 +1,7 @@
 
 package programa;
 
-import java.time.OffsetDateTime;
-import java.time.format.DateTimeFormatter;
+import java.time.Instant;
 
 public class Tut001 {
 
@@ -13,17 +12,19 @@ public class Tut001 {
         //DateTimeFormatter formatadorGmt = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss.SSS").withZone(ZoneOffset.UTC);
         //DateTimeFormatter formatadorLocal = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss.SSS").withZone(ZoneId.systemDefault());
         
-		DateTimeFormatter formatador = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss.SSS");
+		//DateTimeFormatter formatador = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss.SSS");
 		
-		// Fazer parse e formatar com offset (ISO-8601)
+		// ISO 8601
+		// Timestamp em UTC (Instant)
+		Instant agoraUtc = Instant.now();
+		String textoIso = agoraUtc.toString();
+
+		Instant parseado = Instant.parse("2026-11-27T23:31:00Z");
 		
-		OffsetDateTime parsed = OffsetDateTime.parse("2026-11-27T10:18:00-03:00");
-
-		String isoFormatado = parsed.format(DateTimeFormatter.ISO_OFFSET_DATE_TIME);
-
-        System.out.println(parsed);
-        
-        System.out.println(isoFormatado);
+		
+        System.out.println(agoraUtc);
+        System.out.println(textoIso);
+        System.out.println(parseado);
 		
 
 		System.out.println("--------------------------");
@@ -39,10 +40,11 @@ public class Tut001 {
 }
 
 /*
-2026-11-27T10:18-03:00
-2026-11-27T10:18:00-03:00
+2026-11-28T02:38:09.571492568Z
+2026-11-28T02:38:09.571492568Z
+2026-11-27T23:31:00Z
 --------------------------
-tempo execução em ns: 18063591
+tempo execução em ns: 18702357
 
 
 
