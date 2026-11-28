@@ -1,7 +1,8 @@
 
 package programa;
 
-import java.time.OffsetDateTime;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class Tut001 {
@@ -16,17 +17,14 @@ public class Tut001 {
 		//DateTimeFormatter formatador = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss.SSS");
 		
 		// ISO 8601
-		// Data e hora com deslocamento (OffsetDateTime)
-		OffsetDateTime comOffset = OffsetDateTime.now();
+		// Data e hora com fuso horário (ZonedDateTime)
+		ZonedDateTime naZona = ZonedDateTime.now(ZoneId.of("America/Fortaleza"));
 		
-		String formatado = comOffset.format(DateTimeFormatter.ISO_OFFSET_DATE_TIME);
-
-		OffsetDateTime lido = OffsetDateTime.parse("2026-11-27T23:31:00-03:00");
+		String isoComZona = naZona.format(DateTimeFormatter.ISO_ZONED_DATE_TIME);		
 		
-		
-        System.out.println(comOffset);
-        System.out.println(formatado);
-        System.out.println(lido);
+        System.out.println(naZona);
+        System.out.println(isoComZona);
+        
 		
 
 		System.out.println("--------------------------");
@@ -42,11 +40,10 @@ public class Tut001 {
 }
 
 /*
-2026-11-27T23:41:53.982623098-03:00
-2026-11-27T23:41:53.982623098-03:00
-2026-11-27T23:31-03:00
+2026-11-27T23:50:40.509220100-03:00[America/Fortaleza]
+2026-11-27T23:50:40.5092201-03:00[America/Fortaleza]
 --------------------------
-tempo execução em ns: 38426658
+tempo execução em ns: 32474891
 
 
 
