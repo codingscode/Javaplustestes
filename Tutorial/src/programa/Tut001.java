@@ -1,9 +1,7 @@
 
 package programa;
 
-import java.time.ZoneId;
-import java.time.ZonedDateTime;
-import java.time.format.DateTimeFormatter;
+import java.time.LocalDateTime;
 
 public class Tut001 {
 
@@ -17,13 +15,11 @@ public class Tut001 {
 		//DateTimeFormatter formatador = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss.SSS");
 		
 		// ISO 8601
-		// Data e hora com fuso horário (ZonedDateTime)
-		ZonedDateTime naZona = ZonedDateTime.now(ZoneId.of("America/Fortaleza"));
-		
-		String isoComZona = naZona.format(DateTimeFormatter.ISO_ZONED_DATE_TIME);		
-		
-        System.out.println(naZona);
-        System.out.println(isoComZona);
+		LocalDateTime local = LocalDateTime.now();
+        LocalDateTime dataHora = LocalDateTime.parse("2026-11-27T23:31:00");
+        
+        System.out.println(local);
+        System.out.println(dataHora);
         
 		
 
@@ -40,10 +36,10 @@ public class Tut001 {
 }
 
 /*
-2026-11-27T23:50:40.509220100-03:00[America/Fortaleza]
-2026-11-27T23:50:40.5092201-03:00[America/Fortaleza]
+2026-11-28T00:04:23.953857026
+2026-11-27T23:31
 --------------------------
-tempo execução em ns: 32474891
+tempo execução em ns: 37036033
 
 
 
